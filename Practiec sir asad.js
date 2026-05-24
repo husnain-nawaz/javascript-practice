@@ -308,16 +308,116 @@
 // console.log(part4);
 // console.log(part5sub)
 
-let text1 = "helloe bhai";
-console.log(text1);
-let text2 = text1.toUpperCase();
-let text3 = text2.toLowerCase();
-console.log(text2);
-console.log(text3);
+// let text1 = "helloe bhai";
+// console.log(text1);
+// let text2 = text1.toUpperCase();
+// let text3 = text2.toLowerCase();
+// console.log(text2);
+// console.log(text3);
+
+
+// let text1 = "Hello world \uD800";
+// let text2 = "husnain nawaz";
+// let result1 = text1.isWellFormed();
+// let result2 = text2.isWellFormed();
+// console.log(result1);
+// console.log(result2);
+
+
+
+// let text = "       f dddsd remoevspace before and after       ";
+// let result = text.trim();
+// console.log(result);
+
+
+// let text = "       f dddsd remoevspace before and after       ";
+// let result2 = text.trimEnd();
+// console.log(result2);
+
+// let text = "6";
+// let n = text.padStart(6,"-") // add - 5 times start of text value
+// console.log(n)
+
+// let number= 6;
+// let text = number.toString();
+// let padded = text.padEnd(5,"v");
+// console.log(padded);
+
+// let text = "james husnain";
+// let result = text.repeat(2); // repeat the text value for 2 time
+// console.log(result);
+
+
+// let text = "my name husnain";
+// // let newtext = text.replace("husnain", "nawaz"); // repace husnian woth nawaz
+// let text2 = text.replace("my name is lakhan"); // not woeking for whole just repace with some words 
+// // console.log(text);
+// // console.log(newtext);
+// console.log(text2);
+
+
+// let text = "please reapkce husnain and husnain";
+// let change = text.replace("husnain","musa"); // it reaplce only first husnain not the secondf one but we can use it in html like button click 2 time to replac both etc
+// console.log(change); // also case sesitive HUSNAIN never change
+
+
+// let text = " baba ry baba";
+// let change = text.replace("BABA", "hsuanian"); // case sensitive BABA dont work here
+// console.log(change);
+
+// let text = " baba ry baba";
+// let change = text.replace(/BABA/i, "hsuanian"); // even though case senstive still by using /i chnage BABA
+// console.log(change);
+
+// let text = " I love cats. Cats are really clever animal cats.";
+// text = text.replaceAll("cats","dogs");
+// text = text.replaceAll("Cats","DOGS")
+// console.log(text);
+
+
+// let text = " I love cats. Cats are really clever animal cats.";
+// text = text.replaceAll("cats","dogs");  // case sensitive 
+// text = text.replaceAll(/Cats/g,"DOGS")
+// console.log(text);
+
+
+// let text = "a,l,i,n,a";
+// let change = text.split(",");
+// console.log(change);
+// console.log(change[3]); // converted string into array 
+
+// let text = "Hello";
+// let change = text.split("");
+
+// text = "";
+// for (let i = 0; i < change.length; i++) {
+//     text+=change[i];
+//     console.log(text);
+// }
+
+
+// let text= "Please locate where 'locate' occurs!";
+// let index = text.indexOf("locate"); // first locate he ka he lia ha na ky 2nd waly ka 
+// let lastindex = text.lastIndexOf("locate"); // ya last wal locate ka btata ha
+// let checkindex = text.lastIndexOf("husnian"); // return -1 because husnain hahe nahi string ma or indexof b -1 he kary ga agr na mila jo ham search kr rhy string ma 
+// console.log(index);
+// console.log(lastindex);
+// console.log();
+
+
+
+// let text = "Please locate where 'locate' occurs!";
+// let index = text.indexOf("locate",15); // 15 ky bad find krna ha locate jo jo dusra wala ho ga lakin is case ma wo poehla ha kun ky ham 15 ky bad search lkrna ka keh rehy han or 15 sy pehly sary ignore ho jain gy
+// console.log(index); // indexof----->   <------ lastindexof
 
 
 
 
+let text = "Please locate where 'locate' occurs!";
+let search1 = text.search("locate");
+let search2 = text.search(/where/);
+console.log(search1);
+console.log(search2);
 
 
 

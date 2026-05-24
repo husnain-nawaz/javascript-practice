@@ -1,3 +1,2 @@
-  // if(i===5){
-    //     continue; //for skip
-    // }
+t);
+// console.log(newtext);
