@@ -413,13 +413,159 @@
 
 
 
-let text = "Please locate where 'locate' occurs!";
-let search1 = text.search("locate");
-let search2 = text.search(/where/);
-console.log(search1);
-console.log(search2);
+// let text = "Please locate where 'locate' occurs!";
+// let search1 = text.search("locate");
+// let search2 = text.search(/where/);
+// console.log(search1);
+// console.log(search2);
 
 
+// let text = "Please locate where 'locate' occurs!";
+// let matching = text.match("cat"); // retunr the array
+// console.log(matching);
+// let matching2 = text.match(/eas/);
+// console.log(matching2);
+// let matching3 = text.match(/cat/g); // g means globae ha matlab jaahan b aya sab find kry ga na ky sirf first wala cat
+// console.log(matching3);
+
+
+// let text = "The rain in SPAIN stays mainly in the plain";
+// let casesenserach= text.match(/ain/gi); // global yani jintni bar aya ho string ma or case sensitive b agr boig kletter ma ho ga kich milta just ato skip nahi ho jay ega kun ky case sensitive search ah globle abiut insesitive gi 
+// console.log(casesenserach);
+
+
+// let text = "I love cats. Cats are very easy to love. Cats are very popular."
+// let change = text.matchAll("Cats"); // case sesitive ha small cats ignore ho gai
+// let cahngee = text.matchAll(/cats/gi);
+// console.log(change);
+
+
+// let text = "Hello world, welcome to the universe.";
+// let isoinclude = text.includes("world"); // if thi word include than true if not the false 
+// let notinslcude = text.includes('baba'); // not inclde word in string
+// let startcheck = text.includes("hello", 15);
+// console.log(isoinclude);
+// console.log(notinslcude);
+// console.log(startcheck); /// hellow include but still get false because it start check from index 15 befre index 15 all ignore where hello was writen
+
+
+// let text = "Hello world, welcome to the universe.";
+// let checkstart= text.startsWith("Hello"); 
+// let startchecknot = text.startsWith("world"); // false beacuse it doesnot srted with world but by hello
+// let indexstartwith= text.startsWith("World",6);  // start from index 5
+// console.log(indexstartwith); // case sendsitive world != World
+
+
+// let text = "husnain nawaz";
+// let startend = text.endsWith("nawaz",11); // case senssitive nawaz != Nawaz  end ky words ko match karta ha
+// console.log(startend); // start from 11 index nawaz is in string but ignored becaseu string starts from 11 index
+
+
+// let text = "alina amir ufg";
+// let letter =  text.charAt(text.length-3); // 3rd from string but string end beacise of -ve in length of text string
+// console.log(letter);
+
+
+// let text = String.fromCharCode(66, 65,73);
+// console.log(text);
+
+
+// let text1 ="cd"; // -1 if converted ascii of chartters fromstart before like a is before value i guess 65  than b wihic 66 i guess
+// let text2 = "b"; // 1 if vise virsa of -1 like b is before a 
+// console.log(text1.localeCompare(text2)); // 0 if equal and case senstive likje C ascii change than small c
+
+
+
+// let name,jobtitle,born;
+// function employee(name, jobtitle, born){
+//     this.name = name;
+//     this.jobtitle = jobtitle;
+//     this.born = born;
+// }
+// employee.prototype.salary = 20000; // prototype use to add salary manually and it work fine only woth objects of class to add own objects not with other buitlin dayatypes like number arrayys boolean etc etc
+// let emp = new employee("ali", "mechanic",1990);
+// console.log(emp.name);
+// console.log(emp.jobtitle);
+// console.log(emp.born);
+// console.log(emp.salary)
+
+
+// let text = new String("new string ha ya");
+// let result = text.toString();
+// let valuelo = text.valueOf(); // value return krta ha jo variable ko assign hioty hn 
+// console.log(valuelo);
+// console.log(result)
+
+
+// let x = "hello";
+// let result = x.fontsize(6);
+// console.log(result);
+
+
+// let no= 2;
+// let text="";
+// while(no!=Infinity){
+//     no*=no;
+//     text=text+no;
+//     console.log(text);
+// }
+
+
+
+// let x= 2/0;
+// let y = -4/0;
+// console.log(x);
+// console.log(y);
+// console.log(typeof x);
+// console.log(typeof y);
+
+// let x = 0xFF;
+// console.log(x);
+// console.log(typeof x);
+
+
+// let mynumber= 3331;
+// let a = mynumber.toString(2);
+// console.log(a);
+
+// let x = new Number(500);
+// let n = 500;
+// let y = new Number(500);
+// console.log(x==y); // object cant copare or equal in js return false everytime
+// console.log(x===y);
+// console.log(n===y) // object and number not compare but == true === fslse
+
+
+// let x = 234321.3223432323232;
+// console.log(x.toExponential(5))
+
+// let x = 234321.3223432323232;
+// console.log(x.toFixed(5)) // round of after . like 5 here means upto t after dot and remove all afetert those 5
+
+// let x = 234321.3265432;
+// console.log(x.toPrecision(9)) // total digit from satrt to end 9
+
+// let convertsttono="-10 years";
+// console.log(parseInt(convertsttono)); //convert string intoo number and remove string given one
+// console.log(Number.isNaN(876));
+
+// function myfun(x,y=10){
+//     console.log(x+y)
+// }myfun(3)
+
+// function myfun(x,y){
+//     return x+y
+// }
+// let total = myfun(3,5)*5;
+// console.log(total)
+
+
+// function checkage(age){
+//     if(age<18){
+//         return "too young"
+//     }
+//     return "access ok"
+// }
 
 
 
