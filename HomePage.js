@@ -7,7 +7,7 @@
 // let result = multiply(3,5);
 // console.log(result);
 
-const { jsx } = require("react/jsx-runtime")
+// const { jsx } = require("react/jsx-runtime")
 
 
 // x = findmax(1,123, 500, 115, 44, 88);
@@ -389,14 +389,59 @@ const { jsx } = require("react/jsx-runtime")
 
 
 
-function person(first,last,age,color){
-    this.firstname= first;
-    this.lastname = last;
-    this.age= age;
-    this.eyecolor=color;
-}
-const myfather = new person("Nawaz","shaheen",50,"brown");
-console.log(myfather);
+// function person(first,last,age,color){
+//     this.firstname= first;
+//     this.lastname = last;
+//     this.age= age;
+//     this.eyecolor=color;
+// }
+// const myfather = new person("Nawaz","shaheen",50,"brown");
+// console.log(myfather);
+
+
+
+
+// x = 5;
+// console.log(x)
+// var x; // var canbe declare even after the fucntion called but not the let datatype
+
+// x = 8;
+// console.log(x)
+// let x; // ket not allowed to declare after the function call but declare before 
+
+
+// var x= 5;
+// var y = 7;
+// console.log(x+" "+y);
+
+
+// var n = 6;
+// console.log(n+" "+m);// value cant print because value and m not initialied here before printing it
+// var m= 7;
+
+// var n = 6;
+// m= 7;
+// console.log(n+" "+m); // this time m have value but later initialied so value can be pritable
+// var m;
+
+
+// var g= 7;
+// var f;
+// console.log(g,f); // f undefined still because value i szero means not initialized 1st so hoisted not 
+// f=7;
+
+
+// "use strict" // must use to declare x with some var let const to use otherwise give error because we are using usestrict it is used at the start 
+// x=5;
+// console.log(x)
+
+// "use strict"
+// function myfun(){
+//     y=3;
+//     return y;
+// }
+// console.log(myfun())
+
 
 
 
