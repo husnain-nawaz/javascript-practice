@@ -443,6 +443,124 @@
 // console.log(myfun())
 
 
+// "use strict"
+// x = 5;
+// console.log(x);
+
+
+// "use strict";
+// let x= {p1:100,p2:200};
+// console.log(x)
+
+
+// "use strict"
+// let x = 3.14;
+// delete x; /// delete cant be use in strict mode we cannot delete the variable in strict mode
+// console.log(x);
+
+
+// "use strict"
+// function myfucn(p1,p2){return "hello"};
+// console.log(myfucn())
+
+
+// not allowed
+"use strict" 
+// let x=010; //octal numeric numbers
+// let y="\10"; //octal escape character
+
+// const obj = {};
+// Object.defineProperty(obj, "x",{value:7,writable:false});
+// obj.x = 3.14;
+// console.log(obj.x)
+
+// const obj = {};
+// Object.defineProperty(obj, "x",{value:9, Writable:false});
+// console.log(obj.x)
+// obj.x = 5; // channot change value to property x because it iis only readonly
+// console.log(obj.x)
+
+
+// //get only property
+// "use strict"
+// const obj = {get x(){ return 9}} //  allowed get function but not cahnging
+// // obj.x = "4"; // not allowed to change in get fucntion
+// console.log(obj.x)
+
+
+
+// "use strict"
+// delete Object.prototype;
+
+
+// "uses strict"
+// let eval = 3.14;
+// console.log(eval) // eval keyword not working
+
+
+// "use strict"
+// let arguments = 3.14;
+// console.log(arguments); // arguments already a keyword in js so cannot use as variable name
+
+
+
+// const cars=["toytoa","volvo","bmw"];
+// console.log(cars[1])
+
+
+// const cars=[];
+// cars[0] = "toyota";
+// cars[2] = "bently";
+// cars[3] = "samsung";
+// let text="";
+// for (let i= 0; i<cars.length;i++){
+//     text+=cars[i];
+// }
+// console.log(text)
+
+
+// const cars = new Array("Toayota","Audi","Honda");
+// console.log(cars.toString())
+// const cars2 = ["Toayota","Audi","Honda"];
+// console.log(cars2)
+
+
+
+// const cars = new Array("Toayota","Audi","Honda");
+// console.log(cars[cars.length-1])
+
+
+// const fruits= ["Banana", "Orange", "Apple", "Mango"];
+// let text = "";
+// for (let i = 0; i < fruits.length; i++) {
+//     text +=fruits[i];
+// }
+// console.log(text)
+
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+
+// fruits.forEach(
+//     function(bb){
+//         console.log(bb);
+//     }
+// );
+
+
+// adding array elemenets 
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.push("kela");
+// fruits[fruits.length]="amb";
+// fruits.forEach(
+//     function(bb){
+//         console.log(bb);
+//     }
+// );
+
+
+
+
 
 
 
