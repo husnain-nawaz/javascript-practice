@@ -559,6 +559,147 @@
 // );
 
 
+// const months = ["Jan", "Feb", "Mar", "Apr"];
+// const sorted = months.toReversed();
+// console.log(sorted)
+
+
+
+// const points = [40, 100, 1, 5, 25, 10];
+// let b = points.sort(function(a,b){return a-b})
+// console.log(b)
+
+
+const points = [40, 100, 1, 5, 25, 10];
+// console.log(points.sort((a,b)=> b-a))
+// console.log(points.sort(function() {return 0.7 - Math.random()}));
+// for(let i=points.length-1; i>0; --i){
+//     let j = Math.floor(Math.random()*(i+1))
+//     let k = points[i];
+//     points[i] = points[j];
+//     points[j] = k;
+// }
+// console.log(points)
+
+
+// function myarr(arr){
+//     return Math.min.apply(null,arr);
+// }
+// console.log(myarr(points))
+
+
+// function myarr(arr){
+//     return Math.max.apply(null,arr)
+// }
+// console.log(myarr(points));
+
+
+// function myarraymin(arr){
+//     let len = arr.length;
+//     let min = -Infinity;
+//     while(len--){
+//         if(arr[len]>min){
+//             min = arr[len];
+//         }
+//     }
+//     return min;
+// }
+// console.log(myarraymin(points));
+
+
+
+// const cars = [
+//     {type:"volvo", year :2016},
+//     {type:"toyota", year :2020},
+//       {type:"Saab", year:2001},
+//     {type:"BMW", year:2010}
+// ]
+// console.log(cars.sort(function(a,b){return a.year - b.year}))
+
+// cars.sort(function(a,b){
+//     let x = a.type.toLowerCase();
+//     let y = b.type.toLowerCase();
+//     if(x<y){return -1}
+//     if(x>y){return 1}
+//     // return 0;
+// })
+// console.log(cars)
+// console.log(cars[0].type)
+
+
+// const myArr = [
+//   {name:"X00",price:100 },
+//   {name:"X01",price:100 },
+//   {name:"X02",price:100 },
+//   {name:"X03",price:100 },
+//   {name:"X04",price:130 },
+//   {name:"X05",price:110 },
+//   {name:"X06",price:110 },
+//   {name:"X07",price:110 },
+//   {name:"X08",price:120 },
+//   {name:"X09",price:120 },
+//   {name:"X10",price:160 },
+//   {name:"X11",price:120 },
+//   {name:"X12",price:130 },
+//   {name:"X13",price:130 },
+//   {name:"X14",price:130 },
+//   {name:"X15",price:130 },
+//   {name:"X16",price:140 },
+//   {name:"X17",price:140 },
+//   {name:"X18",price:110 },
+//   {name:"X19",price:140 }
+// ];
+// myArr.sort((p1,p2)=>{
+//     if (p1.price < p2.price) return -1;
+//     if (p1.price>p2.price) return 1;
+//     return 0;
+// });
+// let text = "";
+
+// function myfun(value){
+//     text += value.name + "  " + value.price +" ";
+// }
+// myArr.forEach(myfun);
+// console.log(text)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
