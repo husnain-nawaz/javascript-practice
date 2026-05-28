@@ -663,16 +663,151 @@ const points = [40, 100, 1, 5, 25, 10];
 // console.log(text)
 
 
+// const numbers = [45, 4, 9, 16, 25];
+// let text = "";
+// numbers.forEach(myfunction);
+// function myfunction(value, index , array){
+//     text += value +" "+index+" ["+array+"] \n";
+// }
+// console.log(text);
+
+
+// const numbers1 = [45, 4, 9, 16, 25];
+
+// function myfun(a){
+//     return a*2;
+// }
+// const number2=numbers1.map(myfun);
+// console.log(JSON.stringify(number2))
+// console.log(number2)
+
+
+// const myArr = [1, 2, 3, 4, 5, 6];
+// const newarr = myArr.flatMap(x=>[x,x*3]);
+// console.log(newarr);
+
+
+// const numbers = [45, 4, 9, 16, 25];
+// const over18 = numbers.filter(myfun);
+// function myfun(a){
+//  return a>18;
+// }
+// console.log(over18);
+
+
+// const numbers = [45, 4, 9, 16, 25];
+// let sum = numbers.reduceRight(myfun);
+// function myfun(a,b,index,array){
+//     return a+b;
+// }
+// console.log(sum)
+
+
+// const numbers = [45, 4, 9, 16, 25];
+// let allover18 = numbers.every(myfun);
+// function myfun(a,b){
+//     return a>18;
+// }
+// console.log(allover18)
 
 
 
+// const numbers = [4, 24, 9, 16, 5];
+// let over18 = numbers.some(myfun);
+
+// function myfun(a){
+//     return a>18;
+// }
+// console.log(over18);
+
+
+// let text = "ABCDEDG";
+// let v=Array.from(text);
+// console.log(v);
+
+
+// const myNumbers = [1,2,3,4];
+// const myarr = Array.from(myNumbers,(a)=> a*3)
+// console.log(myarr)
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const key = fruits.keys();
+// let text="";
+// for (let x of key){
+//     text+=x +"\n";
+// }
+// console.log(text);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// const f= fruits.entries();
+// let text;
+// for(let x of f){
+//     text +=x+" \n";
+// }
+// console.log(text)
+
+
+// const months = ["Januar", "Februar", "Mar", "April"];
+// const mymonths = months.with(2,"march");
+// console.log(mymonths)
 
 
 
+// const arr1 = [1, 2, 3];
+// const arr2 = [4, 5, 6];
+// const arr3 = [...arr1,...arr2]
+// console.log(arr3);
 
 
 
+// const arr1 = [1, 2, 3];
+// const arr2 = [...arr1]; //use to copy array
+// console.log(arr1)
 
+
+
+// const numbers = [23,55,21,87,56];
+// let minvalue = Math.min(...numbers);
+// let maxvalue = Math.max(...numbers);
+
+// console.log(minvalue);
+// console.log(maxvalue)
+
+
+
+// const arr1 = [1,2,3,4,5,6,7,8];
+// let a, rest;
+// [a,...rest]= arr1;
+// console.log(arr1)
+
+
+// const arr1 = [1,2,3,4,5,6,7,8];
+// let a,b,rest;
+// [a,b,...rest]=arr1;
+// console.log(rest);
+
+
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// let text = fruits.constructor;
+// console.log(text);
+
+// let fruits = Array.of("Banana", "Orange", "Apple", "Mango");
+// console.log(fruits);
+
+
+// const numbers = [4, 9, 16, 25];
+// console.log(numbers.map(Math.sqrt));
+
+// Array.prototype.myucase = function(){
+//     for (let i=0;i<fruits.length; i++){
+//         this[i] = this[i].toUpperCase();
+//     }
+// };
+// const fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.myucase();
+// console.log(fruits)
 
 
 
