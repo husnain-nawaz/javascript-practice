@@ -924,6 +924,127 @@ const points = [40, 100, 1, 5, 25, 10];
 
 
 
+// const fruits = new Map();
+// console.log(cars);
+// fruits.set("kela",500);
+// fruits.set("malta",66);
+// fruits.set("malta",88);// first matla ignnored andf only one time it will show in output
+// fruits.set("kela",22);
+// fruits.set("amb",999);
+// console.log(fruits)
+
+// const cars = new Map([
+//     ["apple", 500],
+//     ["mango",900],
+//     ["guava",200]
+// ]);
+// console.log(cars.get("apple"))
+// cars.set("kela",100);
+// console.log(cars)
+// cars.set("apple",333) // chnage value from 500 to 333
+// console.log(cars)
+// console.log(typeof cars);
+// console.log(cars instanceof Map); //trur also for object too
+
+
+
+// const fruits = new Map([
+//     ["apple", 500],
+//     ["mango",900],
+//     ["guava",200]
+// ]);
+
+// console.log(fruits.size);
+// fruits.delete("apple");
+// console.log(fruits)
+// fruits.clear(); // retue=rn mao but {0}
+// console.log(fruits);
+// console.log(fruits.has("apple")); //true if delet than false
+// fruits.delete("apple")
+// console.log(fruits)
+// console.log(fruits.has("apple"))
+
+// let text ="";
+// fruits.forEach(
+//     function(a,b){
+//         text+=a+" "+ b +" \n";
+//     }
+// )
+// console.log(text);
+
+
+// let text = "";
+// for (const x of fruits.entries()){
+//     text+=x+" \n";
+// }
+// console.log(text)
+
+
+
+// let text = "";
+// for (const x of fruits.keys()){
+//     text+=x+" \n";
+// }
+// console.log(text)
+
+
+// let text = "";
+// for (const x of fruits.values()){
+//     text+=x+" \n";
+// }
+// console.log(text)
+
+
+// let text = 0;
+// for (const x of fruits.values()){
+//     text+=x; // remove "\n" means no string values must be sum as text value assigned to 0
+// }
+// console.log(text)
+
+
+// const apples =  {name:"apples1"};
+// const bananas = {name: 'Bananas2'};
+// const oranges = {name: 'Oranges3'};
+
+// const fruis = new Map();
+
+// fruis.set(apples, 500);
+// fruis.set(bananas,60);
+// fruis.set(oranges,44)
+// console.log(fruis)
+
+
+// const fruits = [
+//     {name:"apples", quantity:300},
+//     {name:"bananas", quantity:500},
+//   {name:"oranges", quantity:200},
+//   {name:"kiwi", quantity:150}
+// ];
+// function check({quantity}){
+//     return quantity>200 ? "ok" : "low";
+// }
+// let v = Map.groupBy(fruits, check);
+// let text="";
+// for (let x of v.get("ok")){
+//     text+=x.name +" "+x.quantity+" \n";
+// }
+// for(let x of v.get("low")){
+//     text+=x.name+" "+x.quantity+" \n";
+// }
+// console.log(text)
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
