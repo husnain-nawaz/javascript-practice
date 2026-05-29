@@ -811,36 +811,116 @@ const points = [40, 100, 1, 5, 25, 10];
 
 
 
+// const letters = new Set(["a","b","c","d"]);
+// console.log(letters.size)
+
+
+// const letters = new Set();
+// letters.add("a");
+// letters.add("b");
+// letters.add("c");
+// console.log(letters)
+
+
+// const letters =  new Set();
+// const a="a";
+// const b="b";
+// const c="c";
+// letters.add(a);
+// letters.add(b);
+// letters.add("b");
+// letters.add("b");
+// letters.add(c);
+// console.log(letters)
 
 
 
+// const letters = new Set(["a","b","c"]);
+// let text = "";
+// for (const x of letters){
+//     text+=x+"\n";
+// }
+// console.log(text)
 
 
 
+// const letters =  new Set(["a","b","c"]);
+
+// console.log(letters instanceof Object)
+// console.log(letters.has("d"));
+// console.log(letters.has("b")) // yes b is in letters
+
+// let text="";
+// letters.forEach(function(a){
+//     text+=a+"\n";
+// });
+// console.log(text)
+
+
+// let text="";
+// for(const x of letters.values()){
+//     text+=x+"\n";
+// }
+// console.log(text)
+
+
+// let text="";
+// for(let i of letters.keys()){
+//     text+=i+"\n";
+// }
+// console.log(text)
+
+
+// let text="";
+// for(const g of letters.entries()){
+//     text+=g+"\n";
+// }
+// console.log(text);
+
+
+// const A = new Set(['a','b','c']);
+// const B = new Set(['b','c','d']);
+// console.log(A.intersection(B));
+// console.log(A.union(B));
+// console.log(A.difference(B));
+// console.log(A.symmetricDifference(B));
+// console.log(A.isSubsetOf(B)); // false becasue all A elemnets are not in B 
+// console.log(A.isDisjointFrom(B)); // if A have no elements which is in B
+
+
+// let myset = new WeakSet();
+// let myobj = {fname:"ali", lname:"nawaz"};
+// let v = myset.add(myobj);
+// console.log(v)
+// // myset.delete(myobj) // delete this than it will give false in has 
+// console.log(myset.has(myobj));  
+// // console.log(myobj instanceof Object);
+// myobj = null; // after the all program run i give null value which means all the vlaue assigned in prgrams now rmeoved and will be garbage collected in memory
+// in weakset no primitive values allowed - only objects allowed
 
 
 
+// let text = "";
+// const person = new WeakSet();
+// let ali  = {name:"ali",age:23};
+// let husnain = {name:"husnain", age:24};
+// let musa = {name: "musa", age:22};
+// let aleena ={name: "aleena", age: 19};
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// track(ali);
+// track(musa);
+// track(husnain);
+// track(ali);
+// function track(visitor){
+//     if(person.has(visitor)){
+//         text+=visitor.name+"visited already\n ";
+//     }
+//     else{
+//         person.add(visitor);
+//         text+=visitor.name+" age is "+visitor.age+" visted 1st time \n";
+//     }
+// }
+// console.log(text)
 
 
 
