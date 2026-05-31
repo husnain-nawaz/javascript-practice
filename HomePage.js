@@ -1068,12 +1068,12 @@ const points = [40, 100, 1, 5, 25, 10];
 
 
 
-const dates = [
-    new Date("2026-01-01"),
-    new Date("2026-12-24"),
-];
-let text = dates.toLocaleString("en-US")
-console.log(text);
+// const dates = [
+//     new Date("2026-01-01"),
+//     new Date("2026-12-24"),
+// ];
+// let text = dates.toLocaleString("en-US")
+// console.log(text);
 
 
 
