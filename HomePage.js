@@ -1034,20 +1034,46 @@ const points = [40, 100, 1, 5, 25, 10];
 // console.log(text)
 
 
+// let num=3.14159;
+// let text=num.toLocaleString("en-US",{
+//     minimumFractionDigits: 1,
+//     minimumFractionDigits: 1,
+// });
+// console.log(text)
+
+
+// let date =  new Date();
+
+// let text = date.toLocaleString("en-US",{
+//     weekday: "short",
+//     year: "numeric",
+//     month: "short",
+//     day: "numeric",
+// })
+// console.log(text);
 
 
 
+// function filesize(bytes){
+//     if(bytes<1024){
+//         return bytes+" bytes";
+//     }
+//     if (bytes<1024*1024){
+//         return (bytes / 1024).toLocaleString("en-US", {maximumFractionDigits: 1}) + " KB";    
+//     }
+//     return(bytes/(1024*1024).toFixed(1)+"MB");
+// }
+// let size = 1000000;
+// console.log(filesize(size));
 
 
 
-
-
-
-
-
-
-
-
+const dates = [
+    new Date("2026-01-01"),
+    new Date("2026-12-24"),
+];
+let text = dates.toLocaleString("en-US")
+console.log(text);
 
 
 
