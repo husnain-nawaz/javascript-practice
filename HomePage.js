@@ -1083,14 +1083,57 @@ const points = [40, 100, 1, 5, 25, 10];
 // console.log(country)
 
 
+// function greet(){
+//     console.log(this.name);
+// }
+// const person = {
+//     name : "ali"
+// }
+// greet.call(person);
 
 
 
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// sum.apply(null,[5,10]);
+
+
+// console.log(this)
+
+
+// function show(){
+//     console.log(this.name);
+// }
+// const p1= {name:"Asli"};
+// const p2= {name:"naqli"};
+// const fn = show.bind(p1); // asli output aye ge kun ky bind ki priority ziada ha call sy
+// fn.call(p2);
 
 
 
+// const person = {
+//     name: "john",
+//     getname : function(){
+//         return this.name;
+//     }
+// };
+// let v = person.getname();
+// console.log(v)
 
 
+// function counter(){
+//     let count = 0;
+//     return function(){
+//         count++;
+//         return count;
+//     };
+// }
+// const c = counter();
+// console.log(c());
+// console.log(c());
+// console.log(c());
+// console.log(c());
 
 
 
