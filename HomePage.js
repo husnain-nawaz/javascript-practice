@@ -1137,6 +1137,15 @@ const points = [40, 100, 1, 5, 25, 10];
 
 
 
+const transactions = [
+  { patient: "Ali Khan", amount: 5000 },
+  { patient: "Sara Ahmed", amount: 3200 },
+  { patient: "Usman Malik", amount: 4500 },
+  { patient: "Ayesha Noor", amount: 2800 },
+  { patient: "Ali Khan", amount: 1500 },
+  { patient: "Sara Ahmed", amount: 4000 },
+  { patient: "Ali Khan", amount: 2200 }
+];
 
 
 
