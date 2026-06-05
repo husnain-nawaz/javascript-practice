@@ -1,0 +1,110 @@
+Create an array of patients:
+
+const patients = [
+  { id: 1, name: "Ali", age: 65, balance: 5000 },
+  { id: 2, name: "Sara", age: 25, balance: 0 },
+  { id: 3, name: "Ahmed", age: 70, balance: 2500 },
+  { id: 4, name: "Fatima", age: 40, balance: 1000 }
+];
+
+Tasks:
+
+Find total patients.
+Find senior citizens (age >= 60).
+Calculate total outstanding balance.
+Find patient with highest balance.
+Print patients having balance > 1000.
+
+
+.......................................................
+const claims = [
+  { claimId: 101, amount: 1200, status: "Paid" },
+  { claimId: 102, amount: 800, status: "Pending" },
+  { claimId: 103, amount: 1500, status: "Rejected" },
+  { claimId: 104, amount: 2000, status: "Paid" },
+  { claimId: 105, amount: 700, status: "Pending" }
+];
+
+Tasks:
+
+Count paid claims.
+Count pending claims.
+Count rejected claims.
+Calculate total paid amount.
+Calculate total pending amount.
+Find highest claim amount.
+
+......................................................
+const transactions = [
+  { patient: "Ali", amount: 1000 },
+  { patient: "Sara", amount: 2500 },
+  { patient: "Ahmed", amount: 1500 },
+  { patient: "Ali", amount: 500 },
+  { patient: "Sara", amount: 1000 }
+];
+
+Tasks:
+
+Total revenue.
+Revenue per patient.
+Patient who generated highest revenue.
+Average transaction amount.
+
+
+
+----------------------------
+Set 1 — Employees (HR System)
+javascriptconst employees = [
+  { id: 1, name: "Ali",    dept: "IT",      salary: 80000, yearsExp: 8  },
+  { id: 2, name: "Sara",   dept: "HR",      salary: 60000, yearsExp: 3  },
+  { id: 3, name: "Ahmed",  dept: "IT",      salary: 95000, yearsExp: 12 },
+  { id: 4, name: "Fatima", dept: "Finance", salary: 70000, yearsExp: 5  },
+  { id: 5, name: "Usman",  dept: "HR",      salary: 55000, yearsExp: 2  }
+];
+Tasks:
+
+Total number of employees
+Find all IT department employees
+Calculate total salary expense
+Find employee with highest salary
+Find employees with more than 5 years experience
+Calculate average salary
+Count employees per department { IT: 2, HR: 2, Finance: 1 }
+Total salary per department
+
+
+Set 2 — Products (Inventory)
+javascriptconst products = [
+  { id: 1, name: "Laptop",  category: "Electronics", price: 150000, stock: 10 },
+  { id: 2, name: "Chair",   category: "Furniture",   price: 25000,  stock: 0  },
+  { id: 3, name: "Phone",   category: "Electronics", price: 80000,  stock: 5  },
+  { id: 4, name: "Desk",    category: "Furniture",   price: 35000,  stock: 8  },
+  { id: 5, name: "Tablet",  category: "Electronics", price: 60000,  stock: 0  }
+];
+Tasks:
+
+Find out of stock products (stock === 0)
+Total inventory value (price × stock) for each product
+Most expensive product
+All Electronics under price 100000
+Count products per category
+Total value of all in-stock items
+
+
+Set 3 — Students (Result Card)
+javascriptconst students = [
+  { name: "Ali",    marks: 85, subject: "Math",    passed: true  },
+  { name: "Sara",   marks: 45, subject: "Science",  passed: false },
+  { name: "Ahmed",  marks: 92, subject: "Math",    passed: true  },
+  { name: "Fatima", marks: 38, subject: "English",  passed: false },
+  { name: "Usman",  marks: 76, subject: "Science",  passed: true  }
+];
+Tasks:
+
+Count passed and failed students
+Find highest scorer
+Calculate class average marks
+Find all Math students
+Find students who scored above average
+Group students by subject
+
