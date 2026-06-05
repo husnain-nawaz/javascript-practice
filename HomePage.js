@@ -1136,6 +1136,33 @@ const points = [40, 100, 1, 5, 25, 10];
 // console.log(c());
 
 
+// const numbers = [10,20,30];
+// numbers.forEach(numbers=>{
+//     console.log(numbers);
+// })
+
+
+// const users = [
+//     {name: "Ali"},
+//     {name: "sara"}
+// ];
+// users.forEach(users=>{
+//     console.log(users.name)
+// })
+
+// const transactions = [
+//   { patient: "Ali Khan", amount: 5000 },
+//   { patient: "Sara Ahmed", amount: 3200 },
+//   { patient: "Usman Malik", amount: 4500 }
+// ];
+// transactions.forEach(transactions =>{
+//     console.log(transactions);
+// })
+
+
+
+
+
 
 const transactions = [
   { patient: "Ali Khan", amount: 5000 },
@@ -1146,8 +1173,34 @@ const transactions = [
   { patient: "Sara Ahmed", amount: 4000 },
   { patient: "Ali Khan", amount: 2200 }
 ];
-
-
+// const revenue={};
+// transactions.forEach(transaction=>{
+//     if(revenue[transaction.patient]){
+//         revenue[transaction.patient]+=transaction.amount;
+//     }
+//     else{
+//         revenue[transaction.patient]=transaction.amount;
+//     }
+// })
+// console.log(revenue);
+let revenue={};
+transactions.forEach(transaction=>{
+    if(revenue[transaction.patient]){
+        revenue[transaction.patient]+=transaction.amount;
+    }
+    else{
+        revenue[transaction.patient]=transaction.amount;
+    }
+});
+let maxamunt = 0;
+let maxpatient = "";
+for(let patient in revenue){
+    if(revenue[patient]>maxamunt){
+        maxamunt = revenue[patient];
+        maxpatient = patient;
+    }
+}
+console.log(maxpatient+" "+maxamunt);
 
 
 
