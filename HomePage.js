@@ -1192,15 +1192,26 @@ transactions.forEach(transaction=>{
         revenue[transaction.patient]=transaction.amount;
     }
 });
-let maxamunt = 0;
-let maxpatient = "";
+// let maxamunt = 0;
+// let maxpatient = "";
+// for(let patient in revenue){
+//     if(revenue[patient]>maxamunt){
+//         maxamunt = revenue[patient];
+//         maxpatient = patient;
+//     }
+// }
+// console.log(maxpatient+" "+maxamunt);
+
+
+let total=0;
+let count=0;
 for(let patient in revenue){
-    if(revenue[patient]>maxamunt){
-        maxamunt = revenue[patient];
-        maxpatient = patient;
-    }
+    total+=revenue[patient];
+    count++;
 }
-console.log(maxpatient+" "+maxamunt);
+let average = total/count;
+console.log(average)
+
 
 
 
