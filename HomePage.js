@@ -1203,14 +1203,14 @@ transactions.forEach(transaction=>{
 // console.log(maxpatient+" "+maxamunt);
 
 
-let total=0;
-let count=0;
-for(let patient in revenue){
-    total+=revenue[patient];
-    count++;
-}
-let average = total/count;
-console.log(average)
+// let total=0;
+// let count=0;
+// for(let patient in revenue){
+//     total+=revenue[patient];
+//     count++;
+// }
+// let average = total/count;
+// console.log(average)
 
 
 
