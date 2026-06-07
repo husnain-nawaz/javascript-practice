@@ -1164,15 +1164,15 @@ const points = [40, 100, 1, 5, 25, 10];
 
 
 
-const transactions = [
-  { patient: "Ali Khan", amount: 5000 },
-  { patient: "Sara Ahmed", amount: 3200 },
-  { patient: "Usman Malik", amount: 4500 },
-  { patient: "Ayesha Noor", amount: 2800 },
-  { patient: "Ali Khan", amount: 1500 },
-  { patient: "Sara Ahmed", amount: 4000 },
-  { patient: "Ali Khan", amount: 2200 }
-];
+// const transactions = [
+//   { patient: "Ali Khan", amount: 5000 },
+//   { patient: "Sara Ahmed", amount: 3200 },
+//   { patient: "Usman Malik", amount: 4500 },
+//   { patient: "Ayesha Noor", amount: 2800 },
+//   { patient: "Ali Khan", amount: 1500 },
+//   { patient: "Sara Ahmed", amount: 4000 },
+//   { patient: "Ali Khan", amount: 2200 }
+// ];
 // const revenue={};
 // transactions.forEach(transaction=>{
 //     if(revenue[transaction.patient]){
@@ -1183,15 +1183,15 @@ const transactions = [
 //     }
 // })
 // console.log(revenue);
-let revenue={};
-transactions.forEach(transaction=>{
-    if(revenue[transaction.patient]){
-        revenue[transaction.patient]+=transaction.amount;
-    }
-    else{
-        revenue[transaction.patient]=transaction.amount;
-    }
-});
+// let revenue={};
+// transactions.forEach(transaction=>{
+//     if(revenue[transaction.patient]){
+//         revenue[transaction.patient]+=transaction.amount;
+//     }
+//     else{
+//         revenue[transaction.patient]=transaction.amount;
+//     }
+// });
 // let maxamunt = 0;
 // let maxpatient = "";
 // for(let patient in revenue){
@@ -1254,17 +1254,61 @@ transactions.forEach(transaction=>{
 // getdata(3);
 
 
-function getdata(dataid,getnextdata){
+// function getdata(dataid,getnextdata){
+//     setTimeout(()=>{
+//         console.log("data",dataid);
+//         if(getnextdata){
+//             getnextdata();
+//         }
+//     },2000)
+// }
+// getdata(1,()=>{
+//     getdata(2);
+// })
+
+
+
+// function datadelay(id,undarwalafun){ // undesrwala fun yahan function ky tor par use ho raha ha jo ham ny nichy expression wala function bnaya ha jis ma 2 value de ha
+//     setTimeout(()=>{
+//         console.log("data",id);
+//         if (undarwalafun) {
+//             undarwalafun();
+//         }
+//     },2000)
+// }
+// datadelay(1,()=>{ // ya jo khali fuction ha ya sara funtion he stor ho gyaha underwala fun ma jo uper sab sy upper line ma ha
+//     datadelay(2);
+// }) 
+
+// function datadelay(id,underwalafun){ // parmater variables han
+//     setTimeout(()=>{ // () inner callbacjk ha
+//         console.log("data",id);
+//         if(underwalafun){  
+//             underwalafun();
+//         }
+//     },2000);
+// }
+// datadelay(1,()=>{ // ya () wala function callback ha yahan
+//     datadelay(2, function(){
+//         datadelay(3);
+//     }); // ya rguments ha or ya call backs han
+// }) // ya () function yahan outer call back ha 
+
+
+
+function datadelay(id,callbackfun){
     setTimeout(()=>{
-        console.log("data",dataid);
-        if(getnextdata){
-            getnextdata();
+        console.log(id);
+        if(callbackfun){
+            callbackfun();
         }
-    },2000)
+    }
+    ),2000;
 }
-getdata(1,()=>{
-    getdata(2);
+datadelay(1,()=>{
+    callbackfun(2);
 })
+
 
 
 
