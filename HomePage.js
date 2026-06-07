@@ -1212,6 +1212,72 @@ transactions.forEach(transaction=>{
 // let average = total/count;
 // console.log(average)
 
+// async wait better ha priomise sy or promise better ha call back hell sy
+// syschronous - ka matlab ha code step by step one by one line heriarchy ky hisab sy chaly ga wait nahi krva sakty ya skip nahi krsakty kuxh lines is ma
+
+ 
+// setTimeout(()=>{
+//     console.log("hello");
+// },4000)
+
+ 
+// function sum(a,b){
+//     console.log(a+b);
+// }
+// function calculator(a,b,sumcallback){ // sumcallback yahan kuxh b likh sakty  thy or ya sum ha or sum ki sar ivalues jo b sum ky function ma ha ly raha ha
+//     sumcallback(a,b)
+// }
+// calculator(1,3,sum) // sum ab aik callback ban gya ha tp is ko bahgair () ky pass krty han
+
+// function calculator(a,b, callback){
+//     callback(a,b)
+// }
+
+// calculator(1,2,(a,b)=>{
+//     console.log(a+b);
+// });
+
+// const hello = ()=>{
+//     console.log("hello");
+// }
+// setTimeout(hello,3000)
+// // 
+
+// function getdata(dataid){
+//     setTimeout(()=>{
+//         console.log("data",dataid);
+//     },2000)
+// }
+
+// getdata(1);
+// getdata(2);
+// getdata(3);
+
+
+function getdata(dataid,getnextdata){
+    setTimeout(()=>{
+        console.log("data",dataid);
+        if(getnextdata){
+            getnextdata();
+        }
+    },2000)
+}
+getdata(1,()=>{
+    getdata(2);
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
