@@ -1296,18 +1296,74 @@ const points = [40, 100, 1, 5, 25, 10];
 
 
 
-function datadelay(id,callbackfun){
-    setTimeout(()=>{
-        console.log(id);
-        if(callbackfun){
-            callbackfun();
-        }
-    }
-    ),2000;
-}
-datadelay(1,()=>{
-    callbackfun(2);
-})
+// function datadelay(id,callbackfun){
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(callbackfun){ // callbackfun = ha ()=>{datadelay(2);}
+//             callbackfun(); // callbackfun() = ha datadelay(2);
+//         }
+//     },2000);
+// }
+
+// datadelay(1,()=>{
+//     datadelay(2,()=>{
+//         datadelay(3)
+//     });
+// })
+
+
+
+// function datadelay(id,callbackfun){
+//     setTimeout(()=>{
+//         console.log(id);
+//         if(callbackfun){ 
+//             callbackfun();
+//         }
+//     },2000);
+// }
+
+// datadelay(1,()=>{
+//     datadelay(2*4,()=>{
+//         datadelay(3)
+//     });
+// })
+
+
+
+// function process(callbackfun){
+//     let result = callbackfun();
+//     console.log(result);
+// }
+
+// process(function(){ // ya function aik callback ha or = ha callbackfun ky or varible ki trha treat ho rha ha idhr
+//     return 100;
+// })
+
+
+// function repeat(callbackfun){
+//     callbackfun();
+//     callbackfun();
+//     callbackfun();
+// }
+// repeat(function(){
+//     console.log(100);
+// })
+
+// function parametervalues(callbackhere){
+//     let name="husnain";
+//     callbackhere(name);
+// }
+// parametervalues(function(user){
+//     console.log(user)
+// })
+
+
+
+
+
+
+
+
 
 
 
