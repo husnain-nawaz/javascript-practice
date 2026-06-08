@@ -1358,6 +1358,10 @@ const points = [40, 100, 1, 5, 25, 10];
 // })
 
 
+// callback hell - kya ha nested callbacks
+// callback hell ki problem ko solve krny ky liye ata ha promises
+
+
 
 
 
