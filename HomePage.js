@@ -465,7 +465,7 @@
 
 
 // not allowed
-"use strict" 
+// "use strict" 
 // let x=010; //octal numeric numbers
 // let y="\10"; //octal escape character
 
@@ -1363,18 +1363,113 @@ const points = [40, 100, 1, 5, 25, 10];
 
 
 
+// class car{
+//     constructor(brand,color){
+//         this.brand = brand;
+//         this.color = color;
+//     }
+//     start(){
+//         console.log("car started");
+//     }
+// }
+// const car1 = new car("Toyota","white");
+// car1.start();
+
+// class student{
+//     constructor(name){
+//         this.name = name;
+//     }
+//     greet(){
+//         console.log(" hello meri jan ",this.name)
+//     }
+// }
+// const student1 = new student("husnain");
+// student1.greet();
+
+
+// class Animal{
+//     eat(){
+//         console.log(" I eat");
+//     }
+// }
+// class dog extends Animal{
+//     bark(){
+//         console.log(" I bark too");
+//     }
+// }
+// const d= new dog;
+// d.eat();
+// d.bark();
+
+
+// class bankaccounnt{
+//     constructor(amount,name){
+//         this.amount = amount;
+//         this.name = name;
+//     }
+//     showbalance(){
+//         console.log(this.name+" balance is "+this.amount);
+//     }
+// }
+// const p = new bankaccounnt("husnain",12000);
+// p.showbalance();
 
 
 
+// import promptSync from "prompt-sync";
+// const prompt = promptSync();
+const prompt = require("prompt-sync")(); // npm package  used to get input and parse output's in node.js not the browser
+// class student {
+//     constructor(name,marks){
+//         this.name = name;
+//         this.marks = marks;
+//     }
+//     showresult(){
+//         console.log("name: ",this.name);
+//         console.log("marks",this.marks);
+//         if(this.marks>=33){
+//             console.log("pass")
+//         }else{
+//             console.log("faail")
+//         }
+//     }
+// }
+// const name1 = prompt(" eneter name : ")
+// const age1 = Number(prompt(" Eneter age: "))
+// const s1 = new student(name1,age1);
+// s1.showresult();
+
+
+// class product {
+//     constructor(name,price){
+//         this.name = name;
+//         this.price = price;
+//     }
+//     discount(percent){
+//         console.log(this.price - (this.price * percent/100))
+//     }
+// }
+// const productname = prompt(" what is name of product: ");
+// const price = Number(prompt("Price: "));
+// const discount = Number(prompt("discount in %: "));
+// const product1 = new product(productname,price);
+// product1.discount(discount);
 
 
 
-
-
-
-
-
-
+// class Student {
+//         constructor(name, marks) {
+//         this.name = name;
+//         this.marks = marks;
+//     }
+// }
+// const student = [];
+// for(let i=0; i<3; i++){
+//     const name= prompt(" name: ");
+//     const marks = Number(prompt("marks: "));
+//     student.push(name,marks);
+// }
+// console.log(student);
 
 
 
