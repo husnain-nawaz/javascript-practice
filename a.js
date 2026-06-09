@@ -1513,15 +1513,15 @@ const prompt = require("prompt-sync")(); // npm package  used to get input and p
 // showvalues();
 
 
-function getpatient(id){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            resolve({
-                id: 1,
-                name: "Husnain",
-            });
-        },3000)
-})}
+// function getpatient(id){
+//     return new Promise((resolve,reject)=>{
+//         setTimeout(()=>{
+//             resolve({
+//                 id: 1,
+//                 name: "Husnain",
+//             });
+//         },3000)
+// })}
 // async function showg(){
 //     console.log(await getpatient(1).then((bbag)=>{
 //         console.log(bbag);
@@ -1537,30 +1537,304 @@ function getpatient(id){
 // showpatient();
 
 
-function getData(id) {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            console.log("Data " + id + " received");
-            resolve(id);
-            // resolve("checkbbay");
-        }, 2000);
-    });
+// function getData(id) {
+//     return new Promise((resolve) => {
+//         setTimeout(() => {
+//             console.log("Data " + id + " received");
+//             resolve(id);
+//             // resolve("checkbbay");
+//         }, 2000);
+//     });
+// }
+
+// async function run() {
+//     console.log("Fetching 1...");
+//     await getData(1).then((message)=>{
+//         console.log(message)
+//     });
+
+//     console.log("Fetching 2...");
+//     await getData(2);
+
+//     console.log("Fetching 3...");
+//     await getData(3);
+// }
+
+// run();
+
+// const prompt = require("prompt-sync")(); 
+
+// class student{
+//     constructor(name,marks,totalmarks){
+//         this.name = name;
+//         this.marks = marks;
+//         this.totalmarks = totalmarks;
+//     }
+//     checkresult(){
+//         let percentage = (this.marks/this.totalmarks)*100;
+//         if(this.marks>=33){
+//             console.log(this.name+" is passed got "+this.marks+" whith percentage of "+percentage.toFixed(2))
+//         }else{
+//             console.log(this.name+" is failed got "+this.marks+" whith percentage of "+percentage.toFixed(2))
+//         }
+//     }
+// }
+// const name1 = prompt("your name are: ");
+// const marks1 = Number(prompt("your marks are: "))
+// const totalmarks1 = Number(prompt("what are total marks: "))
+// const s1= new student(name1,marks1,totalmarks1);
+// console.log(s1.name);
+// console.log(s1.marks);
+// console.log(s1.totalmarks);
+// s1.checkresult();
+
+
+
+// const products = [
+//   { id: 1, name: "Laptop",  category: "Electronics", price: 150000, stock: 10 },
+//   { id: 2, name: "Chair",   category: "Furniture",   price: 25000,  stock: 0  },
+//   { id: 3, name: "Phone",   category: "Electronics", price: 80000,  stock: 5  },
+//   { id: 4, name: "Desk",    category: "Furniture",   price: 35000,  stock: 8  },
+//   { id: 5, name: "Tablet",  category: "Electronics", price: 60000,  stock: 0  }
+// ];
+
+// // Find out of stock products (stock === 0)
+// for(let i=0; i<products.length; i++){
+//     if(products[i].stock === 0){
+//         console.log(products[i].name);
+//     }
+// }
+// Total inventory value (price × stock) for each product
+// let sum=0;
+// for(let i=0; i<products.length; i++){
+//     let value = products[i].price * products[i].stock
+//         console.log(value);
+//         sum = sum+value;
+// }
+// console.log(sum)
+
+// Most expensive product
+// let max= 0;
+// for(let i=0; i<products.length; i++){
+//     if(products[i].price>max){
+//     max=products[i].price;}
+// }
+// console.log(max)
+
+// All Electronics under price 100000
+
+// for(let i=0; i<products.length; i++){
+//     if(products[i].price<100000 && products[i].stock !== 0){
+//     console.log(products[i].name,products[i].price);
+// }}
+
+
+// Count products per category
+// count = {};
+// for(let i=0; i<products.length; i++){
+//     if(count[products[i].category]){
+//         count[products[i].category]++;
+//     }else{
+//         count[products[i].category]=1;
+//     }
+// }
+// console.log(count)
+
+// Total value of all in-stock items
+
+// let sum=0;
+// for(let i=0; i<products.length; i++){
+//     let value = products[i].price * products[i].stock
+//         // console.log(value);
+//         sum = sum+value;
+// }
+// console.log("all instiock items worth: "+sum)
+
+
+
+// const students = [
+//   { name: "Ali",    marks: 85, subject: "Math",    passed: true  },
+//   { name: "Sara",   marks: 45, subject: "Science",  passed: false },
+//   { name: "Ahmed",  marks: 92, subject: "Math",    passed: true  },
+//   { name: "Fatima", marks: 38, subject: "English",  passed: false },
+//   { name: "Usman",  marks: 76, subject: "Science",  passed: true  }
+// ];
+
+// Count passed and failed students
+// for(let i=0; i<students.length; i++){
+//     if(students[i].passed == true){
+//         console.log(students[i].name+" passed");
+//     }
+//     else{
+//         console.log(students[i].name+" failed")
+//     }
+// }
+
+//Count passed and failed students but by marks 
+// let pass = 0;
+// let fail = 0;
+// for(let i=0; i<students.length; i++){
+//   if(students[i].marks >=50){
+//     console.log(students[i].name+"passed")
+//     pass++;
+//   }
+//   else{
+//     console.log(students[i].name+"failed");
+//     fail++;
+//   }
+// }
+// console.log(pass);
+// console.log(fail);
+
+
+// Find all Math students
+// for(let i=0; i<students.length; i++){
+//   if(students[i].subject == "Math"){
+//     console.log(students[i].name);
+//   }
+// }
+
+
+// Find highest scorer
+// let max=0;
+// let name ="";
+// for(let i=0; i<students.length; i++){
+//   if(students[i].marks > max){
+//     max = students[i].marks;
+//     name = students[i].name;
+//   }
+// }
+// console.log(name,max)
+
+
+// Calculate class average marks
+// let sum=0;
+// let count =0;
+// for(let i=0; i<students.length; i++){
+//     sum+=students[i].marks;
+//     count++;
+//   function average(){
+//     average = sum/count;
+//     return average;
+//   }
+// }
+
+// console.log(sum);
+// console.log(count)
+// console.log("average marks are: " +average())
+
+// Find students who scored above average
+
+// let sum=0;
+// let count =0;
+// let maxavg=0;
+// for(let i=0; i<students.length; i++){
+//     sum+=students[i].marks;
+//     count++;
+//   function average(){
+//     average = sum/count;
+//     return average;
+//   }
+// }
+// let avg= average();
+// console.log(sum);
+// console.log(count)
+// console.log("average marks are: " +avg)
+
+// for(let j=0; j<students.length; j++){
+//   if(students[j].marks>avg){
+//     maxavg = students[j].marks;
+//     console.log(students[j].name,maxavg)
+//   }
+// }
+
+// // Group students by subject
+// const students = [
+//   { name: "Ali",    marks: 85, subject: "Math",    passed: true  },
+//   { name: "Sara",   marks: 45, subject: "Science",  passed: false },
+//   { name: "Ahmed",  marks: 92, subject: "Math",    passed: true  },
+//   { name: "Fatima", marks: 38, subject: "English",  passed: false },
+//   { name: "Usman",  marks: 76, subject: "Science",  passed: true  }
+// ];
+// let grouped = {};
+// for(let i=0; i<students.length; i++){
+//   if(grouped[students[i].subject]){
+//     grouped[students[i].subject].push(students[i]);
+//   }else{
+//     grouped[students[i].subject]=[students[i]];
+//   }
+// }
+// console.log(grouped)
+
+
+
+const employees = [
+  { name: "Ali",    dept: "HR",       salary: 50000 },
+  { name: "Sara",   dept: "HR",       salary: 40000 },
+  { name: "Ahmed",  dept: "IT",       salary: 60000 },
+  { name: "Fatima", dept: "Marketing",salary: 35000 },
+  { name: "Usman",  dept: "HR",       salary: 45000 }
+];
+
+// Group employees by dept
+let department = {};
+for(let i=0; i<employees.length; i++){
+  if(department[employees[i].dept]){
+    department[employees[i].dept].push(employees[i]);
+  }else{
+    department[employees[i].dept] = [employees[i]];
+  }
 }
+console.log(department)
 
-async function run() {
-    console.log("Fetching 1...");
-    await getData(1).then((message)=>{
-        console.log(message)
-    });
+// let department = {};
+// for(let i=0; i<employees.length; i++){
+//   if(Object.keys(department).find(key=> key===employees[i].dept)){
+//     department[employees[i].dept].push(employees[i]);
+//   }else{
+//     department[employees[i].dept] = [employees[i]];
+//   }
+// }
+// console.log(department)
 
-    console.log("Fetching 2...");
-    await getData(2);
 
-    console.log("Fetching 3...");
-    await getData(3);
-}
+// let department = {};
+// for(let i=0; i<employees.length; i++){
+//   if(department.hasOwnProperty(employees[i].dept)){
+//     department[employees[i].dept].push(employees[i]);
+//   }else{
+//     department[employees[i].dept] = [employees[i]];
+//   }
+// }
+// console.log(department)
 
-run();
+
+
+// const employees = [
+//   { name: "Ali",    dept: "HR",       salary: 50000 },
+//   { name: "Sara",   dept: "HR",       salary: 40000 },
+//   { name: "Ahmed",  dept: "IT",       salary: 60000 },
+//   { name: "Fatima", dept: "Marketing",salary: 35000 },
+//   { name: "Usman",  dept: "HR",       salary: 45000 }
+// ];
+// let department = {};
+// for (let i = 0; i < employees.length; i++) {
+
+//   if (department[employees[i].dept]) {
+//     department[employees[i].dept] = [...department[employees[i].dept], employees[i]];
+//   } else {
+//     department[employees[i].dept] = [employees[i]];
+//   }
+// }
+// console.log(department);
+
+
+
+// let department = {};
+// for (let i = 0; i < employees.length; i++) {
+//   department[employees[i].dept] = employees[i];
+// }
+// console.log(department)
 
 
 

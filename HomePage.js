@@ -7,6 +7,19 @@
 // let result = multiply(3,5);
 // console.log(result);
 
+
+// const { use } = require("react");
+
+
+// const { use } = require("react");
+
+// const { use } = require("react");
+
+// const { use } = require("react");
+
+
+// const { createContext } = require("react");
+
 // const { jsx } = require("react/jsx-runtime")
 
 
@@ -398,1083 +411,1266 @@
 // const myfather = new person("Nawaz","shaheen",50,"brown");
 // console.log(myfather);
 
-
-
-
-// x = 5;
-// console.log(x)
-// var x; // var canbe declare even after the fucntion called but not the let datatype
-
-// x = 8;
-// console.log(x)
-// let x; // ket not allowed to declare after the function call but declare before 
-
-
-// var x= 5;
-// var y = 7;
-// console.log(x+" "+y);
-
-
-// var n = 6;
-// console.log(n+" "+m);// value cant print because value and m not initialied here before printing it
-// var m= 7;
-
-// var n = 6;
-// m= 7;
-// console.log(n+" "+m); // this time m have value but later initialied so value can be pritable
-// var m;
-
-
-// var g= 7;
-// var f;
-// console.log(g,f); // f undefined still because value i szero means not initialized 1st so hoisted not 
-// f=7;
-
-
-// "use strict" // must use to declare x with some var let const to use otherwise give error because we are using usestrict it is used at the start 
-// x=5;
-// console.log(x)
-
-// "use strict"
-// function myfun(){
-//     y=3;
-//     return y;
-// }
-// console.log(myfun())
-
-
-// "use strict"
-// x = 5;
-// console.log(x);
-
-
-// "use strict";
-// let x= {p1:100,p2:200};
-// console.log(x)
-
-
-// "use strict"
-// let x = 3.14;
-// delete x; /// delete cant be use in strict mode we cannot delete the variable in strict mode
-// console.log(x);
-
-
-// "use strict"
-// function myfucn(p1,p2){return "hello"};
-// console.log(myfucn())
-
-
-// not allowed
-// "use strict" 
-// let x=010; //octal numeric numbers
-// let y="\10"; //octal escape character
-
-// const obj = {};
-// Object.defineProperty(obj, "x",{value:7,writable:false});
-// obj.x = 3.14;
-// console.log(obj.x)
-
-// const obj = {};
-// Object.defineProperty(obj, "x",{value:9, Writable:false});
-// console.log(obj.x)
-// obj.x = 5; // channot change value to property x because it iis only readonly
-// console.log(obj.x)
-
-
-// //get only property
-// "use strict"
-// const obj = {get x(){ return 9}} //  allowed get function but not cahnging
-// // obj.x = "4"; // not allowed to change in get fucntion
-// console.log(obj.x)
-
-
-
-// "use strict"
-// delete Object.prototype;
-
-
-// "uses strict"
-// let eval = 3.14;
-// console.log(eval) // eval keyword not working
-
-
-// "use strict"
-// let arguments = 3.14;
-// console.log(arguments); // arguments already a keyword in js so cannot use as variable name
-
-
-
-// const cars=["toytoa","volvo","bmw"];
-// console.log(cars[1])
-
-
-// const cars=[];
-// cars[0] = "toyota";
-// cars[2] = "bently";
-// cars[3] = "samsung";
-// let text="";
-// for (let i= 0; i<cars.length;i++){
-//     text+=cars[i];
-// }
-// console.log(text)
-
-
-// const cars = new Array("Toayota","Audi","Honda");
-// console.log(cars.toString())
-// const cars2 = ["Toayota","Audi","Honda"];
-// console.log(cars2)
-
-
-
-// const cars = new Array("Toayota","Audi","Honda");
-// console.log(cars[cars.length-1])
-
-
-// const fruits= ["Banana", "Orange", "Apple", "Mango"];
-// let text = "";
-// for (let i = 0; i < fruits.length; i++) {
-//     text +=fruits[i];
-// }
-// console.log(text)
-
-
-
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-
-// fruits.forEach(
-//     function(bb){
-//         console.log(bb);
-//     }
-// );
-
-
-// adding array elemenets 
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// fruits.push("kela");
-// fruits[fruits.length]="amb";
-// fruits.forEach(
-//     function(bb){
-//         console.log(bb);
-//     }
-// );
-
-
-// const months = ["Jan", "Feb", "Mar", "Apr"];
-// const sorted = months.toReversed();
-// console.log(sorted)
-
-
-
-// const points = [40, 100, 1, 5, 25, 10];
-// let b = points.sort(function(a,b){return a-b})
-// console.log(b)
-
-
-const points = [40, 100, 1, 5, 25, 10];
-// console.log(points.sort((a,b)=> b-a))
-// console.log(points.sort(function() {return 0.7 - Math.random()}));
-// for(let i=points.length-1; i>0; --i){
-//     let j = Math.floor(Math.random()*(i+1))
-//     let k = points[i];
-//     points[i] = points[j];
-//     points[j] = k;
-// }
-// console.log(points)
-
-
-// function myarr(arr){
-//     return Math.min.apply(null,arr);
-// }
-// console.log(myarr(points))
-
-
-// function myarr(arr){
-//     return Math.max.apply(null,arr)
-// }
-// console.log(myarr(points));
-
-
-// function myarraymin(arr){
-//     let len = arr.length;
-//     let min = -Infinity;
-//     while(len--){
-//         if(arr[len]>min){
-//             min = arr[len];
-//         }
-//     }
-//     return min;
-// }
-// console.log(myarraymin(points));
-
-
-
-// const cars = [
-//     {type:"volvo", year :2016},
-//     {type:"toyota", year :2020},
-//       {type:"Saab", year:2001},
-//     {type:"BMW", year:2010}
-// ]
-// console.log(cars.sort(function(a,b){return a.year - b.year}))
-
-// cars.sort(function(a,b){
-//     let x = a.type.toLowerCase();
-//     let y = b.type.toLowerCase();
-//     if(x<y){return -1}
-//     if(x>y){return 1}
-//     // return 0;
-// })
-// console.log(cars)
-// console.log(cars[0].type)
-
-
-// const myArr = [
-//   {name:"X00",price:100 },
-//   {name:"X01",price:100 },
-//   {name:"X02",price:100 },
-//   {name:"X03",price:100 },
-//   {name:"X04",price:130 },
-//   {name:"X05",price:110 },
-//   {name:"X06",price:110 },
-//   {name:"X07",price:110 },
-//   {name:"X08",price:120 },
-//   {name:"X09",price:120 },
-//   {name:"X10",price:160 },
-//   {name:"X11",price:120 },
-//   {name:"X12",price:130 },
-//   {name:"X13",price:130 },
-//   {name:"X14",price:130 },
-//   {name:"X15",price:130 },
-//   {name:"X16",price:140 },
-//   {name:"X17",price:140 },
-//   {name:"X18",price:110 },
-//   {name:"X19",price:140 }
-// ];
-// myArr.sort((p1,p2)=>{
-//     if (p1.price < p2.price) return -1;
-//     if (p1.price>p2.price) return 1;
-//     return 0;
-// });
-// let text = "";
-
-// function myfun(value){
-//     text += value.name + "  " + value.price +" ";
-// }
-// myArr.forEach(myfun);
-// console.log(text)
-
-
-// const numbers = [45, 4, 9, 16, 25];
-// let text = "";
-// numbers.forEach(myfunction);
-// function myfunction(value, index , array){
-//     text += value +" "+index+" ["+array+"] \n";
-// }
-// console.log(text);
-
-
-// const numbers1 = [45, 4, 9, 16, 25];
-
-// function myfun(a){
-//     return a*2;
-// }
-// const number2=numbers1.map(myfun);
-// console.log(JSON.stringify(number2))
-// console.log(number2)
-
-
-// const myArr = [1, 2, 3, 4, 5, 6];
-// const newarr = myArr.flatMap(x=>[x,x*3]);
-// console.log(newarr);
-
-
-// const numbers = [45, 4, 9, 16, 25];
-// const over18 = numbers.filter(myfun);
-// function myfun(a){
-//  return a>18;
-// }
-// console.log(over18);
-
-
-// const numbers = [45, 4, 9, 16, 25];
-// let sum = numbers.reduceRight(myfun);
-// function myfun(a,b,index,array){
-//     return a+b;
-// }
-// console.log(sum)
-
-
-// const numbers = [45, 4, 9, 16, 25];
-// let allover18 = numbers.every(myfun);
-// function myfun(a,b){
-//     return a>18;
-// }
-// console.log(allover18)
-
-
-
-// const numbers = [4, 24, 9, 16, 5];
-// let over18 = numbers.some(myfun);
-
-// function myfun(a){
-//     return a>18;
-// }
-// console.log(over18);
-
-
-// let text = "ABCDEDG";
-// let v=Array.from(text);
-// console.log(v);
-
-
-// const myNumbers = [1,2,3,4];
-// const myarr = Array.from(myNumbers,(a)=> a*3)
-// console.log(myarr)
-
-
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// const key = fruits.keys();
-// let text="";
-// for (let x of key){
-//     text+=x +"\n";
-// }
-// console.log(text);
-
-
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// const f= fruits.entries();
-// let text;
-// for(let x of f){
-//     text +=x+" \n";
-// }
-// console.log(text)
-
-
-// const months = ["Januar", "Februar", "Mar", "April"];
-// const mymonths = months.with(2,"march");
-// console.log(mymonths)
-
-
-
-// const arr1 = [1, 2, 3];
-// const arr2 = [4, 5, 6];
-// const arr3 = [...arr1,...arr2]
-// console.log(arr3);
-
-
-
-// const arr1 = [1, 2, 3];
-// const arr2 = [...arr1]; //use to copy array
-// console.log(arr1)
-
-
-
-// const numbers = [23,55,21,87,56];
-// let minvalue = Math.min(...numbers);
-// let maxvalue = Math.max(...numbers);
-
-// console.log(minvalue);
-// console.log(maxvalue)
-
-
-
-// const arr1 = [1,2,3,4,5,6,7,8];
-// let a, rest;
-// [a,...rest]= arr1;
-// console.log(arr1)
-
-
-// const arr1 = [1,2,3,4,5,6,7,8];
-// let a,b,rest;
-// [a,b,...rest]=arr1;
-// console.log(rest);
-
-
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// let text = fruits.constructor;
-// console.log(text);
-
-// let fruits = Array.of("Banana", "Orange", "Apple", "Mango");
-// console.log(fruits);
-
-
-// const numbers = [4, 9, 16, 25];
-// console.log(numbers.map(Math.sqrt));
-
-// Array.prototype.myucase = function(){
-//     for (let i=0;i<fruits.length; i++){
-//         this[i] = this[i].toUpperCase();
-//     }
+// const data= {
+//     firstname: "husnain",
+//     lastname: "nawaz",
+//     age : 19,
+//     city: "lahore",
 // };
-// const fruits = ["Banana", "Orange", "Apple", "Mango"];
-// fruits.myucase();
-// console.log(fruits)
+// let x = JSON.stringify(data);
+// console.log(x);
+
+/// this code work with react otherwose throw error 
 
 
-
-// const letters = new Set(["a","b","c","d"]);
-// console.log(letters.size)
-
-
-// const letters = new Set();
-// letters.add("a");
-// letters.add("b");
-// letters.add("c");
-// console.log(letters)
-
-
-// const letters =  new Set();
-// const a="a";
-// const b="b";
-// const c="c";
-// letters.add(a);
-// letters.add(b);
-// letters.add("b");
-// letters.add("b");
-// letters.add(c);
-// console.log(letters)
-
-
-
-// const letters = new Set(["a","b","c"]);
-// let text = "";
-// for (const x of letters){
-//     text+=x+"\n";
+// function person(first,last,age,color){
+//     this.firstname= first;
+//     this.lastname = last;
+//     this.age= age;
+//     this.eyecolor=color;
+//     this.nationality = "paksitani";
 // }
-// console.log(text)
+// const myfather = new person("Nawaz","shaheen",50,"brown");
+// console.log(myfather.age);
+// const myson = new person("musa","husnain",5,"blue");
+// console.log(myfather.nationality)
+// myfather.nationality="English";
+// console.log(myfather.nationality)
+
+
+// //cannt add new property in person here when use constructor objects
+// person.games = "hockey";
+// console.log(myfather.games); // give undefined because not alloed to adds new peoperty in main object constructor
+
+
+// // but if somonereallay wana add the property in object constructor than we have to use the prototype function their 
+// person.prototype.games = "cricket";// now objects created with main object fuction like myfather or myson can get access of the games property because it has been added to person by prototype 
+// console.log(myfather.games)
 
 
 
-// const letters =  new Set(["a","b","c"]);
 
-// console.log(letters instanceof Object)
-// console.log(letters.has("d"));
-// console.log(letters.has("b")) // yes b is in letters
-
-// let text="";
-// letters.forEach(function(a){
-//     text+=a+"\n";
-// });
-// console.log(text)
-
-
-// let text="";
-// for(const x of letters.values()){
-//     text+=x+"\n";
-// }
-// console.log(text)
-
-
-// let text="";
-// for(let i of letters.keys()){
-//     text+=i+"\n";
-// }
-// console.log(text)
-
-
-// let text="";
-// for(const g of letters.entries()){
-//     text+=g+"\n";
-// }
-// console.log(text);
-
-
-// const A = new Set(['a','b','c']);
-// const B = new Set(['b','c','d']);
-// console.log(A.intersection(B));
-// console.log(A.union(B));
-// console.log(A.difference(B));
-// console.log(A.symmetricDifference(B));
-// console.log(A.isSubsetOf(B)); // false becasue all A elemnets are not in B 
-// console.log(A.isDisjointFrom(B)); // if A have no elements which is in B
-
-
-// let myset = new WeakSet();
-// let myobj = {fname:"ali", lname:"nawaz"};
-// let v = myset.add(myobj);
-// console.log(v)
-// // myset.delete(myobj) // delete this than it will give false in has 
-// console.log(myset.has(myobj));  
-// // console.log(myobj instanceof Object);
-// myobj = null; // after the all program run i give null value which means all the vlaue assigned in prgrams now rmeoved and will be garbage collected in memory
-// in weakset no primitive values allowed - only objects allowed
-
-
-
-// let text = "";
-// const person = new WeakSet();
-// let ali  = {name:"ali",age:23};
-// let husnain = {name:"husnain", age:24};
-// let musa = {name: "musa", age:22};
-// let aleena ={name: "aleena", age: 19};
-
-// track(ali);
-// track(musa);
-// track(husnain);
-// track(ali);
-// function track(visitor){
-//     if(person.has(visitor)){
-//         text+=visitor.name+"visited already\n ";
-//     }
-//     else{
-//         person.add(visitor);
-//         text+=visitor.name+" age is "+visitor.age+" visted 1st time \n";
+// function person(firt,last,age){
+//     this.firstname = firt;
+//     this.lastname = last;
+//     this.age = this.age;
+//     this.nationality = "pakistani";
+//     this.fullname = function () {
+//         return this.firstname +" "+ this.lastname;
 //     }
 // }
+// let myfather = new person("nawaz","shaheen",19);
+// let mymother = new person("sushi","rathore",31);
+// let myson = new person("musa","kamal",3);
+
+
+// myfather.game = "hockey";
+// console.log(myfather.game)
+// person.movie = "jalak dikhla ja";
+// console.log(person.movie)
+// console.log(myfather.movie) // undefined
+// person.prototype.hobby = "reading";
+// console.log(myfather.hobby)
+
+// console.log(myfather.fullname());
+// adding a methid to an object 
+
+// mymother.lastname = function(){
+//     this.lastname = "kaur";
+//     return this.lastname;
+// }
+// console.log(mymother.lastname())
+
+// adding this method to object 
+// mymother.changename = function(name2){
+//     this.lastname = name2;
+// }
+// mymother.changename("jenny");
+// console.log(mymother.lastname)
+
+// myfather.changename("rana"); // not work because change methood is only for mymother
+// console.log(myfather.lastname)
+
+
+// and if i wann the change funtion to be able to used by all newly created object like myfather than i have to craeteby using prototype
+
+// person.prototype.changename = function(namechan){
+//     this.lastname = namechan;    
+// }
+// myson.changename("kaysar");
+// myfather.changename("chaudhry");
+// console.log(myson.lastname);
+// console.log(myfather.lastname)
+
+
+
+//built in javscipt constructors
+
+// console.log(typeof new Object());
+// console.log(typeof new Array());
+// console.log(typeof new Map());
+// console.log(typeof new Set());
+// console.log(typeof new Date());
+// console.log(typeof new RegExp());
+// console.log(typeof new Function());
+
+
+// let myMap= new Map();
+// let obj = {fname:"husnain",lname:"Nawaz"};
+// myMap.set(obj,"player");
+// console.log(myMap.get(obj))
+// console.log(myMap)
+
+
+// let text="";
+// const vistcount = new WeakMap();
+// const john ={name:"john", age:41};
+// const paul = {name:"Paul", age:41};
+// const Ringo = {name:"Ringo", age:42};
+// const George = {name:"George", age:43};
+
+// track(paul);
+// track(Ringo);
+// track(paul);
+// track(paul);
+// track(john);
+
+// function track(a){
+//     let count = vistcount.get(a) || 0;
+//     count++;
+//     vistcount.set(a,count);
+//     text+=a.name+" "+a.age+" visted "+count+" \n";
+// }
 // console.log(text)
 
 
 
-// const fruits = new Map();
-// console.log(cars);
-// fruits.set("kela",500);
-// fruits.set("malta",66);
-// fruits.set("malta",88);// first matla ignnored andf only one time it will show in output
-// fruits.set("kela",22);
-// fruits.set("amb",999);
-// console.log(fruits)
-
-// const cars = new Map([
-//     ["apple", 500],
-//     ["mango",900],
-//     ["guava",200]
-// ]);
-// console.log(cars.get("apple"))
-// cars.set("kela",100);
-// console.log(cars)
-// cars.set("apple",333) // chnage value from 500 to 333
-// console.log(cars)
-// console.log(typeof cars);
-// console.log(cars instanceof Map); //trur also for object too
+// const person = {fname:"John", lname:"Doe", age:25};
+// let text="";
+// for(let i in person){
+//     text+=person[i];
+// }
+// console.log(text)
 
 
 
 // const fruits = new Map([
-//     ["apple", 500],
-//     ["mango",900],
-//     ["guava",200]
+//   ["apples", 500],
+//   ["bananas", 300],
+//   ["oranges", 200]
 // ]);
+// let text = "";
+// for(let x of fruits){
+//     text+=x;
+// }
+// console.log(text)
 
-// console.log(fruits.size);
-// fruits.delete("apple");
-// console.log(fruits)
-// fruits.clear(); // retue=rn mao but {0}
-// console.log(fruits);
-// console.log(fruits.has("apple")); //true if delet than false
-// fruits.delete("apple")
-// console.log(fruits)
-// console.log(fruits.has("apple"))
 
-// let text ="";
-// fruits.forEach(
-//     function(a,b){
-//         text+=a+" "+ b +" \n";
+// function mynum(){
+//     let n=0;
+//     return{
+//         next: function(){
+//             n+=10;
+//             return {value:n, done:true}
+//         }
+//     };
+// }
+// const n = mynum();
+// n.next();
+// n.next();
+// n.next();
+// n.next();
+// n.next();
+// n.next();
+// n.next();
+// n.next();
+// console.log(n.next().value)
+
+
+
+// mynum = {};
+// mynum[Symbol.iterator] = function(){
+//     let n=0;
+//     done = false;
+//     return{
+//         next(){
+//             n+=10;
+//             if(n==100){done = true}
+//             return {value:n,done:done}
+//         }
 //     }
-// )
-// console.log(text);
-
-
-// let text = "";
-// for (const x of fruits.entries()){
-//     text+=x+" \n";
 // }
-// console.log(text)
-
-
-
-// let text = "";
-// for (const x of fruits.keys()){
-//     text+=x+" \n";
-// }
-// console.log(text)
-
-
-// let text = "";
-// for (const x of fruits.values()){
-//     text+=x+" \n";
-// }
-// console.log(text)
-
-
-// let text = 0;
-// for (const x of fruits.values()){
-//     text+=x; // remove "\n" means no string values must be sum as text value assigned to 0
-// }
-// console.log(text)
-
-
-// const apples =  {name:"apples1"};
-// const bananas = {name: 'Bananas2'};
-// const oranges = {name: 'Oranges3'};
-
-// const fruis = new Map();
-
-// fruis.set(apples, 500);
-// fruis.set(bananas,60);
-// fruis.set(oranges,44)
-// console.log(fruis)
-
-
-// const fruits = [
-//     {name:"apples", quantity:300},
-//     {name:"bananas", quantity:500},
-//   {name:"oranges", quantity:200},
-//   {name:"kiwi", quantity:150}
-// ];
-// function check({quantity}){
-//     return quantity>200 ? "ok" : "low";
-// }
-// let v = Map.groupBy(fruits, check);
 // let text="";
-// for (let x of v.get("ok")){
-//     text+=x.name +" "+x.quantity+" \n";
+// for (const num of mynum){
+//     text+=num+" \n";
 // }
-// for(let x of v.get("low")){
-//     text+=x.name+" "+x.quantity+" \n";
+// console.log(text)
+
+// let iterator = mynum[Symbol.iterator]();
+// let text = "";
+// while(true){
+//     const result = iterator.next();
+//     if(result.done) break;
+//     text+=result.value+" \n";
 // }
 // console.log(text)
 
 
-// let num=3.14159;
-// let text=num.toLocaleString("en-US",{
-//     minimumFractionDigits: 1,
-//     minimumFractionDigits: 1,
-// });
+
+// const myIterator = Iterator.from([1, 2, 3]);
+// let text = "";
+// for (const x of myIterator){
+//     text += x;
+// }
 // console.log(text)
 
 
-// let date =  new Date();
 
-// let text = date.toLocaleString("en-US",{
-//     weekday: "short",
-//     year: "numeric",
-//     month: "short",
-//     day: "numeric",
-// })
+// const myIterator = Iterator.from([1, 2, 3, 4, 5, 6]);
+// let v = myIterator.drop(5);
+// let text="";
+// for (const x of v){
+//     text+=x;
+// }
+// console.log(text)
+
+
+
+// const myIterator = Iterator.from("234566789");
+// let result = myIterator.every(x=>x>1);
+// console.log(result)
+
+
+// const myiterator =  Iterator.from([32,33,16,40]);
+// const filtered = myiterator.filter(x=>x>18);
+// let text ="";
+// for(const x of filtered){
+//     text+=x+"\n";
+// }
+// console.log(text)
+
+
+// const myiterator= Iterator.from([3, 10, 18, 30, 20]);
+// let rseult = myiterator.find(x=>x>=18);
+// console.log(rseult) //fist iteration that gives true value
+
+
+
+// const myiterator = Iterator.from([1,2,3,4,5,6,7]);
+// const mapeed = myiterator.flatMap(x=>[x,x*10]);
+// let text = "";
+// for (const x of mapeed){
+//     text+=x+" \n";
+// }
 // console.log(text);
 
 
+// const myiterator= Iterator.from("123456789");
+// let text="";
+// myiterator.forEach(x=> text+=x)
+// console.log(text)
 
-// function filesize(bytes){
-//     if(bytes<1024){
-//         return bytes+" bytes";
-//     }
-//     if (bytes<1024*1024){
-//         return (bytes / 1024).toLocaleString("en-US", {maximumFractionDigits: 1}) + " KB";    
-//     }
-//     return(bytes/(1024*1024).toFixed(1)+"MB");
+
+
+// const myiterator = Iterator.from("123456789");
+// const mapped = myiterator.map(x=>x*2)
+// let text = "";
+// for (let n of mapped){
+//     text+=n+"\n";
 // }
-// let size = 1000000;
-// console.log(filesize(size));
+// console.log(text)
 
 
-
-// const dates = [
-//     new Date("2026-01-01"),
-//     new Date("2026-12-24"),
-// ];
-// let text = dates.toLocaleString("en-US")
-// console.log(text);
-
-
-// const person = {
-//     firstanme: "husnain",
+// function myfun(total,sum){
+//     return total+sum;
 // }
-// let{firstanme, country="Pakistan"} = person;
-// console.log(country)
+// const myiterator = Iterator.from([175, 50, 25]);
+// let result = myiterator.reduce(myfun);
+// console.log(result)
 
 
-// function greet(){
-//     console.log(this.name);
+
+// const myiterator = Iterator.from("123456789");
+// let pass1= myiterator.some(x=>x>7);
+// console.log(pass1);
+
+
+
+// const myiterator = Iterator.from([1,2,3,4,5,6,7,8,9]);
+// const first5 = myiterator.take(5);
+// let text = "";
+// for(let i of first5){
+//     text+=i;
 // }
-// const person = {
-//     name : "ali"
+// console.log(text)
+
+
+// function* mystream(){
+//     yield 1;
+//     yield 2;
+//     return 3;
 // }
-// greet.call(person);
-
-
-
-// function sum(a,b){
-//     console.log(a+b);
+// let mygenerator = mystream();
+// let text="";
+// for(let value of mygenerator){
+//     text+=value;
 // }
-// sum.apply(null,[5,10]);
+// console.log(text)
 
 
-// console.log(this)
+// console.log(Math.exp);
+// console.log(Math.PI);
+// console.log(Math.SQRT2);
+// console.log(Math.SQRT2);
+// console.log(Math.SQRT1_2);
+// console.log(Math.LN2);
+// console.log(Math.LN10);
+// console.log(Math.LOG2E);
+// console.log(Math.LOG10E);
 
 
-// function show(){
-//     console.log(this.name);
+// console.log(Math.round(34.2432));
+// console.log(Math.ceil(-43.244));
+// console.log(Math.floor(-432.333));
+// console.log(Math.trunc(9432.3456));
+// console.log(Math.sign(0))
+// console.log(Math.pow(8,2));
+// console.log(Math.sqrt(64));
+// console.log(Math.abs(-43.33));
+// console.log(Math.sin(90));
+// console.log(Math.cos(0*Math.PI/180));
+// console.log(Math.min(0,15,55,3,75,-66,43,0));
+// console.log(Math.max(0,15,55,3,75,-66,43,0));
+// console.log(Math.random());
+// console.log(Math.log(10));
+// console.log(Math.log2(8));
+// console.log(Math.log10(1000));
+// console.log(Math.acos(-1));
+// console.log(Math.acosh(1));
+// console.log(Math.asin(-1));
+// console.log(Math.atan(2));
+// console.log(Math.atan2(8,4));
+// console.log(Math.tan(2).toFixed(2));
+// let degree = 60;
+// let randians=degree*Math.PI/180;
+// console.log(Math.tan(randians));
+// console.log(Math.E);
+// console.log(Math.floor(Math.random()*100));
+
+// function getrandoom(min,max){
+//     return Math.floor(Math.random()*(max-min)+min);
 // }
-// const p1= {name:"Asli"};
-// const p2= {name:"naqli"};
-// const fn = show.bind(p1); // asli output aye ge kun ky bind ki priority ziada ha call sy
-// fn.call(p2);
+// console.log(getrandoom(0,33))
 
 
 
-// const person = {
-//     name: "john",
-//     getname : function(){
-//         return this.name;
-//     }
-// };
-// let v = person.getname();
-// console.log(v)
+// let text = "Visit W3Schools!"; 
+// const n = text.match(/W3Schools/,"Husnain");
+// console.log(n);
 
 
-// function counter(){
+// let text = "Visit W3Schools!"; 
+// const n = text.search(/W3Schools/,"Husnain");
+// console.log(n);
+
+
+// let text = "Black, white, red, Green, blue, yellow.";
+// let result = text.match(/red|green|blue/g);
+// let result = text.match(/red|green|blue/i);
+// let result = text.match(/red|green|blue/ig);
+// let result = text.match(/red|green|blue/u);
+// console.log(result)
+
+
+// let text = "Give me 100%!";
+// const pattern = /\d/g;
+// console.log(text.match(pattern));
+
+
+// let text = "Give me 100%!";
+// const pattern = /\w/g;
+// console.log(text.match(pattern));
+
+
+// let text = "1,100 or 10000?"
+// const pattern = /10?/; // 0 ya 1 bar just
+// const pattern = /10*/;  // 10 - 0 ya us sy ziadabar a sakty ha chahy jitni marzi bar 
+// const pattern = /10+/; // 10 - kam sy kam aik bar hona chaiye us sy agy jitni bar marzi ho 
+// console.log(text.match(pattern));
+
+
+// const pattern = /^w3schools/i;
+// let text = "w3Schools tutorial";
+// console.log(pattern.test(text));
+
+
+// const pattern = /w3schools$/i;
+// let text = "tutorial w3Schools";
+// console.log(pattern.test(text));
+
+
+// let text = "MOre than 1000 times bro";
+// let pattern = /[0-9]/g; // match 0 to 9 integers in text string
+// let pattern = /[a+]/;
+// console.log(text.match(pattern));
+
+
+// let text = "aaaaaaaaaab";
+// const pattern = /(aa)(bb)/d;
+// let result=text.match(pattern);
+// console.log(JSON.stringify(result));
+// console.log(JSON.stringify(result.indices));
+
+
+
+
+
+
+// function createcounter(){
 //     let count = 0;
 //     return function(){
 //         count++;
 //         return count;
 //     };
 // }
+// const addtocart =  createcounter();
+// console.log(addtocart());
+// console.log(addtocart());
+// console.log(addtocart());
+
+
+
+// function createuser(){
+//     let password = "1234567";
+//     return {
+//         checkpassword(pass){
+//             return pass === password;
+//         }
+//     }
+// }
+// const user = createuser();
+// console.log(user.checkpassword("1234567"))
+// // console.log(password)// passwordd acnot acess directly its unders the function
+
+
+
+// function createbankaccount (){
+//     let balance = 1000;
+//     return{
+//         getbalance(){
+//             return balance;
+//         },
+//         Deposit (amount){
+//             balance+=amount;
+//         }
+//     }
+// }
+// let users = createbankaccount();
+// console.log(users.Deposit())
+
+
+
+// function createcart(){
+//     let totalitems = 0;
+//     return {
+//         additem(){
+//             totalitems++;
+//             return totalitems;
+//         }
+//     }
+// }
+// let users = createcart();
+// console.log(users.additem())
+// console.log(users.additem())
+// console.log(users.additem())
+
+
+
+// function craetelimiter(){
+//     let clicks = 0;
+//     let limitexceed =false;
+//     return function(){
+//         if(limitexceed) return;
+//         clicks++;
+//         if(clicks>5){
+//             limitexceed = true;
+//             console.log("limit axceed")
+//             return;
+//         }
+//         console.log(clicks)
+//     };
+// }
+// let users =  craetelimiter();
+// users();
+// users();
+// users();
+// users();
+// users();
+// users();
+// users();
+// users();
+
+
+// function add(){
+//     let counter= 0;
+//     counter++;
+//     return counter;
+// }
+// let x=0;
+// x = add();
+// x = add();
+// x = add();
+// console.log(x);
+// console.log(x);
+// console.log(x);
+// console.log(x);
+
+
+
+// function createcounter(){
+//     let counter= 0;
+//     return function(){
+//         counter++;
+//         return counter;
+//     }
+// }
+// let add = createcounter();
+// console.log(add());
+// console.log(add());
+// console.log(add());
+// console.log(add());
+// console.log(add());
+
+
+// function add(){
+//     let count = 0;
+//     function plus(){
+//         count++;
+//     }
+//     plus();
+//     return count;
+// }
+// console.log(add())
+// console.log(add())
+// console.log(add())
+// console.log(add())
+// console.log(add())
+
+
+// function mycounter(){
+//     let counter = 0;
+//     return function(){
+//         counter++;
+//         return counter;
+//     };
+// }
+// const add = mycounter();
+// console.log(add());
+// console.log(add());
+// console.log(add());
+// console.log(add());
+// console.log(add());
+
+
+
+// const user ={
+//     name: 'Ali',
+//     sayhello(){
+//         console.log(this.name); // ore we can write user.name becuase here this is user
+//     }
+// };
+// console.log(user.sayhello())
+
+
+// function greet(){
+//     console.log(this.name);
+// }
+// const user = { // objcet ha ya 
+//     name: "Ali"
+// };
+// const user2 = { // objcet ha ya 
+//     name: "Musa"
+// };
+// console.log(greet.call(user2))
+
+
+// function greet(city){
+//     console.log(this.name, city);
+// }
+// const user = {
+//     name: "husnain",
+// }
+// let v = greet.apply(user,["lahore"]);
+// console.log(v)
+
+
+
+// function greet(){
+//     console.log(this.name);
+// }
+// const user = {
+//     name: "Husnain"
+// };
+// const newfun = greet.bind(user);
+// console.log(newfun())
+
+
+// const user = {
+//     name: "Ali"
+// };
+// function showname(){
+//     console.log(this.name)
+// };
+// setTimeout(showname.bind(user),1000);
+
+
+// const person = {
+//     name : "john",
+//     getname: function(){
+//         return this.name;
+//     }
+// };
+// // let a = person.getname();
+// const getname = person.getname;
+// // console.log(a);
+// console.log(getname())
+
+
+
+// const person = {
+//     name: "husnain"
+// };
+// function getname(){
+//     return this.name;
+// }
+// console.log(getname.call(person));
+
+
+
+// function add(a,b){
+//     return a+b;
+// }
+// let g = add.apply(null,[4,5])
+// console.log(g)
+
+
+// const gethusnian = GPUQuerySet.bind(person);
+
+// function counter(){
+//     let count = 0;
+//     return function(){
+//         count++
+//         return count;
+//     };
+// }
 // const c = counter();
 // console.log(c());
 // console.log(c());
-// console.log(c());
-// console.log(c());
 
 
-// const numbers = [10,20,30];
-// numbers.forEach(numbers=>{
-//     console.log(numbers);
-// })
+// function outer(){
+//     let name = "husnain";
+//     return function g(){
+//         console.log(this.name); // ya name variable destroy nahi ho ga kun ky closure ky function ma ha otherwie destroy kr daity hn normal function call krny pr
+//     };
+// }
+// let n = outer.g();
+// console.log(n);
 
 
-// const users = [
-//     {name: "Ali"},
-//     {name: "sara"}
-// ];
-// users.forEach(users=>{
-//     console.log(users.name)
-// })
-
-// const transactions = [
-//   { patient: "Ali Khan", amount: 5000 },
-//   { patient: "Sara Ahmed", amount: 3200 },
-//   { patient: "Usman Malik", amount: 4500 }
-// ];
-// transactions.forEach(transactions =>{
-//     console.log(transactions);
-// })
+// //privat escope what ? IIFE
+// let result = (function(){
+//     let secret = "123456";
+//     return secret;// return ky bgair value rsuy ha 124345 ki jagha undefined  a jatye ge
+// })();
+// console.log(result);
 
 
 
-
-
-
-// const transactions = [
-//   { patient: "Ali Khan", amount: 5000 },
-//   { patient: "Sara Ahmed", amount: 3200 },
-//   { patient: "Usman Malik", amount: 4500 },
-//   { patient: "Ayesha Noor", amount: 2800 },
-//   { patient: "Ali Khan", amount: 1500 },
-//   { patient: "Sara Ahmed", amount: 4000 },
-//   { patient: "Ali Khan", amount: 2200 }
-// ];
-// const revenue={};
-// transactions.forEach(transaction=>{
-//     if(revenue[transaction.patient]){
-//         revenue[transaction.patient]+=transaction.amount;
-//     }
-//     else{
-//         revenue[transaction.patient]=transaction.amount;
-//     }
-// })
-// console.log(revenue);
-// let revenue={};
-// transactions.forEach(transaction=>{
-//     if(revenue[transaction.patient]){
-//         revenue[transaction.patient]+=transaction.amount;
-//     }
-//     else{
-//         revenue[transaction.patient]=transaction.amount;
-//     }
-// });
-// let maxamunt = 0;
-// let maxpatient = "";
-// for(let patient in revenue){
-//     if(revenue[patient]>maxamunt){
-//         maxamunt = revenue[patient];
-//         maxpatient = patient;
+// function outer (){
+//     let count = 0;
+//     return function(){
+//         count++;
+//         return count;
 //     }
 // }
-// console.log(maxpatient+" "+maxamunt);
+// console.log(outer().call(count));
 
 
-// let total=0;
-// let count=0;
-// for(let patient in revenue){
-//     total+=revenue[patient];
-//     count++;
+
+// const person ={
+//     firstname:"husnian",
+//     lastname: "nawaz",
+//     age: 18
+// };
+// console.log(person.firstname)
+
+
+// const person = new Object();
+// person.firstname = "husnain";
+// person.lastname = "nawaz";
+// person.age = 22;
+// console.log(person)
+
+
+
+// const user = {
+//     name: "ali",
+//     age : 222,
 // }
-// let average = total/count;
-// console.log(average)
-
-// async wait better ha priomise sy or promise better ha call back hell sy
-// syschronous - ka matlab ha code step by step one by one line heriarchy ky hisab sy chaly ga wait nahi krva sakty ya skip nahi krsakty kuxh lines is ma
-
- 
-// setTimeout(()=>{
-//     console.log("hello");
-// },4000)
-
- 
-// function sum(a,b){
-//     console.log(a+b);
-// }
-// function calculator(a,b,sumcallback){ // sumcallback yahan kuxh b likh sakty  thy or ya sum ha or sum ki sar ivalues jo b sum ky function ma ha ly raha ha
-//     sumcallback(a,b)
-// }
-// calculator(1,3,sum) // sum ab aik callback ban gya ha tp is ko bahgair () ky pass krty han
-
-// function calculator(a,b, callback){
-//     callback(a,b)
-// }
-
-// calculator(1,2,(a,b)=>{
-//     console.log(a+b);
-// });
-
-// const hello = ()=>{
-//     console.log("hello");
-// }
-// setTimeout(hello,3000)
-// // 
-
-// function getdata(dataid){
-//     setTimeout(()=>{
-//         console.log("data",dataid);
-//     },2000)
-// }
-
-// getdata(1);
-// getdata(2);
-// getdata(3);
+// const extrainfo = {
+//     city: "lahore"
+// };
+// Object.assign(user,extrainfo);
+// console.log(user)
 
 
-// function getdata(dataid,getnextdata){
-//     setTimeout(()=>{
-//         console.log("data",dataid);
-//         if(getnextdata){
-//             getnextdata();
-//         }
-//     },2000)
-// }
-// getdata(1,()=>{
-//     getdata(2);
-// })
-
-
-
-// function datadelay(id,undarwalafun){ // undesrwala fun yahan function ky tor par use ho raha ha jo ham ny nichy expression wala function bnaya ha jis ma 2 value de ha
-//     setTimeout(()=>{
-//         console.log("data",id);
-//         if (undarwalafun) {
-//             undarwalafun();
-//         }
-//     },2000)
-// }
-// datadelay(1,()=>{ // ya jo khali fuction ha ya sara funtion he stor ho gyaha underwala fun ma jo uper sab sy upper line ma ha
-//     datadelay(2);
-// }) 
-
-// function datadelay(id,underwalafun){ // parmater variables han
-//     setTimeout(()=>{ // () inner callbacjk ha
-//         console.log("data",id);
-//         if(underwalafun){  
-//             underwalafun();
-//         }
-//     },2000);
-// }
-// datadelay(1,()=>{ // ya () wala function callback ha yahan
-//     datadelay(2, function(){
-//         datadelay(3);
-//     }); // ya rguments ha or ya call backs han
-// }) // ya () function yahan outer call back ha 
-
-
-
-// function datadelay(id,callbackfun){
-//     setTimeout(()=>{
-//         console.log(id);
-//         if(callbackfun){ // callbackfun = ha ()=>{datadelay(2);}
-//             callbackfun(); // callbackfun() = ha datadelay(2);
-//         }
-//     },2000);
-// }
-
-// datadelay(1,()=>{
-//     datadelay(2,()=>{
-//         datadelay(3)
-//     });
-// })
-
-
-
-// function datadelay(id,callbackfun){
-//     setTimeout(()=>{
-//         console.log(id);
-//         if(callbackfun){ 
-//             callbackfun();
-//         }
-//     },2000);
-// }
-
-// datadelay(1,()=>{
-//     datadelay(2*4,()=>{
-//         datadelay(3)
-//     });
-// })
-
-
-
-// function process(callbackfun){
-//     let result = callbackfun();
-//     console.log(result);
-// }
-
-// process(function(){ // ya function aik callback ha or = ha callbackfun ky or varible ki trha treat ho rha ha idhr
-//     return 100;
-// })
-
-
-// function repeat(callbackfun){
-//     callbackfun();
-//     callbackfun();
-//     callbackfun();
-// }
-// repeat(function(){
-//     console.log(100);
-// })
-
-// function parametervalues(callbackhere){
-//     let name="husnain";
-//     callbackhere(name);
-// }
-// parametervalues(function(user){
-//     console.log(user)
-// })
-
-
-// callback hell - kya ha nested callbacks
-// callback hell ki problem ko solve krny ky liye ata ha promises
-
-
-
-// class car{
-//     constructor(brand,color){
-//         this.brand = brand;
-//         this.color = color;
-//     }
-//     start(){
-//         console.log("car started");
-//     }
-// }
-// const car1 = new car("Toyota","white");
-// car1.start();
-
-// class student{
-//     constructor(name){
-//         this.name = name;
-//     }
+// const person = {
 //     greet(){
-//         console.log(" hello meri jan ",this.name)
+//         console.log("hello");
+//     }
+// };
+// const user = Object.create(person);
+// user.name = "ali";
+// console.log(user.name)
+// user.greet();
+
+
+// let a = 10;
+// let b=a;
+// b=50;
+// console.log(a);
+// console.log(b);
+
+
+// const data = [
+//     ["name", "Ali"],
+//     ["age",22]
+// ];
+// const user = Object.fromEntries(data);
+// console.log(user);
+
+
+// const person = {
+//     age: 10,
+// };
+// const x = person;
+// x.age = 50;
+// console.log(person.age)
+
+
+// const person = {
+//     name: "ali",
+//     age : 33,
+// };
+// const copy = {...person};
+// copy.age = 11;
+// console.log(copy.age)
+
+
+// const user = {
+//     name: "ali",
+//     age : 22,
+// };
+// const upadte ={
+//     ...user,
+//     age : 11,
+// }
+// console.log(user)
+// console.log(upadte)
+
+
+// const person = {
+//     firstname :"husnain",
+//     lastname : "nawaz",
+//     fullname(){
+//         return this.firstname+" "+this.lastname;
+//     }
+// };
+// console.log(person.fullname())
+
+
+// const product = {
+//     name: "alptop",
+//     price : 10000,
+//     showproduct(){
+//         console.log(this.name);
+//         console.log(this.price);
+//     }
+// };
+// console.log(product.showproduct())
+
+
+// const person1 = {
+//     firstname: "ali",
+//     lastname: "khan",
+// };
+// const person2 = {
+//     firstname: "husnain",
+//     lastname: "nawaz",
+// }
+// function fullname(){
+//     return this.firstname+" "+ this.lastname;
+// }
+// console.log(fullname.call(person1))
+
+
+// const person = {
+//     firstname : "ali",
+//     lastname : "khan",
+//     fullname(){
+//         return this.firstname+" "+ this.lastname;
+//     }
+// };
+// const member = {
+//     firstname: "husnian",
+//     lastname: "nawaz",
+// };
+// let fullname = person.fullname.bind(member);
+// console.log(fullname())
+
+
+// const user ={
+//     name: "Ali",
+//     age : 22,
+//     city : "lahore"
+// };
+// // console.log(Object.keys(user))
+// // console.log(Object.entries(user))
+// console.log(Object.values(user))
+// for(let [key,value] of Object.entries(user)){
+//     console.log(key,value)
+// }
+
+// const errors = {
+//     email: "required",
+//     Password : "too short",
+// };
+// Object.entries(errors).map(([field,message]) => {
+//     console.log(field,message);
+// });
+
+
+// const user = {
+//   name: "Ali",
+//   age: 22,
+//   city: "Lahore"
+// };
+// for(let key in user){
+//     console.log(key);
+// }
+
+
+// const user = {
+//     name:"ali",
+// }
+// let key = "name";
+// console.log(user[key])
+
+
+
+// const user = {
+//     name: "ali",
+// };
+// const extra = {
+//     age : 22
+// };
+// Object.assign(user,extra);
+// console.log(user)
+
+
+// const data = [
+//     ["name","husnain"],
+//     ["age", 23]
+// ];
+// const user = Object.fromEntries(data);
+// console.log(user)
+
+
+
+// const user = {
+//     name : "husnain",
+//     age: 22,
+// };
+// const result = Object.fromEntries(
+//     Object.entries(user).filter(([key,value])=>{
+//         return key !=="age";
+//     })
+// );
+// console.log(result)
+
+
+// const products = [
+//     {name:"laptop", category: "electronics"},
+//     {name: "phone", category: "electronics"},
+//     {name: "shirt", category: "clothes"},
+// ];
+// const grouped = Object.groupBy(
+//     products,
+//     a => a.category
+// );
+// console.log(grouped);
+
+
+// const person = {
+//     firstname : "ali",
+//     lastname : "khan",
+//     get fullname(){
+//         return this.firstname+" "+this.lastname;
+//     }
+// };
+// console.log(person.fullname)
+
+
+// const user = {
+//   firstName: "Ali",
+//   lastName: "Khan",
+//     get fullname(){
+//         return `${this.firstName} ${this.lastName}`;
+//     }
+// };
+// console.log(user.fullname);
+
+
+// const user = {
+//   name: "",
+
+//   set username(value) {
+//     this.name = value.toUpperCase();
+//   }
+// };
+// user.username = "ali";
+// console.log(user.name);
+
+
+// const user = {
+//     firstname : "",
+//     lastname : "",
+//     set fullname(value){
+//         const parts =  value.split(" ");
+//         this.firstname = parts[0];
+//         this.lastname = parts[1];
+//     },
+//     get fullname(){
+//         return `${this.firstname} ${this.lastname}`;
 //     }
 // }
-// const student1 = new student("husnain");
-// student1.greet();
-
-
-// class Animal{
-//     eat(){
-//         console.log(" I eat");
-//     }
-// }
-// class dog extends Animal{
-//     bark(){
-//         console.log(" I bark too");
-//     }
-// }
-// const d= new dog;
-// d.eat();
-// d.bark();
-
-
-// class bankaccounnt{
-//     constructor(amount,name){
-//         this.amount = amount;
-//         this.name = name;
-//     }
-//     showbalance(){
-//         console.log(this.name+" balance is "+this.amount);
-//     }
-// }
-// const p = new bankaccounnt("husnain",12000);
-// p.showbalance();
+// user.fullname = "ali khan";
+// console.log(user.firstname)
+// console.log(user.lastname)
+// console.log(user.fullname)
 
 
 
-// import promptSync from "prompt-sync";
-// const prompt = promptSync();
-const prompt = require("prompt-sync")(); // npm package  used to get input and parse output's in node.js not the browser
-// class student {
-//     constructor(name,marks){
-//         this.name = name;
-//         this.marks = marks;
-//     }
-//     showresult(){
-//         console.log("name: ",this.name);
-//         console.log("marks",this.marks);
-//         if(this.marks>=33){
-//             console.log("pass")
-//         }else{
-//             console.log("faail")
+// const user ={
+//     age : 0,
+//     set userage(value){
+//         if(value<0){
+//             console.log("invalid age");
+//             return
 //         }
+//         this.age = value;
+//         console.log(this.age)
+//     }
+// };
+// user.userage = 95;
+
+
+// -------------------------------------
+
+
+// var name = "husnain"; // better to use let and const if dont wanna chnage value later
+// console.log(name);
+
+// let age = 24;
+// console.log(age);
+
+// const city = "lahore";
+// console.log(city);
+
+// let isStudent = true;
+// const isStudent = false;
+// console.log(isStudent)
+// console.log(isStudent)
+
+// const country = "pakistan";
+// console.log(country)
+
+
+// var price = 100;
+// var quantity = 5;
+// total = price*quantity;
+// console.log(total);
+
+// var salary = 50000;
+// var bonus = 10000;
+
+// var firstName, lastName;
+// console.log(fullName = firstName+" "+lastName)
+
+// let favoriteColor= "Hello World";
+// console.log(favoriteColor) 
+
+// let hasLicense = true; // 1
+// let isLoggedIn = false; // 0
+
+
+// let fruits = ["apple","mango","guava"];
+// let numbers = [1,2,3,4,6];
+// let person = {
+//     name: "musa",
+//     age: 22,
+// }
+// let car ={
+//     brand : "toyota",
+//     model : "corolla",
+//     year : 2017
+// }
+
+
+// var score = 80;
+
+// let score = 51;
+// let passed = score>=50;
+// console.log(passed)
+
+// var temprature = 30;
+// let message = "Today is a good day";
+
+
+// let a =30, b=10,x;
+// x=a;
+// a=b;
+// console.log(" a : "+a," b : "+x)
+// both are true
+// let a= 10, b = 15;
+// [a,b] = [b,a];
+// console.log(" a : "+a," b : "+b)
+
+// ---------------------------------------------
+
+
+// const person = {
+//     name: "Ali"
+// };
+// console.log(person.name);
+
+
+
+// const person = {
+//   name: "Ali"
+// };
+
+// Object.defineProperty(person, "age", {
+//   value: 25,
+//   enumerable: true, // is waja sy 25 output ma show ho ga 
+// });
+
+// console.log(person);
+
+// {
+//   writable: false,
+//   enumerable: false, 
+//   configurable: false
+// }
+
+
+
+// const person = {
+//     name : "ali"
+// };
+// Object.defineProperty(person,"name",{
+//     writable: false
+// })
+// person.name = "ahmed"; // writeble false ki waja sy is ko change nahi kr sakty ab
+// console.log(person.name)
+
+
+// const person = {
+//     name: "ali",
+//     age : 24,
+// }
+// Object.defineProperty(person, "age",{
+//     enumerable: false, // is enumerable sy age show he nahi ho ge output ha halan ky ya aik property ha object ki
+// })
+// console.log(Object.keys(person))
+
+
+// const person = {
+//     name: "ali",
+//     age: 25,
+// };
+// Object.defineProperty(person, "age", {
+//     enumerable: false
+// })
+// console.log(Object.keys(person));
+// console.log(Object.getOwnPropertyNames(person)) // y asab properties daita ha even false he kun na ho enumerbale for that property
+
+
+// const person = {
+//     firstname: "ali",
+//     lastname : "khan",
+// };
+// Object.defineProperty(person,"fullname",{
+//     get(){
+//         return this.firstname+" "+this.lastname;
+//     }
+// });
+// console.log(person.fullname)
+
+
+
+// const product= {
+//     title : "laptop",
+//     price : 1000,
+// };
+// Object.defineProperty(product,"discountprice",{
+//     get(){
+//         return this.price -100;
+//     }
+// });
+// console.log(product.discountprice);
+
+
+
+// const person = {
+//     name: "husnain"
+// };
+// Object.preventExtensions(person);
+// person.age =33; // ya dd he nahi ho ga kun ky preventextension lga kr han sy person objcet ko restrcit kr dia ha ky koi b new property add kry to nahi krny daini 
+// console.log(person)
+// person.name = "musa"; // lekin change zaroor kr sakty han existing wali
+// console.log(person)
+// delete person.name; // delet b kr sakty han
+// console.log(person)
+
+
+// const person = {
+//     name: "Ali",
+//     age : 20
+// };
+// Object.seal(person)
+// person.city = "lahore";
+// console.log(person)
+// delete person.name; // nahi kr sakty kuxh nahi ho ga
+// console.log(person)
+
+// person.age = 30; // lakin han value zaroor change kr sakty han seal ma 
+// console.log(person.age)
+// console.log(person)
+
+
+// const person = {
+//     name: "ali",
+//     age: 25,
+// };
+// Object.freeze(person); // us sy kuch nahi kr sakty person ma na delet ekis i property ko na chnage na new property bahir likh sakty kuch b nahi
+// person.age = 12;
+// person.city = "lahore";
+// delete person.age;
+// console.log(person)
+
+
+// const person = {
+//     name: "Alsi"
+// };
+// Object.freeze(person);
+// console.log(Object.isFrozen(person)) // return true if we have used freeze already true / false 
+
+
+// const config = Object.freeze({
+//     API_URL : "https://api.com",
+//     VERSION: "1.0.0",
+// });
+// config.API_URL = "hack.com"; // ya change nahi ho ga kun ky freez ma pebly wali api likh rakhi ha 
+// console.log(config.API_URL)
+
+
+
+// function person(name){
+//     this.name = name;
+//     this.sayhello = function(){
+//         console.log("Hello"+this.name);
 //     }
 // }
-// const name1 = prompt(" eneter name : ")
-// const age1 = Number(prompt(" Eneter age: "))
-// const s1 = new student(name1,age1);
-// s1.showresult();
+// const user1 = new person("Ali");
+// const user2 = new person("Ahmed");
+// console.log(user1.name)
+// console.log(user2.name)
+// console.log(user1.sayhello === user2.sayhello) // false dy ga kun ky  user 1 wala or user2 wala function alag ban gy ha andar kun ky copy bna li ha user1 or 2 dono ny 
 
 
-// class product {
-//     constructor(name,price){
-//         this.name = name;
-//         this.price = price;
-//     }
-//     discount(percent){
-//         console.log(this.price - (this.price * percent/100))
-//     }
+// uper wala simple tha ab prototype sy bnanay lagy han
+
+// function person(name){
+//     this.name = name;
 // }
-// const productname = prompt(" what is name of product: ");
-// const price = Number(prompt("Price: "));
-// const discount = Number(prompt("discount in %: "));
-// const product1 = new product(productname,price);
-// product1.discount(discount);
+// person.prototype.sayhello = function(){
+//     console.log("Hello : "+ this.name);
+// };
+// const user1 = new person("husnian");
+// const user2 = new person("musa bhai");
+// // console.log(user1.name); // simple 
+// // console.log(user2.name); // simple one
+// // console.log(user1.sayhello());
+// // console.log(user2.sayhello());
+// console.log(user1.sayhello === user2.sayhello) // true aye ga kun ky ya aik he function sy ly raha ha na ky copy bna raha ha
 
 
 
-// class Student {
-//         constructor(name, marks) {
-//         this.name = name;
-//         this.marks = marks;
-//     }
+// const user ={
+//     name: "ali",
 // }
-// const student = [];
-// for(let i=0; i<3; i++){
-//     const name= prompt(" name: ");
-//     const marks = Number(prompt("marks: "));
-//     student.push(name,marks);
+// const extra ={
+//     age: 22,
+// };
+// const result = Object.assign({}, user,extra); // assign object ko merge krny ky liye use hot aha jab bad ma bnaya ho wo or purana dono object akathy output ma show hon ashuru ho jaty han is case ma jaisy name or age dono
+// console.log(result)
+
+
+// const user = {
+//     name: "Ali"
+// };
+// Object.freeze(user);
+// user.name = "ahmaed"; // ya chng he nahi ho ga kun ky freeze allow he nahi krta or error b koi nahi aye ga output purany wala anm he ali sjow ho ga 
+// console.log(user.name)
+
+
+// const person ={
+//     country : "pakistan"
+// };
+// const user = Object.create(person)
+
+
+// const user = {
+//     name: "ali",
+// };
+// Object.freeze(user); // freeze chnage he nahi krny dy ga value ko 
+// user.name = "ahmed";
+// console.log(user.name);
+
+// const user = {
+//     name: "husnain",
 // }
-// console.log(student);
+// Object.seal(user);
+// user.name = "musa"; // is ma vaue to chnage kr sakty han but new property add nahi kr sskaty 
+// console.log(user.name)
 
 
+// const person = {
+//     country : "pakistan"
+// };
+// const user = Object.create(person);
+// user.name = "Ali";
+// console.log(user.name);
+// console.log(user.country);
 
 
+const group={};
+const fruits = [];
 
+let p = fruits.push({ name: "kela",  color: "yellow", qty: 8  })
+console.log(group)
 
 
 
