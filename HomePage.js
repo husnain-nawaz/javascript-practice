@@ -1666,46 +1666,11 @@
 // console.log(user.country);
 
 
-// const group={};
-// const fruits = [];
+const group={};
+const fruits = [];
 
-// let p = fruits.push({ name: "kela",  color: "yellow", qty: 8  })
-// console.log(group)
-
-
-
-
-// const employees = [
-//   { name: "Ali",    dept: "IT",       salary: 50000 },
-//   { name: "Sara",   dept: "HR",       salary: 40000 },
-//   { name: "Ahmed",  dept: "IT",       salary: 60000 },
-//   { name: "Fatima", dept: "Marketing",salary: 35000 },
-//   { name: "Usman",  dept: "HR",       salary: 45000 }
-// ];
-// let deptarmrnt = {};
-// for(let i=0; i<employees.length; i++){
-//     if(deptarmrnt[employees[i].dept]){
-//         deptarmrnt[employees[i].dept].push(employees[i]);
-//     }else{
-//         deptarmrnt[employees[i].dept] = [employees[i]];
-//     }
-// }
-// console.log(deptarmrnt);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let p = fruits.push({ name: "kela",  color: "yellow", qty: 8  })
+console.log(group)
 
 
 
