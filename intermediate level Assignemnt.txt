@@ -1,0 +1,371 @@
+Create an array of patients:
+
+const patients = [
+  { id: 1, name: "Ali", age: 65, balance: 5000 },
+  { id: 2, name: "Sara", age: 25, balance: 0 },
+  { id: 3, name: "Ahmed", age: 70, balance: 2500 },
+  { id: 4, name: "Fatima", age: 40, balance: 1000 }
+];
+
+Tasks:
+
+Find total patients.
+Find senior citizens (age >= 60).
+Calculate total outstanding balance.
+Find patient with highest balance.
+Print patients having balance > 1000.
+
+
+.......................................................
+const claims = [
+  { claimId: 101, amount: 1200, status: "Paid" },
+  { claimId: 102, amount: 800, status: "Pending" },
+  { claimId: 103, amount: 1500, status: "Rejected" },
+  { claimId: 104, amount: 2000, status: "Paid" },
+  { claimId: 105, amount: 700, status: "Pending" }
+];
+
+Tasks:
+
+Count paid claims.
+Count pending claims.
+Count rejected claims.
+Calculate total paid amount.
+Calculate total pending amount.
+Find highest claim amount.
+
+......................................................
+const transactions = [
+  { patient: "Ali", amount: 1000 },
+  { patient: "Sara", amount: 2500 },
+  { patient: "Ahmed", amount: 1500 },
+  { patient: "Ali", amount: 500 },
+  { patient: "Sara", amount: 1000 }
+];
+
+Tasks:
+
+Total revenue.
+Revenue per patient.
+Patient who generated highest revenue.
+Average transaction amount.
+
+
+
+----------------------------
+Set 1 — Employees (HR System)
+javascriptconst employees = [
+  { id: 1, name: "Ali",    dept: "IT",      salary: 80000, yearsExp: 8  },
+  { id: 2, name: "Sara",   dept: "HR",      salary: 60000, yearsExp: 3  },
+  { id: 3, name: "Ahmed",  dept: "IT",      salary: 95000, yearsExp: 12 },
+  { id: 4, name: "Fatima", dept: "Finance", salary: 70000, yearsExp: 5  },
+  { id: 5, name: "Usman",  dept: "HR",      salary: 55000, yearsExp: 2  }
+];
+Tasks:
+
+Total number of employees
+Find all IT department employees
+Calculate total salary expense
+Find employee with highest salary
+Find employees with more than 5 years experience
+Calculate average salary
+Count employees per department { IT: 2, HR: 2, Finance: 1 }
+Total salary per department
+
+
+Set 2 — Products (Inventory)
+javascriptconst products = [
+  { id: 1, name: "Laptop",  category: "Electronics", price: 150000, stock: 10 },
+  { id: 2, name: "Chair",   category: "Furniture",   price: 25000,  stock: 0  },
+  { id: 3, name: "Phone",   category: "Electronics", price: 80000,  stock: 5  },
+  { id: 4, name: "Desk",    category: "Furniture",   price: 35000,  stock: 8  },
+  { id: 5, name: "Tablet",  category: "Electronics", price: 60000,  stock: 0  }
+];
+Tasks:
+
+Find out of stock products (stock === 0)
+Total inventory value (price × stock) for each product
+Most expensive product
+All Electronics under price 100000
+Count products per category
+Total value of all in-stock items
+
+
+Set 3 — Students (Result Card)
+javascriptconst students = [
+  { name: "Ali",    marks: 85, subject: "Math",    passed: true  },
+  { name: "Sara",   marks: 45, subject: "Science",  passed: false },
+  { name: "Ahmed",  marks: 92, subject: "Math",    passed: true  },
+  { name: "Fatima", marks: 38, subject: "English",  passed: false },
+  { name: "Usman",  marks: 76, subject: "Science",  passed: true  }
+];
+Tasks:
+
+Count passed and failed students
+Find highest scorer
+Calculate class average marks
+Find all Math students
+Find students who scored above average
+Group students by subject
+
+-----------------------------------
+
+1. Print Message After Delay
+
+Create a function showMessage(callback) that waits 2 seconds and then executes the callback.
+
+Expected:
+
+Loading...
+Done!
+2. Calculate Sum
+
+Create a function calculate(a, b, callback) that calculates the sum and passes the result to the callback.
+
+Example:
+
+calculate(5, 10, displayResult);
+
+Output:
+
+15
+3. Student Result
+
+Create a function that receives a student's marks and uses a callback to print:
+
+Pass
+
+or
+
+Fail
+4. Process User Data
+
+Create an array of users and a function that loops through the array and calls a callback for each user.
+
+Example:
+
+Ali
+Sara
+Ahmed
+Promises
+5. Promise That Resolves
+
+Create a Promise that resolves after 3 seconds with:
+
+Data Loaded
+
+Use .then() to display the message.
+
+6. Promise That Rejects
+
+Create a Promise that rejects after 2 seconds with:
+
+Network Error
+
+Handle the error using .catch().
+
+7. Check Age
+
+Create a function checkAge(age) that returns a Promise.
+
+Conditions:
+
+age >= 18 → resolve("Eligible")
+otherwise → reject("Not Eligible")
+
+Use .then() and .catch().
+
+8. Fetch Product
+
+Create a function getProduct(id) that returns a Promise.
+
+After 2 seconds:
+
+{id: 1, name: "Laptop"}
+
+should be returned.
+
+Display the product using .then().
+
+Async / Await
+9. Sequential Data Loading
+
+Create a function getData(id) that returns a Promise and resolves after 2 seconds.
+
+Use async/await to print:
+
+1
+2
+3
+
+with a 2-second gap between each.
+
+10. Hospital Patient Records
+
+Create a function getPatient(id) that returns a Promise.
+
+After 2 seconds:
+
+{
+  id: 1,
+  name: "Ali",
+  disease: "Flu"
+}
+
+Use async/await to fetch and display:
+
+Patient: Ali
+Disease: Flu
+Bonus Challenge (Medium)
+
+Create:
+
+getData(1)
+getData(2)
+getData(3)
+
+using Promises and async/await so that:
+
+Fetching 1...
+Data 1 received
+
+Fetching 2...
+Data 2 received
+
+Fetching 3...
+Data 3 received
+
+
+
+
+------------------------------------
+Assignment 1: Student Management System
+Requirements
+Create a Student class with:
+studentId
+name
+marks (array)
+Methods
+addMark(mark)
+getAverage()
+getGrade()
+
+---------------------------------------
+
+1. Given: const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
+a) Remove duplicates while preserving order.
+b) Sort in descending order without mutating original.
+c) Find the sum of unique numbers.
+2. Given: const fruits = ["apple", "banana", "mango", "orange", "kiwi"];
+a) Create a new array with fruits having even length names.
+b) Rotate array left by 2 positions.
+c) Join them with " → " separator.
+3. Given: const people = [{name:"Ali", age:25}, {name:"Sara", age:30}, {name:"Ahmed", age:22}];
+a) Sort by age ascending.
+b) Get array of just names.
+c) Find person with max age.
+4. Use Array.flatMap() on:
+const data = [[1,2], [3,4,5], [6]]; to get [1,2,3,4,5,6] and then multiply each by 2.
+5. Given: const arr = [10, 20, 30, 40, 50];
+a) Use reduce to calculate average.
+b) Use some and every to check if all > 15 and at least one > 45.
+6. Chunk array: Write a function chunk(arr, size) that splits [1,2,3,4,5,6,7] into chunks of size 3 → [[1,2,3],[4,5,6],[7]].
+7. Given two arrays:
+const a = [1,2,3,4,5];
+const b = [4,5,6,7,8];
+Find intersection, union, and symmetric difference.
+8. Given: const matrix = [[1,2,3],[4,5,6],[7,8,9]];
+a) Flatten it.
+b) Get diagonal elements.
+c) Transpose the matrix.
+9. Implement custom filter using reduce for:
+const scores = [85, 92, 78, 95, 60, 88]; → keep scores >= 85.
+10. Given: const words = ["hello", "world", "javascript", "array", "medium"];
+a) Sort by length descending.
+b) Capitalize first letter of each.
+11. Find the second largest number in:
+[10, 5, 20, 8, 20, 15, 30, 25]
+12. Given: const transactions = [ {id:1, amount:100}, {id:2, amount:-50}, {id:3, amount:200} ];
+a) Calculate total balance.
+b) Separate positive and negative amounts.
+13. Use map + filter chain on:
+const products = [{name:"Laptop", price:800}, {name:"Phone", price:500}, {name:"Tablet", price:300}];
+→ Get names of products with price > 400.
+14. Shuffle an array randomly (Fisher-Yates) for ["A","B","C","D","E"].
+15. Given: const arr = [1, [2, [3, 4]], 5];
+Deep flatten it using recursion or modern methods.
+Objects & Data Handling (16-25)
+16. Given:
+JavaScriptconst user = {
+  name: "Ahmed",
+  address: { city: "Karachi", country: "Pakistan" },
+  hobbies: ["cricket", "reading"]
+};
+a) Deep clone the object.
+b) Add age: 28 safely.
+c) Get all keys and values.
+17. Merge two objects with nested properties and handle conflicts:
+obj1 = {a:1, b:{x:10}}
+obj2 = {b:{y:20}, c:3}
+18. Count frequency of characters in string "javascript" using object.
+19. Given array of objects, group by property:
+const employees = [{dept:"IT", name:"A"}, {dept:"HR", name:"B"}, {dept:"IT", name:"C"}];
+20. Create a function that returns a new object with only specified keys (pick).
+21. Convert this object to array of key-value pairs and back:
+{name: "Ali", age: 30, city: "Lahore"}
+22. Deep freeze an object (prevent any mutation).
+23. Given: const inventory = { apple: 10, banana: 5, orange: 8 };
+a) Increase every quantity by 2.
+b) Find item with lowest stock.
+24. Implement a simple cache object with get and set using closure.
+25. Given two objects, check if they have same structure and values (deep equal).
+Functions, Scope & Closures (26-32)
+26. Create a counter using closure that supports increment(), decrement(), reset().
+27. Write a function using this that can be called as obj.method() and also as standalone (with default).
+28. Implement once function that runs a given function only one time.
+29. Create a function that returns a new function remembering previous calls (memoization for fibonacci).
+30. Explain and code: What will be logged and why?
+JavaScriptfor (var i = 0; i < 3; i++) {
+  setTimeout(() => console.log(i), 100);
+}
+Fix it using let and using closure.
+31. Create a debounce function (medium version).
+32. Curry this function: add(a,b,c) → add(1)(2)(3).
+ES6+ & Modern JS (33-40)
+33. Destructure and rename:
+const data = { userId: 101, profile: { name: "Sara", age: 28 } };
+34. Use spread and rest to merge arrays and objects.
+35. Convert this to arrow function with implicit return and proper this handling if needed.
+36. Given array, use destructuring to swap two elements without temp variable.
+37. Create a tagged template literal for simple HTML escaping.
+38. Use Map and Set to remove duplicates from array and maintain insertion order.
+39. Given Promise: Create a function that retries a failing async operation max 3 times.
+40. Convert this callback style to async/await:
+JavaScriptgetUser(1, (err, user) => { ... });
+Async & Promises (41-45)
+41. Given array of URLs, fetch all in parallel using Promise.all.
+42. Implement Promise.allSettled polyfill (basic version).
+43. Create a function that resolves after random delay (simulate API).
+44. Handle race condition: Run 3 promises and take the fastest one.
+45. Given:
+JavaScriptasync function process() {
+  // fetch user, then posts, then comments
+}
+Write it with proper error handling.
+Mixed / Algorithms (46-50)
+46. Palindrome check for string ignoring case and spaces: "A man a plan a canal Panama".
+47. Find two numbers in array that add up to target: nums = [2,7,11,15], target = 9.
+48. Rotate array k times: [1,2,3,4,5] with k=2 → [4,5,1,2,3].
+49. Implement a basic Event Emitter class with on, emit, off.
+50. Given: const str = "hello world javascript";
+a) Reverse words in string ("javascript world hello").
+b) Count word frequency using object/Map.
+
+
+
+
+
+
+
+
+
