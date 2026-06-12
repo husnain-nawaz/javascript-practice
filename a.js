@@ -1,4 +1,4 @@
-
+// const prompt = require("prompt-sync")();
 // const person ={
 //     name: "ali",
 //     age : 25,
@@ -7,7 +7,7 @@
 // console.log(Object.values(person)) // y aali or 25 show kry ga kun ky ya ha values
 // console.log(Object.entries(person)) // entries both values or keys dono he return krta ha output ma
 
-const { get, message } = require("prompt");
+// const { get, message } = require("prompt");
 // const { use } = require("react");
 
 // const { use } = require("react");
@@ -148,7 +148,7 @@ const { get, message } = require("prompt");
 // });
 
 
-const prompt = require("prompt-sync")(); // npm package  used to get input and parse output's in node.js not the browser
+// const prompt = require("prompt-sync")(); // npm package  used to get input and parse output's in node.js not the browser
 
 // function getnextage(age){
 //     return Number.parseInt(age,10)+1;
@@ -1768,24 +1768,24 @@ const prompt = require("prompt-sync")(); // npm package  used to get input and p
 
 
 
-const employees = [
-  { name: "Ali",    dept: "HR",       salary: 50000 },
-  { name: "Sara",   dept: "HR",       salary: 40000 },
-  { name: "Ahmed",  dept: "IT",       salary: 60000 },
-  { name: "Fatima", dept: "Marketing",salary: 35000 },
-  { name: "Usman",  dept: "HR",       salary: 45000 }
-];
+// const employees = [
+//   { name: "Ali",    dept: "HR",       salary: 50000 },
+//   { name: "Sara",   dept: "HR",       salary: 40000 },
+//   { name: "Ahmed",  dept: "IT",       salary: 60000 },
+//   { name: "Fatima", dept: "Marketing",salary: 35000 },
+//   { name: "Usman",  dept: "HR",       salary: 45000 }
+// ];
 
 // Group employees by dept
-let department = {};
-for(let i=0; i<employees.length; i++){
-  if(department[employees[i].dept]){
-    department[employees[i].dept].push(employees[i]);
-  }else{
-    department[employees[i].dept] = [employees[i]];
-  }
-}
-console.log(department)
+// let department = {};
+// for(let i=0; i<employees.length; i++){
+//   if(department[employees[i].dept]){
+//     department[employees[i].dept].push(employees[i]);
+//   }else{
+//     department[employees[i].dept] = [employees[i]];
+//   }
+// }
+// console.log(department)
 
 // let department = {};
 // for(let i=0; i<employees.length; i++){
@@ -1835,6 +1835,274 @@ console.log(department)
 //   department[employees[i].dept] = employees[i];
 // }
 // console.log(department)
+
+
+
+// class Student {
+//   constructor(studentId,name){
+//     this.studentId = studentId;
+//     this.name = name;
+//     this.marks = [];
+//   }
+//   addMark(mark){
+//     this.marks.push(mark);
+//   }
+//   getAverage(){
+//     let sum = 0;
+//     for(let i=0; i<this.marks.length; i++){
+//       sum+=this.marks[i];
+//     }
+//     return sum/this.marks.length;
+//   }
+//   getgrades(){
+//     let gardes_are = this.getAverage();
+//     if(gardes_are > 90) return "A";
+//     if(gardes_are > 80) return "B";
+//     if(gardes_are > 70) return "C";
+//     if(gardes_are > 60) return "D";
+//     if(gardes_are > 50) return "E";
+//     if(gardes_are < 50) return "F";
+//   }
+// }
+// let s = new Student(1,"Husnain")
+// s.addMark(93);
+// s.addMark(93);
+// s.addMark(55);
+// s.addMark(66);
+// console.log(s.getAverage(),s.getgrades())
+
+// ------------------------------------------------------
+
+// class Student {
+//   constructor(studentId,name,marks){
+//     this.studentId = studentId;
+//     this.name = name;
+//     this.marks = marks;
+//   }
+//   getAverage(){
+//     let sum = 0;
+//     let count = 0;
+//     for(let i=0; i<this.marks.length; i++){
+//       sum+=this.marks[i];
+//       count++;
+//     }
+//     return sum/count;
+//   }
+//   getgrades(){
+//     let gardes_are = this.getAverage();
+//     if(gardes_are > 90) return "A";
+//     if(gardes_are > 80) return "B";
+//     if(gardes_are > 70) return "C";
+//     if(gardes_are > 60) return "D";
+//     if(gardes_are > 50) return "E";
+//     if(gardes_are < 50) return "F";
+//   }
+// }
+// let s = new Student(1,"Husnain",[23,23,45,77,88])
+// console.log(s.getAverage(),s.getgrades())
+
+
+// const students = [
+//   { name: "Ali", marks: 85, subject: "Math" },
+//   { name: "Sara", marks: 45, subject: "Science" },
+//   { name: "Ahmed", marks: 92, subject: "Math" },
+//   { name: "Fatima", marks: 38, subject: "English" },
+//   { name: "Usman", marks: 76, subject: "Science" }
+// ];
+
+// Count how many students passed (marks >= 50).
+// class StudentManager{
+//   constructor(students){
+//     this.students = students;
+//   }
+//   funcperform(){
+//   let greaterreturn = [];
+//   let count = 0;
+//   for(let i=0; i<this.students.length; i++){
+//     if(this.students[i].marks>=50){
+//       greaterreturn.push(this.students[i]);
+//       count++;
+//     }
+//   }
+//       return {greaterreturn,count};
+// }
+// }
+// let s = new StudentManager(students);
+// let m = s.funcperform();
+// console.log(m);
+
+
+// export function add(a,b){
+//   return a+b;
+// }
+
+// ------------------------------------
+
+// const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
+// // Remove duplicates while preserving order.
+// const unique = [...new Set(nums)]
+// console.log(unique)
+
+// debugger;
+// const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
+// const unique = nums.filter((a,b)=>{ // yahan a value ha array ma or b index ha aisy he return krti ha ya
+//     console.log(a,b)
+//     return nums.indexOf(a)=== b;
+// });
+// console.log(unique);
+
+
+// const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
+// const unique = [];
+// for(let i=0; i<nums.length; i++){
+//   if(!unique.includes(nums[i])){
+//     unique.push(nums[i]);
+//   }
+// }
+// console.log(unique)
+
+
+// const nums = [3, 7, 4, 7, 5, 9, 2, 6, 5, 3];
+// const unique = [];
+// for (let i = 0; i < nums.length; i++) {
+//   let found = false;
+//   for (let j = 0; j < unique.length; j++) {
+//     if (nums[i] === unique[j]) {
+//       found = true;
+//       break;
+//     }
+//   }
+//   if (!found) {
+//     unique.push(nums[i]);
+//   }
+// }
+// console.log(unique);
+
+
+// const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
+// let unique = [];
+// for(let i=0; i<nums.length; i++){
+//   let found = false;
+//   for(let j=0; j<unique.length;j++){
+//     if(nums[i]===unique[j]){
+//       found = true
+//       break;
+//     }
+//   }
+//   if(!found){
+//     unique.push(nums[i]);
+//   }
+// }
+// console.log(unique)
+
+
+// const nums = [3, 7, 4, 1, 5, 9, 7, 6, 5, 3,2,2,-3];
+// const asending = [...nums].sort((a,b)=>a-b);
+// const desending = [...nums].sort((a,b)=>b-a);
+// console.log(asending)
+// console.log(desending)
+
+// const fruits = ["apple", "banana", "mango", "orange", "kiwi"];
+// Create a new array with fruits having even length names.
+
+// const evenlengthfruits = fruits.filter((value)=>{
+//   return value.length % 2 == 0;
+// })
+// console.log(evenlengthfruits)
+
+
+// const fruitseven = fruits.filter((values)=>{
+//     return values.length % 2 == 0;
+// })
+// console.log(fruitseven);
+
+
+// const rotate = fruits.slice(2).concat(fruits.slice(0,2))
+// console.log(rotate)
+
+
+// Join them with " → " separator.
+
+// const jointhem = fruits.join(" -> ")
+// console.log(jointhem)
+
+
+const people = [{name:"Ali", age:25}, 
+    {name:"Sara", age:30}, 
+    {name:"Ahmed", age:22},
+    {name:"Musa", age: 88},
+    {name:"kaleem", age: 66}];
+
+// Sort by age ascending.
+// const sortbymax = people.sort((a,b)=> a.age-b.age)
+// console.log(people)
+
+
+// by using bubble sort
+// for(let i=0; i<people.length-1; i++){ // length ha 3 or ya 301 yani 2 tak chly ga yani 0,1,2 is tarha     for(let j=0; j<people.length-i-1; j++){
+//     for(let j=0; j<people.length-i-1; i++){ // matlab 
+//         let temp = people[i];
+//         people[i] = people[j];
+//         people[j]= temp;
+//     }
+// }
+// console.log(people)
+
+// for(let i=0; i<people.length-1; i++){
+//     for(let j=0; j<people.length-i-1; j++){
+//         if(people[j].age>people[j+1].age){
+//             let temp = people[j];
+//             people[j] = people[j+1];
+//             people[j+1] = temp;
+//         }
+//     }
+// }
+// console.log(people);
+
+// ascending
+// for(let i=0; i<people.length-1; i++){
+//     for(let j=0; j<people.length-i-1; j++){
+//         if(people[j].age>people[j+1].age){
+//             let temp = people[j];
+//             people[j] = people[j+1];
+//             people[j+1] = temp;
+//         }
+//     }
+// }
+// console.log(people)
+
+// descending order if <
+// for(let i=0; i<people.length-1; i++){
+//     for(let j=0; j<people.length-i-1; j++){
+//         if(people[j].age<people[j+1].age){
+//             let temp = people[j+1];
+//             people[j+1] = people[j];
+//             people[j] = temp;
+//         }
+//     }
+// }
+// console.log(people)
+
+
+// Get array of just names.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
