@@ -1839,11 +1839,11 @@
 
 
 // Transpose the matrix.
-const matrix = [
-    [1,2,3],
-    [4,5,6],
-    [7,8,9]
-];
+// const matrix = [
+//     [1,2,3],
+//     [4,5,6],
+//     [7,8,9]
+// ];
 
 // let transpose = [];
 // for(let i = 0; i < matrix.length; i++){
@@ -1867,7 +1867,7 @@ const matrix = [
 
 
 // Implement custom filter using reduce for: keep scores >= 85.
-const scores = [85, 92, 78, 95, 60, 88];
+// const scores = [85, 92, 78, 95, 60, 88];
 
 // const greaterthan85 = scores.reduce((jismapushhona,valuelyra)=>{
 //     if(valuelyra>=85){
@@ -1878,7 +1878,7 @@ const scores = [85, 92, 78, 95, 60, 88];
 // console.log(greaterthan85);
 
 
-const words = ["hello", "world", "javascript", "array", "medium"];
+// const words = ["hello", "world", "javascript", "array", "medium"];
 // const sorthora = words.sort((a,b)=>b.length - a.length);
 // console.log(sorthora)
 
@@ -1928,10 +1928,10 @@ const words = ["hello", "world", "javascript", "array", "medium"];
 // console.log(second)
 
 
-const transactions = [ {id:1, amount:100},
-                         {id:2, amount:-50},
-                         {id:4, amount:-90},
-                          {id:3, amount:200}, ];
+// const transactions = [ {id:1, amount:100},
+//                          {id:2, amount:-50},
+//                          {id:4, amount:-90},
+//                           {id:3, amount:200}, ];
 
 // Calculate total balance.
 // sum = 0;
@@ -1957,9 +1957,9 @@ const transactions = [ {id:1, amount:100},
 // console.log(negetivevalues)
 
 
-const products = [{name:"Laptop", price:800},
-                 {name:"Phone", price:500},
-                {name:"Tablet", price:300}];
+// const products = [{name:"Laptop", price:800},
+//                  {name:"Phone", price:500},
+//                 {name:"Tablet", price:300}];
 
 // Get names of products with price > 400
 // let pushnames = [];
@@ -1985,12 +1985,103 @@ const products = [{name:"Laptop", price:800},
 // console.log(result)
 
 
+// Shuffle an array randomly (Fisher-Yates) for ["A","B","C","D","E"].
+// const arr = ["A","B","C","D","E"];
+// function shuffle(array){
+//     for(let i=array.lengrth-1; i>0; i--){
+//         const j = Math.floor(Math.random()*(i+1));
+//         [array[i],array[j]] = [array[j], array[i]]
+//     }
+//     return array;
+// }
+// console.log(shuffle(arr))
 
 
 
+// const arr = ["A","B","C","D","E"];
+
+// for(let i = arr.length - 1; i > 0; i--){
+//     let randomIndex = Math.floor(Math.random() * (i + 1));
+//     [arr[i], arr[randomIndex]] = [arr[randomIndex], arr[i]];
+// }
+// console.log(arr);
+
+// for(let i=arr.length-1; i>0; i--){
+//     let randomindex = Math.floor(Math.random() * (i+1))
+//     [arr[i],arr[randomindex]] = [arr[randomindex],arr[i]]
+// }
+// console.log(arr)
 
 
+// const arr = [1, [2, [3, 4]], 5];
 
+// const flatit = arr.flat(Infinity);
+// console.log(flatit)
+
+
+// function flatten(array){
+//     let result = [];
+//     for(let i=0; i<array.length; i++){
+//         if(Array.isArray(array[i])){
+//             result = result.concat(flatten(array[i]))
+//         }
+//         else{
+//             result.push(array[i])
+//         }}
+//     return result;
+// }
+// console.log(flatten(arr))
+
+// function flatten(array){
+//     let result = [];
+//     for(let i=0; i<array.length; i++){
+//         if(Array.isArray(array[i])){
+//             result = result.concat(flatten(array[i]));
+//         }
+//     else{
+//         result.push(array[i])
+//     }}
+//     return result
+// }
+// console.log(flatten(arr));
+
+
+const user = {
+  name: "Ahmed",
+  address: { city: "Karachi", country: "Pakistan" },
+  hobbies: ["cricket", "reading"]
+};
+// Deep clone the object.
+// const cloneduser = structuredClone(user);
+// console.log(cloneduser)
+
+
+// function deepclone(obj){
+//     if(obj === null || typeof obj !== "object") return obj;
+//     if(Array.isArray(obj)){
+//         return obj.map(deepclone);
+//     }
+//     const copy = {};
+//     for(let key in obj){
+//         copy[key] = deepclone(obj[key])
+//     }
+//     return copy;
+// }
+// console.log(deepclone(user));
+
+
+function deepclone(obj){
+    if(obj === null || typeof obj !== "object") return obj;
+    if(Array.isArray(obj)){
+        return obj.map(item => deepclone(item))
+    }
+    const copy = {};
+    for(let key in obj){
+        copy[key] = deepclone(obj[key])
+    }
+    return copy;
+}
+console(deepclone(deepclone(user)))
 
 
 
