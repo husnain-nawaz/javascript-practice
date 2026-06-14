@@ -1666,11 +1666,15 @@
 // console.log(user.country);
 
 
-const group={};
-const fruits = [];
+// const group={};
+// const fruits = [];
 
-let p = fruits.push({ name: "kela",  color: "yellow", qty: 8  })
-console.log(group)
+// let p = fruits.push({ name: "kela",  color: "yellow", qty: 8  })
+// console.log(group)
+
+
+
+
 
 
 

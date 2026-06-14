@@ -1,4 +1,4 @@
-// const prompt = require("prompt-sync")();
+
 // const person ={
 //     name: "ali",
 //     age : 25,
@@ -1838,258 +1838,151 @@
 
 
 
-// class Student {
-//   constructor(studentId,name){
-//     this.studentId = studentId;
-//     this.name = name;
-//     this.marks = [];
-//   }
-//   addMark(mark){
-//     this.marks.push(mark);
-//   }
-//   getAverage(){
-//     let sum = 0;
-//     for(let i=0; i<this.marks.length; i++){
-//       sum+=this.marks[i];
+// Transpose the matrix.
+const matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+];
+
+// let transpose = [];
+// for(let i = 0; i < matrix.length; i++){
+//     transpose[i] = [];
+//     for(let j = 0; j < matrix[i].length; j++){
+//         transpose[i][j] = matrix[j][i];
 //     }
-//     return sum/this.marks.length;
-//   }
-//   getgrades(){
-//     let gardes_are = this.getAverage();
-//     if(gardes_are > 90) return "A";
-//     if(gardes_are > 80) return "B";
-//     if(gardes_are > 70) return "C";
-//     if(gardes_are > 60) return "D";
-//     if(gardes_are > 50) return "E";
-//     if(gardes_are < 50) return "F";
-//   }
 // }
-// let s = new Student(1,"Husnain")
-// s.addMark(93);
-// s.addMark(93);
-// s.addMark(55);
-// s.addMark(66);
-// console.log(s.getAverage(),s.getgrades())
+// console.log(transpose);
 
-// ------------------------------------------------------
 
-// class Student {
-//   constructor(studentId,name,marks){
-//     this.studentId = studentId;
-//     this.name = name;
-//     this.marks = marks;
-//   }
-//   getAverage(){
-//     let sum = 0;
-//     let count = 0;
-//     for(let i=0; i<this.marks.length; i++){
-//       sum+=this.marks[i];
-//       count++;
+
+// let transpose = [];
+// for(let i=0; i<matrix.length; i++){
+//     transpose[i] = [];
+//     for(let j=0; j<matrix[i].length; j++){
+//         transpose[i][j] = matrix[j][i];
 //     }
-//     return sum/count;
-//   }
-//   getgrades(){
-//     let gardes_are = this.getAverage();
-//     if(gardes_are > 90) return "A";
-//     if(gardes_are > 80) return "B";
-//     if(gardes_are > 70) return "C";
-//     if(gardes_are > 60) return "D";
-//     if(gardes_are > 50) return "E";
-//     if(gardes_are < 50) return "F";
-//   }
 // }
-// let s = new Student(1,"Husnain",[23,23,45,77,88])
-// console.log(s.getAverage(),s.getgrades())
+// console.log(transpose)
 
 
-// const students = [
-//   { name: "Ali", marks: 85, subject: "Math" },
-//   { name: "Sara", marks: 45, subject: "Science" },
-//   { name: "Ahmed", marks: 92, subject: "Math" },
-//   { name: "Fatima", marks: 38, subject: "English" },
-//   { name: "Usman", marks: 76, subject: "Science" }
-// ];
+// Implement custom filter using reduce for: keep scores >= 85.
+const scores = [85, 92, 78, 95, 60, 88];
 
-// Count how many students passed (marks >= 50).
-// class StudentManager{
-//   constructor(students){
-//     this.students = students;
-//   }
-//   funcperform(){
-//   let greaterreturn = [];
-//   let count = 0;
-//   for(let i=0; i<this.students.length; i++){
-//     if(this.students[i].marks>=50){
-//       greaterreturn.push(this.students[i]);
-//       count++;
+// const greaterthan85 = scores.reduce((jismapushhona,valuelyra)=>{
+//     if(valuelyra>=85){
+//         jismapushhona.push(valuelyra);
 //     }
-//   }
-//       return {greaterreturn,count};
+//     return jismapushhona;
+// },[])
+// console.log(greaterthan85);
+
+
+const words = ["hello", "world", "javascript", "array", "medium"];
+// const sorthora = words.sort((a,b)=>b.length - a.length);
+// console.log(sorthora)
+
+// // Capitalize first letter of each
+// const result = words.map(word => {
+//     return word[0].toUpperCase() + word.slice(1);
+// })
+// console.log(result)
+
+
+// Find the second largest number in:
+
+// const arr = [10, 5, 20, 8, 20, 15, 30, 25];
+// const secondhighest = [... new Set(arr)].sort((a,b)=>b-a)[1];
+// console.log(secondhighest)
+
+
+// const arr = [10, 5, 20, 8, 19,15, 30, 25,20];
+// let first = 0;
+// let second = 0;
+// for (let i = 0; i < arr.length; i++) {
+//     let num = arr[i];
+//     if (num > first) {
+//         second = first;
+//         first = num;
+//     }
+//     else if (num > second && num < first) {
+//         second = num;
+//     }
 // }
+// console.log(second);
+
+
+// const arr = [10, 5, 20, 8, 19,15, 30, 29,20];
+// let first = 0;
+// let second = 0;
+// for(let i=0; i<arr.length; i++){
+//     let num = arr[i];
+//     if(num>first){
+//         second = first;
+//         first = num;
+//     }
+//     else if(num>second && num<first){
+//         second = num;
+//     }
 // }
-// let s = new StudentManager(students);
-// let m = s.funcperform();
-// console.log(m);
+// console.log(second)
 
 
-// export function add(a,b){
-//   return a+b;
+const transactions = [ {id:1, amount:100},
+                         {id:2, amount:-50},
+                         {id:4, amount:-90},
+                          {id:3, amount:200}, ];
+
+// Calculate total balance.
+// sum = 0;
+// for(let i=0; i<transactions.length; i++){
+//     sum+=transactions[i].amount;
 // }
+// console.log(sum)
 
-// ------------------------------------
+// Separate positive and negative amounts.
 
-// const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
-// // Remove duplicates while preserving order.
-// const unique = [...new Set(nums)]
-// console.log(unique)
 
-// debugger;
-// const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
-// const unique = nums.filter((a,b)=>{ // yahan a value ha array ma or b index ha aisy he return krti ha ya
-//     console.log(a,b)
-//     return nums.indexOf(a)=== b;
+// let postivevalues = [];
+// let negetivevalues = [];
+
+// for(let i=0; i<transactions.length; i++){
+//     if(transactions[i].amount < 0){
+//         negetivevalues.push(transactions[i]);
+//     }else{
+//         postivevalues.push(transactions[i])
+//     }
+// }
+// console.log(postivevalues)
+// console.log(negetivevalues)
+
+
+const products = [{name:"Laptop", price:800},
+                 {name:"Phone", price:500},
+                {name:"Tablet", price:300}];
+
+// Get names of products with price > 400
+// let pushnames = [];
+// for(let i=0; i<products.length; i++){
+//     if(products[i].price > 400){
+//         pushnames.push(products[i])
+//     }
+// }
+// console.log(pushnames)
+
+
+// const result = transactions.reduce((addhere,vales)=>{
+//     if(vales.amount>0){
+//         addhere.positive.push(vales);
+//     }else{
+//         addhere.negitive.push(vales)
+//     }
+//     return addhere;
+// },{
+//     positive: [],
+//     negitive: [],
 // });
-// console.log(unique);
-
-
-// const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
-// const unique = [];
-// for(let i=0; i<nums.length; i++){
-//   if(!unique.includes(nums[i])){
-//     unique.push(nums[i]);
-//   }
-// }
-// console.log(unique)
-
-
-// const nums = [3, 7, 4, 7, 5, 9, 2, 6, 5, 3];
-// const unique = [];
-// for (let i = 0; i < nums.length; i++) {
-//   let found = false;
-//   for (let j = 0; j < unique.length; j++) {
-//     if (nums[i] === unique[j]) {
-//       found = true;
-//       break;
-//     }
-//   }
-//   if (!found) {
-//     unique.push(nums[i]);
-//   }
-// }
-// console.log(unique);
-
-
-// const nums = [3, 1, 4, 1, 5, 9, 2, 6, 5, 3];
-// let unique = [];
-// for(let i=0; i<nums.length; i++){
-//   let found = false;
-//   for(let j=0; j<unique.length;j++){
-//     if(nums[i]===unique[j]){
-//       found = true
-//       break;
-//     }
-//   }
-//   if(!found){
-//     unique.push(nums[i]);
-//   }
-// }
-// console.log(unique)
-
-
-// const nums = [3, 7, 4, 1, 5, 9, 7, 6, 5, 3,2,2,-3];
-// const asending = [...nums].sort((a,b)=>a-b);
-// const desending = [...nums].sort((a,b)=>b-a);
-// console.log(asending)
-// console.log(desending)
-
-// const fruits = ["apple", "banana", "mango", "orange", "kiwi"];
-// Create a new array with fruits having even length names.
-
-// const evenlengthfruits = fruits.filter((value)=>{
-//   return value.length % 2 == 0;
-// })
-// console.log(evenlengthfruits)
-
-
-// const fruitseven = fruits.filter((values)=>{
-//     return values.length % 2 == 0;
-// })
-// console.log(fruitseven);
-
-
-// const rotate = fruits.slice(2).concat(fruits.slice(0,2))
-// console.log(rotate)
-
-
-// Join them with " → " separator.
-
-// const jointhem = fruits.join(" -> ")
-// console.log(jointhem)
-
-
-const people = [{name:"Ali", age:25}, 
-    {name:"Sara", age:30}, 
-    {name:"Ahmed", age:22},
-    {name:"Musa", age: 88},
-    {name:"kaleem", age: 66}];
-
-// Sort by age ascending.
-// const sortbymax = people.sort((a,b)=> a.age-b.age)
-// console.log(people)
-
-
-// by using bubble sort
-// for(let i=0; i<people.length-1; i++){ // length ha 3 or ya 301 yani 2 tak chly ga yani 0,1,2 is tarha     for(let j=0; j<people.length-i-1; j++){
-//     for(let j=0; j<people.length-i-1; i++){ // matlab 
-//         let temp = people[i];
-//         people[i] = people[j];
-//         people[j]= temp;
-//     }
-// }
-// console.log(people)
-
-// for(let i=0; i<people.length-1; i++){
-//     for(let j=0; j<people.length-i-1; j++){
-//         if(people[j].age>people[j+1].age){
-//             let temp = people[j];
-//             people[j] = people[j+1];
-//             people[j+1] = temp;
-//         }
-//     }
-// }
-// console.log(people);
-
-// ascending
-// for(let i=0; i<people.length-1; i++){
-//     for(let j=0; j<people.length-i-1; j++){
-//         if(people[j].age>people[j+1].age){
-//             let temp = people[j];
-//             people[j] = people[j+1];
-//             people[j+1] = temp;
-//         }
-//     }
-// }
-// console.log(people)
-
-// descending order if <
-// for(let i=0; i<people.length-1; i++){
-//     for(let j=0; j<people.length-i-1; j++){
-//         if(people[j].age<people[j+1].age){
-//             let temp = people[j+1];
-//             people[j+1] = people[j];
-//             people[j] = temp;
-//         }
-//     }
-// }
-// console.log(people)
-
-
-// Get array of just names.
-
-
-
-
-
+// console.log(result)
 
 
 
