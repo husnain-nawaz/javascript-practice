@@ -7,6 +7,8 @@
 // console.log(Object.values(person)) // y aali or 25 show kry ga kun ky ya ha values
 // console.log(Object.entries(person)) // entries both values or keys dono he return krta ha output ma
 
+// const { use } = require("react");
+
 // const { get, message } = require("prompt");
 // const { use } = require("react");
 
@@ -2046,11 +2048,11 @@
 // console.log(flatten(arr));
 
 
-const user = {
-  name: "Ahmed",
-  address: { city: "Karachi", country: "Pakistan" },
-  hobbies: ["cricket", "reading"]
-};
+// const user = {
+//   name: "Ahmed",
+//   address: { city: "Karachi", country: "Pakistan" },
+//   hobbies: ["cricket", "reading"]
+// };
 // Deep clone the object.
 // const cloneduser = structuredClone(user);
 // console.log(cloneduser)
@@ -2070,18 +2072,172 @@ const user = {
 // console.log(deepclone(user));
 
 
-function deepclone(obj){
-    if(obj === null || typeof obj !== "object") return obj;
-    if(Array.isArray(obj)){
-        return obj.map(item => deepclone(item))
+// function deepclone(obj){
+//     if(obj === null || typeof obj !== "object") return obj;
+//     if(Array.isArray(obj)){
+//         return obj.map(item => deepclone(item))
+//     }
+//     const copy = {};
+//     for(let key in obj){
+//         copy[key] = deepclone(obj[key])
+//     }
+//     return copy;
+// }
+// const v = deepclone(user);
+// console.log(v)
+
+
+// Add age: 28 safely.
+// const updateduser = {
+//     ...user,
+//     age : 28,
+// }
+// console.log(user)
+
+// const updateduser = Object.assign({}, user, {
+//     age: 28,
+// });
+// console.log(updateduser)
+
+// Get all keys and values.
+// let keys = Object.keys(user);
+// for(let i = 0; i<keys.length; i++){
+//     console.log(keys[i],user[keys[i]])
+// }
+// for(let key in user){
+//     console.log(key,user[key])
+// }
+
+// for(let [key,value] of Object.entries(user)){
+//     console.log(key,value)
+// }
+
+
+// const v = Object.keys(user).forEach(key => {
+//     console.log(key, user[key])
+// })
+
+
+// Merge two objects with nested properties and handle conflicts:
+// function deepMerge(obj1, obj2) {
+//     let result = {};
+//     for (let key in obj1) {
+//         result[key] = obj1[key];
+//     }
+//     for (let key in obj2) {
+//         if (
+//             typeof obj2[key] === "object" &&
+//             obj2[key] !== null &&
+//             !Array.isArray(obj2[key]) &&
+//             typeof result[key] === "object" &&
+//             result[key] !== null &&
+//             !Array.isArray(result[key])
+//         ) {
+//             result[key] = deepMerge(result[key], obj2[key]);
+//         }
+//         else {
+//             result[key] = obj2[key];
+//         }
+//     }
+//     return result;
+// }
+// const obj1 = { a: 1, b: { x: 10 } };
+// const obj2 = { b: { y: 20 }, c: 3 };
+// console.log(deepMerge(obj1, obj2));
+
+
+// function deepmerge(obj1,obj2){
+//     let result = {};
+//     for(let key in obj1){
+//         result[key] = obj1[key]
+//     }
+//     for(let key in obj2){
+//         if(
+//             typeof obj2[key] === "object" &&
+//             obj2[key] !== null &&
+//             !Array.isArray(obj2[key]) &&
+//             typeof result[key] === "object" &&
+//             result[key] !== null &&
+//             !Array.isArray(result[key])
+//         ){
+//             result[key] = deepmerge(result[key],obj2[key])
+//         }
+//         else{
+//             result[key] = obj2[key];
+//         }
+//     }
+//     return result;
+// }
+// const obj1 = { a: 1, b: { x: 10 } };
+// const obj2 = { b: { y: 20 }, c: 3 };
+// console.log(deepmerge(obj1,obj2))
+
+
+
+// let str = "javascript";
+// let freq = {};
+// for (let i = 0; i < str.length; i++) {
+//     let ch = str[i];
+//     if (freq[ch]) {
+//         freq[ch]++;
+//     } else {
+//         freq[ch] = 1;
+//     }
+// }
+// console.log(freq);
+
+// for(let i=0; i<str.length; i++){
+//     let firstletter = str[i];
+//     if(freq[firstletter]){
+//         freq[firstletter]++;
+//     }
+//     else{
+//         freq[firstletter] = 1;
+//     }
+// }
+// console.log(freq)
+
+
+// const employees = [{dept:"IT", name:"A"},
+//                  {dept:"HR", name:"B"}, 
+//                  {dept:"IT", name:"C"}];
+
+// // Given array of objects, group by property:
+// const groupedby = {};
+// for(let i=0; i<employees.length; i++){
+//     if(groupedby[employees[i].dept]){
+//         groupedby[employees[i].dept].push(employees[i]);
+//     }
+//     else{
+//         groupedby[employees[i].dept] = [employees[i]]
+//     }
+// }
+// console.log(groupedby)
+
+
+
+// Create a function that returns a new object with only specified keys (pick).
+function pick(obj, keys) {
+    let result = {};
+    for (let i = 0; i < keys.length; i++) {
+        let key = keys[i];
+        if (obj[key] !== undefined) {
+            result[key] = obj[key];
+        }
     }
-    const copy = {};
-    for(let key in obj){
-        copy[key] = deepclone(obj[key])
-    }
-    return copy;
+    return result;
 }
-console(deepclone(deepclone(user)))
+const user = {
+    name: "Ahmed",
+    age: 25,
+    city: "Karachi",
+    country: "Pakistan"
+};
+console.log(pick(user, ["name","age"]));
+
+
+
+
 
 
 

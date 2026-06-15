@@ -1673,6 +1673,31 @@
 // console.log(group)
 
 
+function deepMerge(obj1, obj2) {
+    let result = {};
+    for (let key in obj1) {
+        result[key] = obj1[key];
+    }
+    for (let key in obj2) {
+        if (
+            typeof obj2[key] === "object" &&
+            obj2[key] !== null &&
+            !Array.isArray(obj2[key]) &&
+            typeof result[key] === "object" &&
+            result[key] !== null &&
+            !Array.isArray(result[key])
+        ) {
+            result[key] = deepMerge(result[key], obj2[key]);
+        }
+        else {
+            result[key] = obj2[key];
+        }
+    }
+    return result;
+}
+const obj1 = { a: 1, b: { x: 10 } };
+const obj2 = { b: { y: 20 }, c: 3 };
+console.log(deepMerge(obj1, obj2));
 
 
 
