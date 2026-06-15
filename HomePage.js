@@ -1673,31 +1673,272 @@
 // console.log(group)
 
 
-function deepMerge(obj1, obj2) {
-    let result = {};
-    for (let key in obj1) {
-        result[key] = obj1[key];
-    }
-    for (let key in obj2) {
-        if (
-            typeof obj2[key] === "object" &&
-            obj2[key] !== null &&
-            !Array.isArray(obj2[key]) &&
-            typeof result[key] === "object" &&
-            result[key] !== null &&
-            !Array.isArray(result[key])
-        ) {
-            result[key] = deepMerge(result[key], obj2[key]);
-        }
-        else {
-            result[key] = obj2[key];
-        }
-    }
-    return result;
+// --------------- class's -----------------
+
+// const students = [
+//   { name: "Ali",    marks: 85, subject: "Math",    passed: true  },
+//   { name: "Sara",   marks: 45, subject: "Science",  passed: false },
+//   { name: "Ahmed",  marks: 92, subject: "Math",    passed: true  },
+//   { name: "Fatima", marks: 38, subject: "English",  passed: false },
+//   { name: "Usman",  marks: 76, subject: "Science",  passed: true  }
+// ];
+// Find highest scorer
+// class Studentmanager{
+//     constructor(students){
+//         this.students = students;
+//     }
+//     showfun(){
+//         let high=students[0];
+//         for(let i=0; i<this.students.length; i++){
+//             if(this.students[i].marks>high.marks){
+//                 high = this.students[i];
+//             }
+//         }
+//         return high;
+//     }
+// }
+// const s1 = new Studentmanager(students);
+// console.log(s1.showfun())
+
+
+// // Count passed and failed students
+// class studentmanger{
+//     constructor(students){
+//         this.students = students;
+//     }
+//     checkfun(){
+//         for(let i=0; i<this.students.length; i++){
+//         if(this.students[i].marks>=50){
+//             console.log(this.students[i],"passed");
+//         }
+//         else{
+//             console.log(this.students[i],"Failed");            
+//         }
+//         }
+//     }
+// }
+// const s1 = new studentmanger(students);
+// s1.checkfun();
+
+// Calculate class average marks
+// class studentmanger{
+//     constructor(students){
+//         this.students = students;
+//     }
+//     checkfun(){
+//         let sum=0;
+//         let name = "";
+//         for(let i=0; i<this.students.length; i++){
+//             sum+=this.students[i].marks;
+//             name = this.students[i].name;
+//     }
+//     console.log("average is : "+sum,name);
+// }
+// }
+// let s1 = new studentmanger(students);
+// s1.checkfun();
+
+
+// Find all Math students
+// class studentmanger{
+//     constructor(students){
+//         this.students = students;
+//     }
+//     checkfun(){
+//         let add = [];
+//         for(let i=0; i<this.students.length; i++){
+//                 if(this.students[i].subject === "Math"){
+//                 add.push(students[i]);
+//             }
+//             }
+//         return add;
+//         }
+//     }
+// let s1 = new studentmanger(students);
+// console.log(s1.checkfun());
+
+// by using filter
+// class StudentManager {
+//     constructor(students) {
+//         this.students = students;
+//     }
+//     filterout(){
+//         return this.students.filter((g)=> g.subject === "Math")
+//     }
+// }
+// let s1 = new StudentManager(students);
+// console.log(s1.filterout());
+
+
+// for... of ka use kr ky
+// for(let keys of students){
+//     if(keys.subject === "Math"){
+//     console.log(keys)
+// }
+// }
+
+// for... of ka use kr ky
+// let mathst = [];
+// for(let keys of students){
+//     if(keys.subject === "Math"){
+//     mathst.push(keys)
+// }
+// }
+// console.log(mathst)
+
+// simple filter 
+// let mathstudents = students.filter(
+//     function (g){ // g here is euql to studnets[i] yani hr line jo b stunet array ma ha ya aik line ha kun ky filter ma loop chal raha ha for i wala or return ho raha us ma students[i]
+//         return g.subject === "Math";
+//     }
+// )
+// console.log(mathstudents)
+
+// Find students who scored above average
+// class Studentmanger{
+//     constructor(students){
+//         this.students = students;
+//     }
+//     scoredabove(){
+//         let addmainval = this.students[0];
+//         let avg = 0;
+//         let count = 0;
+//         for(let i=0; i<this.students.length; i++){
+//             avg+= this.students[i].marks;
+//             count++;
+//         };
+//         let abovemarks = avg/count;
+//         console.log(abovemarks);
+//         // console.log(avg);
+        
+//         for(let j=0; j<this.students.length; j++){
+//         if(this.students[j].marks > abovemarks){
+//             addmainval=students[j];
+//             console.log(addmainval)
+//         }
+//     }
+//     }
+// }
+// let s1 = new Studentmanger(students);
+// s1.scoredabove();
+
+
+// Group students by subject
+// class Studentmanger{
+//     constructor(students){
+//         this.students = students;
+//     }
+//     groupedby(){
+//         let subjectname = {};
+//         for(let i=0; i<this.students.length; i++){
+//             if(subjectname[this.students[i].subject]){
+//                 subjectname[this.students[i].subject].push(this.students[i]);
+//             }else{
+//                 subjectname[this.students[i].subject] = [this.students[i]]
+//             }
+//         }
+//         return subjectname;
+//     }
+// }
+// let s1 = new Studentmanger(students);
+// console.log(s1.groupedby());
+
+
+
+// class Studentsystem {
+//   constructor(studentId, name) {
+//     this.studentId = studentId;
+//     this.name = name;
+//     this.marks = [];
+//   }
+//   addMark(mark){
+//     this.marks.push(mark);
+//   }
+//   getAverage(){
+//     let sum = 0;
+//     for(let i=0; i<this.marks.length; i++){
+//       sum+=this.marks[i];
+//     }
+//     return sum/this.marks.length;
+//   }
+//   getGrade(){
+//     const avg = this.getAverage();
+//     if(avg > 90){ return "A"}
+//     if(avg > 80) return "B"
+//     if(avg > 70) return "C"
+//     if(avg > 60) return "D"
+//     if(avg > 50) return "E"
+//     if(avg < 50) return "F"    
+//   }
+// }
+// const s = new Studentsystem(1,"Husnain")
+// s.addMark(33);
+// s.addMark(52);
+// s.addMark(45);
+// s.addMark(98);
+// console.log(s.getAverage())
+// console.log(s.getGrade())
+
+
+  
+// import { add } from './a.js';
+// let result = add(2,3)
+// console.log(result)
+
+
+
+// for (let i = 0; i < people.length - 1; i++) {
+//   for (let j = 0; j < people.length - 1 - i; j++) {
+//     if (people[j].age > people[j + 1].age) {
+
+//       let temp = people[j];
+//       people[j] = people[j + 1];
+//       people[j + 1] = temp;
+//     }
+//   }
+// }
+// console.log(people);
+
+
+// function chunk(arr, size) {
+//   let result = [];
+//   for (let i = 0; i < arr.length; i += size) {
+//     result.push(arr.slice(i, i + size));
+//   }
+//   return result;
+// }
+// const nums = [1, 2, 3, 4, 5, 6, 7];
+// console.log(chunk(nums, 3));
+
+
+
+// let numbers = [10,20,30,40,50];
+// numbers.splice(1,3)
+// console.log(numbers)
+
+// let letters = ['A', 'B', 'C', 'D', 'E'];
+// letters.splice(1,3)
+// console.log(letters)
+
+const ages = [3, 10, 18, 20];
+
+function checkAge(age) {
+  return age > 18;
 }
-const obj1 = { a: 1, b: { x: 10 } };
-const obj2 = { b: { y: 20 }, c: 3 };
-console.log(deepMerge(obj1, obj2));
+console.log(ages.findIndex(checkAge));
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
