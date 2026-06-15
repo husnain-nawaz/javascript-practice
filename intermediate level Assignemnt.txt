@@ -318,6 +318,7 @@ const employees = [{dept:"IT", name:"A"}, {dept:"HR", name:"B"}, {dept:"IT", nam
 a) Increase every quantity by 2.
 b) Find item with lowest stock.
 24. Implement a simple cache object with get and set using closure.
+ -------------------------------
 25. Given two objects, check if they have same structure and values (deep equal).
 Functions, Scope & Closures (26-32)
 26. Create a counter using closure that supports increment(), decrement(), reset().
@@ -360,12 +361,152 @@ Mixed / Algorithms (46-50)
 50. Given: const str = "hello world javascript";
 a) Reverse words in string ("javascript world hello").
 b) Count word frequency using object/Map.
+-------------------------
 
+1. Bank Account System
+Create a BankAccount class.
+- Properties:
+    * accountNumber
+    * accountHolder
+    * balance
+- Methods:
+    * deposit(amount)
+    * withdraw(amount)
+    * checkBalance()
+- Conditions:
+    * Prevent withdrawing more than the available balance.
+    * Print clear transaction messages for every deposit and withdrawal.
 
+---
 
+## 2. Student Result Management
+Create a Student class.
+- Requirements:
+    * Store the student's name and marks for 5 subjects.
+- Calculations & Methods:
+    * Calculate Total Marks.
+    * Calculate Percentage.
+    * Determine the Grade based on the percentage.
+- Grading Scale:
+    * A = 80% and above
+    * B = 70% and above
+    * C = 60% and above
+    * F = Below 60%
 
+---
 
+## 3. Library Management System
+Create two classes: Book and Library.
+- Requirements:
+    * Use arrays inside the Library class to store book objects.
+- Core Features / Methods:
+    * Add a book to the library.
+    * Remove a book from the library.
+    * Search for a book by its title.
+    * Display all available books in the library.
 
+---
 
+## 4. Employee Payroll System
+Create an Employee class.
+- Properties:
+    * Name
+    * Basic Salary
+    * Attendance (number of days present)
+- Methods & Calculations:
+    * Calculate the daily salary rate.
+    * Calculate the final monthly salary based on attendance.
+    * Apply proper salary deductions for missed days.
+    * *Assume standard total Working Days = 30.*
 
+---
 
+## 5. Hospital Patient System
+Create a Patient class.
+- Properties:
+    * Patient ID
+    * Name
+    * Age
+    * Outstanding Balance
+- Methods:
+    * addBalance(amount) (add new charges to the bill)
+    * payBill(amount) (pay off the outstanding bill)
+    * displayPatientInfo()
+- Conditions:
+    * The outstanding balance should never become negative.
+
+---
+
+## 6. E-Commerce Shopping Cart
+Create two classes: Product and Cart.
+- Requirements:
+    * Use loops and arrays to manage items.
+- Core Features / Methods:
+    * Add a product to the cart.
+    * Remove a product from the cart.
+    * Calculate the total bill of all items in the cart.
+    * Display all items currently in the cart.
+
+---
+
+## 7. Vehicle Rental System
+Create a Vehicle class.
+- Properties:
+    * Vehicle Number
+    * Model
+    * Rent Per Day
+- Methods & Logic:
+    * Calculate total rent for N days.
+    * Apply a 10% discount if the vehicle is rented for more than 7 days.
+
+---
+
+## 8. CRM Lead Management
+Create a Lead class.
+- Properties:
+    * Lead Name
+    * Source (e.g., Website, Referral, Social Media)
+    * Status (Must be either: Won, Lost, or Pending)
+- Required Analysis Tasks:
+    * Count the total number of leads grouped by their Status.
+    * Count the total number of leads grouped by their Source.
+    * Calculate the overall Win Rate (Percentage of "Won" leads out of total leads).
+
+---
+
+## 9. Inventory Management System
+Create two classes: Product and Inventory.
+- Core Features / Methods:
+    * Add products to the inventory.
+    * Update stock quantities when new stock arrives or items are sold.
+    * Find and list all low-stock products (where stock quantity is less than 10).
+    * Calculate the total quantity of all items in the entire inventory.
+
+---
+
+## 10. Mini ATM System
+Create an ATM class.
+- Interactive Menu Options:
+    1. Deposit
+    2. Withdraw
+    3. Check Balance
+    4. Exit
+- Rules & Constraints:
+    * Cannot withdraw more money than the current balance.
+    * Track the transaction history.
+    * Display the last 5 transactions when requested.
+
+---
+
+## BONUS CHALLENGE (Interview Level)
+### Online Food Ordering System
+Create four interacting classes: Restaurant, MenuItem, Order, and Customer.
+- Features & Workflow:
+    * A customer places an order.
+    * Multiple menu items can be added to a single order.
+    * Calculate the total bill.
+- Discount Logic:
+    * If total bill is greater than 5000 -> Apply a 10% Discount.
+    * If total bill is greater than 10000 -> Apply a 20% Discount.
+- Output:
+    * Print a formatted final invoice showing item breakdowns, discounts applied, and the final amount due.
