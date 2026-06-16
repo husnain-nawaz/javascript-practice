@@ -1,4 +1,4 @@
-// const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")();
 // const person ={
 //     name: "ali",
 //     age : 25,
@@ -2449,75 +2449,426 @@
 
 //  Library Management System
 
-class Book{
-  constructor(title,author, year){
-    this.title = title;
-    this.author = author;
-    this.year = year;
-  }
-}
-class Library{
-  constructor(){
-  this.books = []; // sab books yahan store hon gi
-  }
-  addbook(book){
-    this.books.push(book);
-    // console.log(`${book.title} add to librray`)
-  }
+// class Book{
+//   constructor(title,author, year){
+//     this.title = title;
+//     this.author = author;
+//     this.year = year;
+//   }
+// }
+// class Library{
+//   constructor(){
+//   this.books = []; // sab books yahan store hon gi
+//   }
+//   addbook(book){
+//     this.books.push(book);
+//     // console.log(`${book.title} add to librray`)
+//   }
 
-// remove
-removeBook(titlearg) {
-  const index = this.books.findIndex(a=>
-    a.title.toLowerCase() === titlearg.toLowerCase());
-    if(index === -1){
-      console.log(`${titlearg} not found`)
-      return
-    }
-    this.books.splice(index,1);
-    console.log(`${titlearg} removed from library`)
-}
-// search
-  searchbook(titlearg){
-    const book = this.books.find(b=>b.title.toLowerCase() === titlearg.toLowerCase())
-      if(!book){
-        console.log(`${titlearg} "book not found"`)
-      return
-    }
-    console.log(`Found ${book.title} by ${book.author} in year ${book.year}`)
-  }
+// // remove
+// removeBook(titlearg) {
+//   const index = this.books.findIndex(a=>
+//     a.title.toLowerCase() === titlearg.toLowerCase());
+//     if(index === -1){
+//       console.log(`${titlearg} not found`)
+//       return
+//     }
+//     this.books.splice(index,1);
+//     console.log(`${titlearg} removed from library`)
+// }
+// // search
+//   searchbook(titlearg){
+//     const book = this.books.find(b=>b.title.toLowerCase() === titlearg.toLowerCase())
+//       if(!book){
+//         console.log(`${titlearg} "book not found"`)
+//       return
+//     }
+//     console.log(`Found ${book.title} by ${book.author} in year ${book.year}`)
+//   }
 
-// display
-  displaybooks(){
-    if(this.books === 0){
-      console.log("Library is Empty");
-      return;
-    }
-    console.log("All Books in Library");
-    this.books.forEach(book=>{
-      console.log(`"${book.title}" - ${book.author} (${book.year})`)
-    })
-  }
-}
-const mylibrray = new Library();
-const book1 = new Book("rich dad poor dad","Musa bhai",1990)
-const book2 = new Book("rumi","rumaisa",2000)
-const book3 = new Book("english","wren martin",1938)
-// add books
-mylibrray.addbook(book1);
-mylibrray.addbook(book2);
-mylibrray.addbook(book3);
-// display book
-console.log("---------------")
-mylibrray.displaybooks();
-console.log("---------------")
-// search book
-// mylibrray.searchbook("Rami")
-// mylibrray.searchbook("english")
-// remove book
-mylibrray.removeBook("gam")
-// display books again
-console.log("----------------")
-mylibrray.displaybooks();
+// // display
+//   displaybooks(){
+//     if(this.books === 0){
+//       console.log("Library is Empty");
+//       return;
+//     }
+//     console.log("All Books in Library");
+//     this.books.forEach(book=>{
+//       console.log(`"${book.title}" - ${book.author} (${book.year})`)
+//     })
+//   }
+// }
+// const mylibrray = new Library();
+// const book1 = new Book("rich dad poor dad","Musa bhai",1990)
+// const book2 = new Book("rumi","rumaisa",2000)
+// const book3 = new Book("english","wren martin",1938)
+// // add books
+// mylibrray.addbook(book1);
+// mylibrray.addbook(book2);
+// mylibrray.addbook(book3);
+// // display book
+// console.log("---------------")
+// mylibrray.displaybooks();
+// console.log("---------------")
+// // search book
+// // mylibrray.searchbook("Rami")
+// // mylibrray.searchbook("english")
+// // remove book
+// mylibrray.removeBook("gam")
+// // display books again
+// console.log("----------------")
+// mylibrray.displaybooks();
+
+
+
+// Employee Payroll System
+// class Employee{
+//   constructor(name,basicsalary,attendance){
+//     this.name = name;
+//     this.basicsalary = basicsalary;
+//     this.attendance= attendance;
+//     this.workingdays = 30;
+//   }
+//   dailyrate(){
+//     return this.basicsalary/this.workingdays;
+//   }
+//   misseddays(){
+//     return this.workingdays-this.attendance;
+//   }
+//   deduction(){
+//     return this.dailyrate() * this.misseddays();
+//   }
+//   finalsalary(){
+//     return this.basicsalary - this.deduction();
+//   }
+//   getpayslip(){
+//     console.log(`Employee : ${this.name}`)
+//     console.log(`Basic salary : ${this.basicsalary}`)
+//     console.log(`Days Present : ${this.attendance} / ${this.workingdays}`)
+//     console.log(`Missed days : ${this.misseddays()}`)
+//     console.log(`Deduction : ${this.deduction().toFixed(2)}`)
+//     console.log(`Final Salary : ${this.finalsalary().toFixed(2)}`)
+//   }
+// }
+
+// const emp1 = new Employee("Ali", 50000, 30)
+// const emp2 = new Employee("Husnain", 20000, 20)
+// const emp3 = new Employee("Musa", 30000, 25)
+
+// emp1.getpayslip()
+// console.log("-------------------------")
+// emp2.getpayslip()
+// console.log("-------------------------")
+// emp3.getpayslip()
+
+
+// Hospital Patient System
+// class Patient{
+//   constructor(patientid,name,age,oustandingbalance){
+//     this.patientid = patientid;
+//     this.name = name;
+//     this.age = age;
+//     this.oustandingbalance = oustandingbalance;
+//   }
+//   addbalance(amount){
+//     this.oustandingbalance += amount;
+//   }
+//   paybill(amount){
+//     if(amount>=this.oustandingbalance){
+//       console.log("payment esceeds outstanding balance")
+//       // this.oustandingbalance -= amount;
+//       this.oustandingbalance = 0;
+//     }else{
+//       this.oustandingbalance -= amount;
+//     }
+//   }
+//   displayPatientInfo(){
+//     console.log(`Patient ID : ${this.patientid}`)
+//     console.log(`Patient Name : ${this.name}`)
+//     console.log(`Patient Age : ${this.age}`)
+//     console.log(`Outstarnding Balance : ${this.oustandingbalance}`)
+//   }
+// }
+// const patient1 = new Patient(101,"husnain", 25, 5000);
+// patient1.addbalance(3000)
+// patient1.paybill(9000)
+// patient1.displayPatientInfo()
+
+
+// E-Commerce Shopping Cart
+// class Product{
+//   constructor(id,name,price){
+//     this.id = id;
+//     this.name = name;
+//     this.price = price;
+//   }
+// }
+// class Cart{
+//   constructor(){
+//     this.items = [];
+//   }
+//   addproduct(item){
+//     this.items.push(item);
+//   }
+//   removeproduct(itemid){
+//     for(let i=0; i<this.items.length; i++){
+//       if(this.items[i].id === itemid){
+//         this.items.splice(i,1)
+//         break;
+//       }
+//     }
+//   }
+//   calculateitemsammount(){
+//     let total = 0;
+//     for(let i=0; i<this.items.length; i++){
+//       total += this.items[i].price;
+//     }
+//     return total;
+//   }
+//   displayitems(){
+//     console.log(`Cart Items: `)
+//     for(let i=0; i<this.items.length; i++){
+//       console.log(`ID: ${this.items[i].id} - Name : ${this.items[i].name} - ${this.items[i].price}`)
+//     }
+//   }
+// }
+// const product1 = new Product(1,"Laptop", 10000)
+// const product2 = new Product(2,"Mouse", 2000)
+// const product3 = new Product(3,"Keyboard", 5000)
+
+// const mycart = new Cart();  
+// mycart.addproduct(product1)
+// mycart.addproduct(product2)
+// mycart.addproduct(product3)
+
+// console.log("-----------------")
+// mycart.removeproduct(1)
+// mycart.displayitems()
+// console.log(mycart.calculateitemsammount())
+
+
+// Vehicle Rental System
+// class Vehicle {
+//   constructor(vehiclenumber,model,rentperday){
+//     this.vehiclenumber = vehiclenumber;
+//     this.model = model;
+//     this.rentperday = rentperday;
+//   }
+//   calculateRent(days){
+//     let totalrent = this.rentperday * days;
+//     if(days>7){
+//       totalrent= totalrent - (totalrent*10) / 100;
+//     }
+//     return totalrent;
+//   }
+//   displayvehicleinfo(){
+//     console.log(`Vehicle Number : ${this.vehiclenumber}`)
+//     console.log(`Vehicle MOdel : ${this.model}`)
+//     console.log(`Vehicle rent a day : ${this.rentperday}`)
+//   }
+// }
+
+// const vehicle1 = new Vehicle("SWL-5611", "Toyota Corolla", 5000)
+// const vehicle2 = new Vehicle("SWL-5611", "Toyota Corolla", 5000)
+// const vehicle3 = new Vehicle("SWL-5611", "Toyota Corolla", 5000)
+// vehicle1.displayvehicleinfo()
+// console.log(vehicle1.calculateRent(7))
+// console.log("-------------")
+// console.log("After discount: ",vehicle1.calculateRent(8))
+// vehicle1.displayvehicleinfo()
+
+
+
+// RM Lead Management
+// class Lead {
+//   constructor(leadname,source,status){
+//     this.leadname = leadname;
+//     this.source = source;
+//     this.status = status;
+//   }
+// }
+// class Analyzer{
+//   constructor(leadsvalues){
+//     this.allleads = leadsvalues;
+//   }
+//   // counter status
+//   countby(key){
+//     const result = {};
+//     for(let i=0; i<this.allleads.length; i++){
+//       const value = this.allleads[i][key];
+//       if(result[value]){
+//         result[value]++;
+//       }else{
+//         result[value] = 1;
+//       }
+//     }
+//     return result;
+//   }
+//   getwinrate(ststus){
+//     let won = 0;
+//     for(let i=0; i< this.allleads.length; i++){
+//       if(this.allleads[i].status === ststus){
+//         won++;
+//       }
+//     }
+//     return (won/this.allleads.length) *100
+//   }
+
+// }
+
+// // data
+// const leads = [
+//   new Lead("Ali", "Website", "Pending"),
+//   new Lead("Sara", "Referral", "Pending"),
+//   new Lead("Ahmed", "Website", "Lost"),
+//   new Lead("Fatima", "Social Media", "Won"),
+//   new Lead("Usman", "Referral", "Won"),
+//   new Lead("Ayesha", "Website", "Pending")
+// ];
+// // analyze
+// const analyzer = new Analyzer(leads);
+// console.log("Leads by status");
+// console.log(analyzer.countby("status"))
+// console.log("-----------------")
+// console.log("Leads by source");
+// console.log(analyzer.countby("source"))
+// console.log(`Win rate : ${analyzer.getwinrate("Pending").toFixed(1)} %`)
+
+
+
+// Inventory Management System
+// class Product{
+//     constructor(id, name, stock){
+//         this.id = id;
+//         this.name = name;
+//         this.stock = stock;
+//     }
+// }
+// class Inventory{
+//   constructor(){
+//     this.products = [];
+//   }
+//   // add product
+//   addproduct(product){
+//     this.products.push(product);
+//   }
+//   // add or remove
+//   updatestock(productId,quantity){
+//     for(let i=0; i<this.products.length; i++){
+//         if(this.products[i].id === productId){
+//             this.products[i].stock += quantity;
+//         }
+//     }
+//   }
+//   getLowstockProducts(){
+//     let lowstock = [];
+//     for(let i=0; i<this.products.length; i++){
+//         if(this.products[i].stock < 10){
+//             lowstock.push(this.products[i]);
+//         }
+//         else{
+//             return "Not a single one is less than 10 "
+//         }
+//     }
+//     return lowstock;
+//   }
+//   gettotalstock(){
+//     let total = 0;
+//     for(let i=0; i<this.products.length; i++){
+//         total += this.products[i].stock;
+//     }
+//     return total;
+//   }
+//   // display all
+//   display(){
+//     for(let i=0; i<this.products.length; i++){
+//         console.log(`ID ${this.products[i].id} - Name: ${this.products[i].name} - stock: ${this.products[i].stock}`)
+//     }
+// }
+// }
+
+// const product1 = new Product(101,"soap",14)
+// const product2 = new Product(201,"Laptop",23)
+// const product3 = new Product(301,"MObile",29)
+// const product4 = new Product(401,"keyboard",47)
+
+// const myInventory = new Inventory();
+// myInventory.addproduct(product1)
+// myInventory.addproduct(product2)
+// myInventory.addproduct(product3)
+// myInventory.addproduct(product4)
+// console.log(myInventory.getLowstockProducts())
+
+// myInventory.updatestock(101,-5)
+// console.log("Total stock of products is: ",myInventory.gettotalstock())
+// myInventory.display()
+// console.log(myInventory.getLowstockProducts())
+
+
+// // Mini ATM System
+// class ATM{
+//     constructor(balance=0){
+//         this.balance = balance;
+//         this.transactions = [];
+//     }
+//     deposit(amount){
+//         if(amount>0){
+//             this.balance += amount;
+//             this.transactions.push(`Deposited ${amount} | Balance: ${this.balance}`)
+//                     console.log(`Deposited ${amount}`)
+//             }else{
+//                 console.log("Invalid Amount");
+//             }
+//     }
+//     withdraw(amount){
+//         if(amount> this.balance){
+//             console.log("Insufficent Balance");
+//         }
+//         else if(amount>0){
+//             this.balance -= amount;
+//             this.transactions.push(`Withdrawal ${amount} | Balance ${this.balance}`)
+//              console.log(`Wthdrawal ${amount}`);
+//         }
+//         else{
+//             console.log("Invalid amount")
+//         }
+//     }
+//     checkbalance(){
+//         console.log("current Balance is ",this.balance)
+//     }
+//     showlast5transactions(){
+//         console.log("Last 5 transeactions")
+//         let start = this.transactions.length - 5;
+//         if(start<0){
+//             start = 0;
+//         }
+//         for(let i=start; i<this.transactions.length; i++){
+//             console.log(this.transactions[i])
+//         }
+//     }
+// }
+// const atm1 = new ATM(10000);
+// atm1.deposit(1000);
+// atm1.deposit(1000);
+// atm1.deposit(1000);
+// atm1.deposit(1000);
+// atm1.deposit(1000);
+// atm1.deposit(1000);
+// atm1.withdraw(200)
+// atm1.deposit(1000);
+// atm1.withdraw(200)
+// atm1.withdraw(200)
+// atm1.deposit(1000);
+// atm1.withdraw(200)
+// atm1.checkbalance()
+// atm1.showlast5transactions()
+
+
+
+
+
+
+
 
 
 
