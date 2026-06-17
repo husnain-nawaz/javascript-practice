@@ -2864,6 +2864,270 @@ const prompt = require("prompt-sync")();
 // atm1.showlast5transactions()
 
 
+// Online Food Ordering System
+
+// class MenuItem{
+//     constructor(name,price){
+//         this.name = name;
+//         this.price = price;
+//     }
+// }
+
+// class Resturant{
+//     constructor(name){
+//         this.name = name;
+//         this.menu = [];
+//     }
+//     addMenuItem(menuItem){
+//         this.menu.push(menuItem);
+//     }
+//     showMenu(){
+//         console.log(`${this.name} Menu`);
+//         for(let i=0; i<this.menu.length; i++){
+//             console.log(`${this.menu[i].name} - Rs. ${this.menu[i].price}`)
+//         }
+//     }
+// }
+
+
+// class Customer{
+//     constructor(name){
+//         this.name = name;
+//         this.Order = new Order();
+//     }
+//     placeorder(menuitem, quantity){
+//         this.Order.additems(menuitem,quantity);
+//     }
+// }
+
+// class Order{
+//     constructor(){
+//         this.items =[];
+//     }
+//     additems(menuItem, quantity){
+//         this.items.push({
+//             item: menuItem,
+//             quantity: quantity,
+//         });
+//     }
+//     calulateTotal(){
+//         let total = 0;
+//         for(let i=0; i<this.items.length; i++){
+//             total += this.items[i].item.price * this.items[i].quantity;
+//         }
+//         return total;
+//     }
+//     calculateDiscount(){
+//         let total = this.calulateTotal();
+//         if(total>1000){
+//             return total * 0.20
+//         }
+//         if(total>5000){
+//             return total * 0.10
+//         }
+//         return 0;
+//     }
+//     generateInvoice(customername){
+//         console.log("--------------------------")
+//         console.log("           FINAL INVOICE")
+//         console.log("----------------------")
+//         console.log(`Customer ${customername}`);
+//         console.log(" ");
+//         let total = 0;
+//         for(let i=0; i< this.items.length; i++){
+//             let subtotal = this.items[i].item.price * this.items[i].quantity;
+//         total += subtotal;
+//         console.log(`${this.items[i].item.name} | Rs. ${this.items[i].item.price} X ${this.items[i].quantity} = Rs. ${subtotal}`);
+//         }
+//         let discount = this.calculateDiscount();
+//         let finalamount = total - discount;
+//         console.log("-----------------------");
+//         console.log(`TOtal Bill          : Rs. ${total}`);
+//         console.log(`Discount Applied    : Rs. ${discount}`);
+//         console.log(`Amount due          : Rs. ${finalamount}`);
+//         console.log(`----------------------`);   
+//     }
+// }
+
+
+// // Testing
+// let resturant = new Resturant("Food hub");
+// let burger = new MenuItem("Burger", 1200);
+// let pizza = new MenuItem("Pizza", 2500);
+// let biryani = new MenuItem("Biryani",800);
+// resturant.addMenuItem(burger);
+// resturant.addMenuItem(pizza);
+// resturant.addMenuItem(biryani);
+// resturant.showMenu();
+// let customer= new Customer("Ali");
+// customer.placeorder(burger,2);
+// customer.placeorder(pizza, 3);
+// customer.placeorder(biryani,2);
+// customer.Order.generateInvoice(customer.name)
+
+
+
+// class MenuItem{
+//     constructor(name,price){
+//         this.name = name;
+//         this.price = price;
+//     }
+// }
+// class Resturant{
+//     constructor(name){
+//         this.name = name;
+//         this.menu = [];
+//     }
+//     addMenuItem(menuitem){
+//         this.menu.push(menuitem)
+//     }
+//     showmenu(){
+//         console.log(` ${this.name} Menu `)
+//         for(let i=0; i<this.menu.length; i++){
+//             console.log(`${this.menu[i].name} - Rs. ${this.menu[i].price}`)
+//         }
+//     }
+// }
+//     // Customer
+// class Customer{
+//     constructor (name){
+//         this.name = name;
+//     }
+// }
+//     // Order
+// class Order{
+//     constructor(customer){
+//         this.customer = customer;
+//         this.items = [];
+//     }
+//     addItem(menuItem, quantity){
+//         this.items.push({
+//             item: menuItem,
+//             quantity: quantity,
+//         })
+//     }
+//     claculatetotalbill(){
+//         let total = 0;
+//         for(let i=0; i<this.items.length; i++){
+//             total+=this.items[i].item.price * this.items[i].quantity;
+//         }
+//         return total;
+//     }
+//     calculateDiscount(){
+//         let total = this.claculatetotalbill();
+//         if(total>10000){
+//             return total * 0.2;
+//         }
+//         if(total > 5000){
+//             return total * 0.1;
+//         }
+//         return 0;
+//     }
+//     // generate Invoice
+//     generateInvoice(){
+//         console.log("--------------------------")
+//         console.log("      Final Invoice")
+//         console.log("--------------------------")
+//         let total = 0;
+//         for(let i=0; i<this.items.length; i++){
+//             let subtotal = this.items[i].item.price * this.items[i].quantity;
+//             total+=subtotal; 
+//             console.log(`${this.items[i].item.name} | RS. ${this.items[i].item.price} x ${this.items[i].quantity} = RS. ${subtotal}`)
+//         }
+//         let discount = this.calculateDiscount();
+//         let finalamount = total - discount;
+//         console.log("-----------------")
+//         console.log(`TOtal Bill       : ${total}`)
+//         console.log(`Discount Applied : ${discount}`)
+//         console.log(`Amount to be paid: ${finalamount}`)
+//         console.log("-----------------")
+//     }
+// }
+
+
+// let burger = new MenuItem("Burger", 1200);
+// let pizza = new MenuItem("Pizza", 2500);
+// let biryani = new MenuItem("Biryani", 800)
+// let kabab = new MenuItem("kabab", 300)
+// // Resturants
+// let cheezious = new Resturant("cheezious")
+// let NomNosh = new Resturant("NomNosh")
+// // Different Menu's for different Resturant
+// cheezious.addMenuItem(burger);
+// cheezious.addMenuItem(pizza);
+// // Nomnosh Menus now
+// NomNosh.addMenuItem(biryani);
+// NomNosh.addMenuItem(kabab);
+// NomNosh.addMenuItem(pizza)
+// // display values 
+// cheezious.showmenu()
+// NomNosh.showmenu()
+// // customer now
+// let customer = new Customer("Ali");
+// let order = new Order(customer);
+// order.addItem(burger,2)
+// order.addItem(biryani,4)
+// order.addItem(kabab,3)
+
+// order.generateInvoice()
+
+
+
+function deepEqual(obj1,obj2){
+     let keys1 = Object.keys(obj1);
+     let keys2 = Object.keys(obj2);
+     if(keys1.length !== keys2.length){
+        return false;
+     }
+     for(let i=0; i<keys1.length; i++){
+        let key = keys1[i];
+        if(!(key in obj2)){
+            return false;
+        }
+        if(
+            typeof obj1[key] === "object" &&
+            obj1[key] !== null &&
+            typeof obj2[key] === "object" &&
+            obj2[key] !== null
+        ){
+            if(!deepEqual(obj1[key], obj2[key])){
+                return false;
+            }else{
+                if(obj1[key] !== obj2[key]){
+                    return false;
+                }
+            }
+        }
+     }
+     return true;
+}
+
+// let obj1 = {
+//     name: "Ali",
+//     age: 20
+// }; 
+// let obj2 = {
+//     name: "Musa",
+//     age: 12,
+// };
+
+
+let obj1 = {
+    name: "Ali",
+    address: {
+        city: "Lahore",
+        country: "Pakistan"
+    }
+};
+
+let obj2 = {
+    name: "Ali",
+    address: {
+        city: "Lahore",
+        country: "Pakistan"
+    }
+};
+console.log(deepEqual(obj1,obj2))
 
 
 
