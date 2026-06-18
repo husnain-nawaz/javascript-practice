@@ -3073,34 +3073,34 @@ const prompt = require("prompt-sync")();
 
 
 
-function deepEqual(obj1,obj2){
-     let keys1 = Object.keys(obj1);
-     let keys2 = Object.keys(obj2);
-     if(keys1.length !== keys2.length){
-        return false;
-     }
-     for(let i=0; i<keys1.length; i++){
-        let key = keys1[i];
-        if(!(key in obj2)){
-            return false;
-        }
-        if(
-            typeof obj1[key] === "object" &&
-            obj1[key] !== null &&
-            typeof obj2[key] === "object" &&
-            obj2[key] !== null
-        ){
-            if(!deepEqual(obj1[key], obj2[key])){
-                return false;
-            }else{
-                if(obj1[key] !== obj2[key]){
-                    return false;
-                }
-            }
-        }
-     }
-     return true;
-}
+// function deepEqual(obj1,obj2){
+//      let keys1 = Object.keys(obj1);
+//      let keys2 = Object.keys(obj2);
+//      if(keys1.length !== keys2.length){
+//         return false;
+//      }
+//      for(let i=0; i<keys1.length; i++){
+//         let key = keys1[i];
+//         if(!(key in obj2)){
+//             return false;
+//         }
+//         if(
+//             typeof obj1[key] === "object" &&
+//             obj1[key] !== null &&
+//             typeof obj2[key] === "object" &&
+//             obj2[key] !== null
+//         ){
+//             if(!deepEqual(obj1[key], obj2[key])){
+//                 return false;
+//             }else{
+//                 if(obj1[key] !== obj2[key]){
+//                     return false;
+//                 }
+//             }
+//         }
+//      }
+//      return true;
+// }
 
 // let obj1 = {
 //     name: "Ali",
@@ -3112,25 +3112,237 @@ function deepEqual(obj1,obj2){
 // };
 
 
-let obj1 = {
-    name: "Ali",
-    address: {
-        city: "Lahore",
-        country: "Pakistan"
-    }
-};
 
-let obj2 = {
-    name: "Ali",
-    address: {
-        city: "Lahore",
-        country: "Pakistan"
-    }
-};
-console.log(deepEqual(obj1,obj2))
+// function deepequal(obj1,obj2){
+//     let keys1 = Object.keys(obj1);
+//     let keys2 = Object.keys(obj2);
+//     if(keys1.length !== keys2.length){
+//         return false;
+//     }
+//     for(let i=0; i<keys1.length; i++){
+//         let key = keys1[i];
+//         if(!(key in obj2)){
+//             return false;
+//         }
+//         if(
+//             typeof obj1[key] === "object" &&
+//             typeof obj2[key] === "object" &&
+//             obj1[key] !== null &&
+//             obj2[key] !== null
+//         ){
+//             if(!deepequal(obj1[key], obj2[key])){
+//                 return false;
+//             }else{
+//                 if(obj1[key] !== obj2[key]){
+//                     return false;
+//                 }
+//             }
+//         }
+//     }
+//     return true;
+// }
+
+// let obj1 = {
+//     name: "Ali",
+//     age: 20
+// }; 
+// let obj2 = {
+//     name: "Musa",
+//     age: 12,
+// };
+
+// let obj1 = {
+//     name: "Ali",
+//     address: {
+//         city: "Lahore",
+//         country: "Pakistan"
+//     }
+// };
+
+// let obj2 = {
+//     name: "Ali",
+//     address: {
+//         city: "Lahore",
+//         country: "Pakistan"
+//     }
+// };
+// console.log(deepequal(obj1,obj2))
 
 
 
+// function createcounter(){
+//     let count = 0;
+//     return {
+//         increment: function (){
+//             count++;
+//             return count;
+//         },
+//         decrement: function(){
+//             count--;
+//             return count;
+//         },
+//         reset: function(){
+//             count= 0;
+//             return count;
+//         }
+//     };
+// }
+
+// let counter = createcounter();
+// console.log(counter.increment());
+// console.log(counter.increment());
+// console.log(counter.decrement());
+// console.log(counter.reset())
+
+
+
+
+// function createcounter(){
+//     let count = 0;
+//     return{
+//         increament: function(){
+//             count++
+//             return count;
+//         },
+//         decreament: function(){
+//             count--;
+//             return count;
+//         },
+//         reset: function(){
+//             count = 0;
+//             return count;
+//         }
+//     }
+// }
+// let counter = createcounter();
+// console.log(counter.increament())
+// console.log(counter.decreament());
+// console.log(counter.increament()) 
+// console.log(counter.reset())
+// console.log(counter.count);
+
+
+// function showName() {
+//     let context = this || {};
+//     console.log(context.name || "Guest");}
+// let obj = {
+//     name: "Ali",
+//     method: showName};
+// obj.method(); // Ali
+// showName();   // Guest
+
+
+// let obj ={
+//     name: "Husnain",
+//     method: showname,
+// }
+// function showname(){
+//     let context = this || {};
+//     console.log(context.name || "Guest");
+// }
+// obj.method();
+// showname()
+
+
+// function once(fn) {
+//     let called = false;
+//     const f =  function (...args) {
+//         if (!called) {
+//             called = true;
+//             return fn(...args);}
+//         }
+//         return f;
+//         }
+// function greet(name) {
+//     console.log("Hello " + name);}
+// let greetOnce = once(greet);
+// greetOnce("Husnian");   // Hello Ali
+// greetOnce("Musa");  // kuch nahi hoga
+// greetOnce("Sara");  // kuch nahi hoga
+
+
+// function once(fn){
+//     let completed = false;
+//     return function(...args){
+//         if(!completed){
+//             completed = true;
+//             return fn(...args)
+//         }
+//     }
+//     return true;
+// }
+// function greet(name){
+//     console.log(name);
+// }
+// // original function call
+// // greet("Husnain")
+// // greet("Musa bhai")
+// // once function now 
+// let oncegreet = once(greet);
+// oncegreet("Husnian")
+// oncegreet("Musa")
+// oncegreet("Alizay shah")
+
+
+
+// let entered = false;
+// function enter(name){
+//     if(!entered){
+//         entered = true;
+//         console.log(name)
+//     }
+// }
+// enter("ali");
+// enter("husnian")
+
+
+
+// function memoizedFib() {
+//     let cache = {};
+//     return function fib(n) {
+//         if (n in cache) {
+//             console.log("From cache:", n);
+//             return cache[n];
+//         }
+//         if (n <= 1) {
+//             cache[n] = n;
+//             return n;
+//         }
+//         cache[n] = fib(n - 1) + fib(n - 2);
+//         return cache[n];
+//     };
+// }
+// const fib = memoizedFib();
+// console.log(fib(10)); // 8
+// console.log(fib(10)); // cache se
+// console.log(fib(11)); // 13
+
+
+
+function createFibonacci() {
+    // 1. Yeh hamari "Memory" (Cache) hai jahan jawab save honge
+    const cache = {}; 
+    // 2. Yeh wo naya function hai jo return hoga aur sab yaad rakhega
+    return function fib(n) {
+        // Agar number pehle se memory mein hai, to wahi se return kar do
+        // if (n in cache) {
+        //     console.log(cache[n])
+        //     return cache[n];
+        // }
+        // // Base cases: Agar n 0 ya 1 hai
+        if (n <= 1) {
+            return n;
+        }
+        // Agar memory mein nahi hai, to calculate karo aur cache mein save karo
+        cache[n] = fib(n - 1) + fib(n - 2);
+    
+        return cache[n];
+    };
+}
+// Code ko chalane ka tareeqa:
+const smartFib = createFibonacci(); // Yeh hume naya function deta hai jo memory rakhta hai
+console.log(smartFib(10)); // Pehli dafa calculation karega -> 55
+// console.log(smartFib(11));
 
 
 

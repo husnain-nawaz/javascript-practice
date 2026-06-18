@@ -1920,12 +1920,145 @@
 // letters.splice(1,3)
 // console.log(letters)
 
-const ages = [3, 10, 18, 20];
+// const ages = [3, 10, 18, 20];
 
-function checkAge(age) {
-  return age > 18;
+// function checkAge(age) {
+//   return age > 18;
+// }
+// console.log(ages.findIndex(checkAge));
+
+
+
+class Lead {
+  constructor(leadName, source, status) {
+    this.leadName = leadName;
+    this.source = source;
+    this.status = status;
+  }
 }
-console.log(ages.findIndex(checkAge));
+
+class LeadAnalyzer {
+  constructor(leads) {
+    this.leads = leads;
+  }
+
+  // Generic counter (reuse for status & source)
+  countBy(key) {
+    const result = {};
+
+    for (let i = 0; i < this.leads.length; i++) {
+      const value = this.leads[i][key];
+
+      if (result[value]) {
+        result[value]++;
+      } else {
+        result[value] = 1;
+      }
+    }
+
+    return result;
+  }
+
+  // getWinRate() {
+  //   let won = 0;
+
+  //   for (let i = 0; i < this.leads.length; i++) {
+  //     if (this.leads[i].status === "Won") {
+  //       won++;
+  //     }
+  //   }
+
+  //   return (won / this.leads.length) * 100;
+  // }
+}
+
+// Data
+// const leads = [
+//   new Lead("Ali", "Website", "Won"),
+//   new Lead("Sara", "Referral", "Pending"),
+//   new Lead("Ahmed", "Website", "Lost"),
+//   new Lead("Fatima", "Social Media", "Won"),
+//   new Lead("Usman", "Referral", "Won"),
+//   new Lead("Ayesha", "Website", "Pending")
+// ];
+
+// // Analyzer
+// const analyzer = new LeadAnalyzer(leads);
+
+// console.log("Leads By Status:");
+// console.log(analyzer.countBy("status"));
+
+// console.log("Leads By Source:");
+// console.log(analyzer.countBy("source"));
+
+// // console.log("Win Rate:", analyzer.getWinRate().toFixed(1) + "%");
+
+
+
+// const readline = require('readline');
+
+// // Set up where the input and output come from
+// const rl = readline.createInterface({
+//   input: process.stdin,
+//   output: process.stdout
+// });
+
+// // Ask the user a question
+// rl.question('What is your name? ', (answer) => {
+//   console.log(`Hello, ${answer}!`);
+//   rl.close(); // Close the input stream
+// });
+
+
+function deepEqual(obj1,obj2){
+     let keys1 = Object.keys(obj1);
+     let keys2 = Object.keys(obj2);
+     if(keys1.length !== keys2.length){
+        return false;
+     }
+     for(let i=0; i<keys1.length; i++){
+        let key = keys1[i];
+        if(!(key in obj2)){
+            return false;
+        }
+        if(
+            typeof obj1[key] === "object" &&
+            obj1[key] !== null &&
+            typeof obj2[key] === "object" &&
+            obj2[key] !== null
+        ){
+            if(!deepEqual(obj1[key], obj2[key])){
+                return false;
+            }else{
+                if(obj1[key] !== obj2[key]){
+                    return false;
+                }
+            }
+        }
+     }
+     return true;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
