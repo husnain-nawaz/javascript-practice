@@ -3319,30 +3319,70 @@ const prompt = require("prompt-sync")();
 
 
 
-function createFibonacci() {
-    // 1. Yeh hamari "Memory" (Cache) hai jahan jawab save honge
-    const cache = {}; 
-    // 2. Yeh wo naya function hai jo return hoga aur sab yaad rakhega
-    return function fib(n) {
-        // Agar number pehle se memory mein hai, to wahi se return kar do
-        // if (n in cache) {
-        //     console.log(cache[n])
-        //     return cache[n];
-        // }
-        // // Base cases: Agar n 0 ya 1 hai
-        if (n <= 1) {
-            return n;
-        }
-        // Agar memory mein nahi hai, to calculate karo aur cache mein save karo
-        cache[n] = fib(n - 1) + fib(n - 2);
+// function createFibonacci() {
+//     // 1. Yeh hamari "Memory" (Cache) hai jahan jawab save honge
+//     const cache = {}; 
+//     // 2. Yeh wo naya function hai jo return hoga aur sab yaad rakhega
+//     return function fib(n) {
+//         // Agar number pehle se memory mein hai, to wahi se return kar do
+//         // if (n in cache) {
+//         //     console.log(cache[n])
+//         //     return cache[n];
+//         // }
+//         // // Base cases: Agar n 0 ya 1 hai
+//         if (n <= 1) {
+//             return n;
+//         }
+//         // Agar memory mein nahi hai, to calculate karo aur cache mein save karo
+//         cache[n] = fib(n - 1) + fib(n - 2);
     
-        return cache[n];
-    };
+//         return cache[n];
+//     };
+// }
+// // Code ko chalane ka tareeqa:
+// const smartFib = createFibonacci(); // Yeh hume naya function deta hai jo memory rakhta hai
+// console.log(smartFib(10)); // Pehli dafa calculation karega -> 55
+// // console.log(smartFib(11));
+
+
+
+// function createfibonacci(){
+//     const cache = {};
+//     return function fib(n){
+//         if(n in cache){
+//             return cache[n];
+//         }
+//         if(n<=1){
+//             return n;
+//         }
+//         cache[n] = fib(n-1)+fib(n-2)
+//         return cache[n]
+//     }}   
+// const smartfib = createfibonacci();
+// console.log(smartfib(10))
+
+
+
+
+const person = {
+    name: "Ali",
+    age: 20,
+};
+const newperson = {
+    ...person, // ya spread operator copy kr laita ha person ki sari values ko jo person object ma hoti han or dal daita ha kahan bala newperson ma
+    city: "lahore"
 }
-// Code ko chalane ka tareeqa:
-const smartFib = createFibonacci(); // Yeh hume naya function deta hai jo memory rakhta hai
-console.log(smartFib(10)); // Pehli dafa calculation karega -> 55
-// console.log(smartFib(11));
+console.log(newperson)
+
+
+
+
+
+
+
+
+
+
 
 
 
